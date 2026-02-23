@@ -1,0 +1,8 @@
+# .gitignore
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+data/processed/
+*.sqlite
+.env
