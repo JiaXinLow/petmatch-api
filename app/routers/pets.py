@@ -9,6 +9,54 @@ from app.schemas import PetCreate, PetUpdate, PetRead
 
 router = APIRouter(tags=["pets"])
 
+# ---------------- Utility & Filtering Endpoints ----------------
+
+@router.get("/pets/species", response_model=List[str])
+def list_species(db: Session = Depends(get_db)):
+    rows = db.execute(select(Pet.species).distinct()).scalars().all()
+    return sorted([s for s in rows if s])
+
+
+@router.get("/pets/outcomes", response_model=List[str])
+def list_outcome_types(db: Session = Depends(get_db)):
+    rows = db.execute(select(Pet.outcome_type).distinct()).scalars().all()
+    return sorted([o for o in rows if o])
+
+
+@router.get("/pets/breeds", response_model=List[str])
+def list_breeds(
+    species: Optional[str] = Query(None, description="Filter by species (Dog|Cat|Other)"),
+    db: Session = Depends(get_db)
+):
+    stmt = select(Pet.breed_name_raw).distinct()
+    if species:
+        stmt = stmt.where(Pet.species == _normalize_species(species))
+
+    rows = db.execute(stmt).scalars().all()
+    return sorted([b for b in rows if b])
+
+@router.get("/pets/summary")
+def pets_summary(db: Session = Depends(get_db)):
+
+    total = db.query(Pet).count()
+
+    species_rows = db.execute(select(Pet.species)).scalars().all()
+    species_summary = {}
+    for s in species_rows:
+        if s:
+            species_summary[s] = species_summary.get(s, 0) + 1
+
+    ages = db.execute(select(Pet.age_months)).scalars().all()
+    age_values = [a for a in ages if isinstance(a, int)]
+
+    return {
+        "total_pets": total,
+        "species_counts": species_summary,
+        "average_age_months": (
+            sum(age_values) / len(age_values) if age_values else None
+        )
+    }
+
 # ---------- Helpers ----------
 
 def _normalize_species(v: Optional[str]) -> Optional[str]:
