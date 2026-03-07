@@ -12,7 +12,3 @@ app.include_router(pets_router, prefix="/api/v1")
 @app.get("/")
 def root():
     return {"name": "PetMatch API", "version": "0.1.0"}
-
-@app.on_event("startup")
-def startup_event():
-    Base.metadata.create_all(bind=engine)

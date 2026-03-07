@@ -6,6 +6,7 @@ from sqlalchemy import select, and_
 from app.database import get_db
 from app.models import Pet
 from app.schemas import PetCreate, PetUpdate, PetRead
+from app.services.recommender import recommend_pets
 
 router = APIRouter(tags=["pets"])
 
@@ -56,6 +57,44 @@ def pets_summary(db: Session = Depends(get_db)):
             sum(age_values) / len(age_values) if age_values else None
         )
     }
+
+
+@router.get("/pets/recommend", response_model=List[PetRead], tags=["pets"])
+def recommend(
+    species: str = Query(..., description="Target species (Dog|Cat|Other)"),
+    size: Optional[str] = Query(
+        None, description="Desired breed size (e.g., Small, Medium, Large)"
+    ),
+    energy: Optional[str] = Query(
+        None, description="Desired energy level (e.g., Low, Medium, High)"
+    ),
+    target_age: Optional[int] = Query(
+        None, ge=0, description="Target pet age in months (non-negative)"
+    ),
+    limit: int = Query(10, ge=1, le=100, description="Max results to return"),
+    db: Session = Depends(get_db),
+):
+    """
+    Weighted hybrid recommendations.
+
+    Scoring (high level):
+    - Species match: strong weight
+    - Size / Energy match: adds weight if provided
+    - Age proximity: smooth 1/(1+|Δ|) similarity
+    - 'Adoption' outcome: small bonus
+    """
+    # Reuse the same normalizer used elsewhere so species is consistent
+    species_norm = _normalize_species(species) or "Other"
+
+    pets = recommend_pets(
+        db=db,
+        species=species_norm,
+        size=size,
+        energy=energy,
+        target_age=target_age,
+        limit=limit,
+    )
+    return [_pet_to_read(p) for p in pets]
 
 # ---------- Helpers ----------
 
