@@ -1,7 +1,7 @@
 from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
-from sqlalchemy import select, and_
+from sqlalchemy import select, and_, func
 
 from app.database import get_db
 from app.models import Pet
@@ -36,26 +36,27 @@ def list_breeds(
     rows = db.execute(stmt).scalars().all()
     return sorted([b for b in rows if b])
 
+
 @router.get("/pets/summary")
 def pets_summary(db: Session = Depends(get_db)):
 
-    total = db.query(Pet).count()
+    total = db.query(func.count(Pet.id)).scalar()
 
-    species_rows = db.execute(select(Pet.species)).scalars().all()
-    species_summary = {}
-    for s in species_rows:
-        if s:
-            species_summary[s] = species_summary.get(s, 0) + 1
+    # Species distribution via GROUP BY
+    species_counts = (
+        db.query(Pet.species, func.count())
+          .group_by(Pet.species)
+          .all()
+    )
+    species_summary = {species: count for species, count in species_counts}
 
-    ages = db.execute(select(Pet.age_months)).scalars().all()
-    age_values = [a for a in ages if isinstance(a, int)]
+    # Average age
+    average_age = db.query(func.avg(Pet.age_months)).scalar()
 
     return {
         "total_pets": total,
         "species_counts": species_summary,
-        "average_age_months": (
-            sum(age_values) / len(age_values) if age_values else None
-        )
+        "average_age_months": float(average_age) if average_age is not None else None
     }
 
 
@@ -83,7 +84,6 @@ def recommend(
     - Age proximity: smooth 1/(1+|Δ|) similarity
     - 'Adoption' outcome: small bonus
     """
-    # Reuse the same normalizer used elsewhere so species is consistent
     species_norm = _normalize_species(species) or "Other"
 
     pets = recommend_pets(
@@ -96,6 +96,7 @@ def recommend(
     )
     return [_pet_to_read(p) for p in pets]
 
+
 # ---------- Helpers ----------
 
 def _normalize_species(v: Optional[str]) -> Optional[str]:
@@ -106,9 +107,9 @@ def _normalize_species(v: Optional[str]) -> Optional[str]:
         return v
     return "Other"
 
+
 def _pet_to_read(p: Pet) -> PetRead:
-    # Pydantic orm_mode=True in PetRead lets us return p directly,
-    # but building explicitly keeps it clear and future-proof.
+    # We construct PetRead explicitly for clarity and future-proofing.
     return PetRead(
         id=p.id,
         external_id=p.external_id,
@@ -123,12 +124,66 @@ def _pet_to_read(p: Pet) -> PetRead:
         shelter_id=p.shelter_id,
     )
 
+
 # ---------- CRUD ----------
 
-@router.post("/pets", response_model=PetRead, status_code=status.HTTP_201_CREATED)
+@router.post(
+    "/pets",
+    response_model=PetRead,
+    status_code=status.HTTP_201_CREATED,
+    # Minimal OpenAPI example so Swagger/PDF looks clean
+    openapi_extra={
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "external_id": "AUS-1001",
+                        "species": "Dog",
+                        "age_months": 12,
+                        "breed_name_raw": "Mixed"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "201": {
+                "description": "Pet created",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "id": 1,
+                            "external_id": "AUS-1001",
+                            "species": "Dog",
+                            "age_months": 12,
+                            "breed_name_raw": "Mixed",
+                            "breed_id": None,
+                            "sex_upon_outcome": None,
+                            "color": None,
+                            "outcome_type": None,
+                            "outcome_datetime": None,
+                            "shelter_id": None
+                        }
+                    }
+                }
+            },
+            "409": {
+                "description": "external_id already exists",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "detail": "Pet with external_id 'AUS-1001' already exists."
+                        }
+                    }
+                }
+            }
+        }
+    }
+)
 def create_pet(payload: PetCreate, db: Session = Depends(get_db)):
-    # Optional: enforce external_id uniqueness to avoid duplicates
-    exists = db.execute(select(Pet).where(Pet.external_id == payload.external_id)).scalar_one_or_none()
+    # Enforce external_id uniqueness to avoid duplicates
+    exists = db.execute(
+        select(Pet).where(Pet.external_id == payload.external_id)
+    ).scalar_one_or_none()
     if exists:
         raise HTTPException(
             status_code=status.HTTP_409_CONFLICT,
@@ -154,12 +209,14 @@ def create_pet(payload: PetCreate, db: Session = Depends(get_db)):
     db.refresh(pet)
     return _pet_to_read(pet)
 
+
 @router.get("/pets/{pet_id}", response_model=PetRead)
 def get_pet(pet_id: int, db: Session = Depends(get_db)):
     pet = db.get(Pet, pet_id)
     if not pet:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Pet not found.")
     return _pet_to_read(pet)
+
 
 @router.get("/pets", response_model=List[PetRead])
 def list_pets(
@@ -189,8 +246,31 @@ def list_pets(
     rows = db.execute(stmt).scalars().all()
     return [_pet_to_read(p) for p in rows]
 
+
+@router.patch("/pets/{pet_id}", response_model=PetRead)
+def patch_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db)):
+    pet = db.get(Pet, pet_id)
+    if not pet:
+        raise HTTPException(status_code=404, detail="Pet not found.")
+
+    updates = payload.model_dump(exclude_none=True)
+    if "species" in updates:
+        updates["species"] = _normalize_species(updates["species"]) or "Other"
+
+    for field, value in updates.items():
+        setattr(pet, field, value)
+
+    db.commit()
+    db.refresh(pet)
+    return _pet_to_read(pet)
+
+
 @router.put("/pets/{pet_id}", response_model=PetRead)
 def update_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db)):
+    """
+    Note: In this API, PUT performs a *partial* update (for convenience),
+    the same as PATCH. This is documented in the API PDF.
+    """
     pet = db.get(Pet, pet_id)
     if not pet:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Pet not found.")
@@ -219,6 +299,7 @@ def update_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(pet)
     return _pet_to_read(pet)
+
 
 @router.delete("/pets/{pet_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_pet(pet_id: int, db: Session = Depends(get_db)):
