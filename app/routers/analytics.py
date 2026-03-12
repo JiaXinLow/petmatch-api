@@ -6,6 +6,7 @@ from sqlalchemy import select
 from app.database import get_db
 from app.models import Pet
 from app.services.return_risk import return_risk_for_pet
+from app.services.welfare import welfare_for_pet
 
 router = APIRouter(tags=["analytics"])
 
@@ -67,4 +68,96 @@ def get_return_risk_by_external_id(
     result, err = return_risk_for_pet(db, pet.id, window_days=window_days)
     if err == "not_found":
         raise HTTPException(status_code=404, detail="Pet not found")
+    return {"external_id": external_id, "pet_id": pet.id, **result}
+
+
+@router.get(
+    "/analytics/welfare/{pet_id}",
+    openapi_extra={
+        "responses": {
+            "200": {
+                "description": "Welfare/behavior heuristic score.",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "pet_id": 201,
+                            "welfare_score": 62,
+                            "components": [
+                                {"name": "herding_group_weight", "weight": 12},
+                                {"name": "senior_age_penalty", "weight": 10}
+                            ],
+                            "advisory": [
+                                "Increase enrichment activities (Herding/Sporting traits).",
+                                "Provide extra comfort and rest areas for senior animals."
+                            ],
+                            "explanation": "Heuristic assessment of possible shelter-stress and welfare needs."
+                        }
+                    }
+                },
+            },
+            "404": {
+                "description": "Pet not found",
+                "content": {"application/json": {"example": {"detail": "Pet not found"}}}
+            }
+        }
+    }
+)
+
+def get_welfare_score(
+    pet_id: int,
+    db: Session = Depends(get_db),
+):
+    result, err = welfare_for_pet(db, pet_id)
+    if err == "not_found":
+        raise HTTPException(status_code=404, detail="Pet not found")
+    return {"pet_id": pet_id, **result}
+
+@router.get(
+    "/analytics/welfare/by-external-id/{external_id}",
+    openapi_extra={
+        "responses": {
+            "200": {
+                "description": "Welfare/behavior score using external_id lookup.",
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "external_id": "WFTEST-1",
+                            "pet_id": 201,
+                            "welfare_score": 62,
+                            "components": [
+                                {"name": "senior_age_penalty", "weight": 10},
+                                {"name": "dark_coat_penalty", "weight": 2}
+                            ],
+                            "advisory": [
+                                "Provide extra comfort and rest areas for senior animals.",
+                                "Improve lighting or retake photos to improve visibility."
+                            ],
+                            "explanation": "Heuristic assessment of possible shelter-stress and welfare needs."
+                        }
+                    }
+                }
+            },
+            "404": {
+                "description": "Pet not found",
+                "content": {
+                    "application/json": {
+                        "example": {"detail": "Pet not found"}
+                    }
+                }
+            }
+        }
+    }
+)
+def get_welfare_by_external_id(
+    external_id: str,
+    db: Session = Depends(get_db),
+):
+    pet = db.execute(select(Pet).where(Pet.external_id == external_id)).scalar_one_or_none()
+    if not pet:
+        raise HTTPException(status_code=404, detail="Pet not found")
+
+    result, err = welfare_for_pet(db, pet.id)
+    if err == "not_found":
+        raise HTTPException(status_code=404, detail="Pet not found")
+
     return {"external_id": external_id, "pet_id": pet.id, **result}
