@@ -8,7 +8,7 @@ from app.models import Pet
 from app.schemas import PetCreate, PetUpdate, PetRead
 from app.utils.pet_helpers import normalize_species, pet_to_read
 
-router = APIRouter(tags=["pets"])
+router = APIRouter(tags=["pets:crud"])
 
 @router.post(
     "/pets",
