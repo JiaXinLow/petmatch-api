@@ -9,7 +9,7 @@ from app.schemas_errors import ErrorResponse
 from app.services.return_risk import return_risk_for_pet
 from app.services.welfare import welfare_for_pet
 
-router = APIRouter(tags=["analytics"])
+router = APIRouter(tags=["pets.analytics"])
 
 @router.get(
     "/analytics/return-risk/{pet_id}",

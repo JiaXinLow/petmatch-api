@@ -9,7 +9,7 @@ from app.schemas import PetCreate, PetUpdate, PetRead
 from app.schemas_errors import ErrorResponse
 from app.utils.pet_helpers import normalize_species, pet_to_read
 
-router = APIRouter(tags=["pets:crud"])
+router = APIRouter(tags=["pets.manage"])
 
 @router.post(
     "/pets",

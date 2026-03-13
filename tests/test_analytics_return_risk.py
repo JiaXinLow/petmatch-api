@@ -44,7 +44,7 @@ def test_return_risk_happy_path(client, session_factory):
         db.commit()
         pid = p.id
 
-    r = client.get(f"/api/v1/analytics/return-risk/{pid}?window_days=180")
+    r = client.get(f"/api/analytics/return-risk/{pid}?window_days=180")
     assert r.status_code == 200
     body = r.json()
     assert body["pet_id"] == pid
@@ -57,7 +57,7 @@ def test_return_risk_happy_path(client, session_factory):
 
 
 def test_return_risk_404(client):
-    r = client.get("/api/v1/analytics/return-risk/999999")
+    r = client.get("/api/analytics/return-risk/999999")
     assert r.status_code == 404
     assert r.json()["detail"] == "Pet not found"
 
@@ -70,7 +70,7 @@ def test_return_risk_by_external_id(client, session_factory):
         db.commit()
         pid = p.id
 
-    r = client.get("/api/v1/analytics/return-risk/by-external-id/A668305")
+    r = client.get("/api/analytics/return-risk/by-external-id/A668305")
     assert r.status_code == 200
     body = r.json()
     assert body["external_id"] == "A668305"

@@ -35,24 +35,24 @@ def test_filters(client, session_factory):
     seed_sample(session_factory)
 
     # Species
-    r = client.get("/api/v1/pets/species")
+    r = client.get("/api/pets/species")
     assert r.status_code == 200
     assert "Dog" in r.json()
     assert "Cat" in r.json()
 
     # Outcomes
-    r = client.get("/api/v1/pets/outcomes")
+    r = client.get("/api/pets/outcomes")
     assert r.status_code == 200
     assert "Adoption" in r.json()
     assert "Transfer" in r.json()
 
     # Breeds for Dogs
-    r = client.get("/api/v1/pets/breeds?species=Dog")
+    r = client.get("/api/pets/breeds?species=Dog")
     assert r.status_code == 200
     assert "Beagle" in r.json()
 
     # Summary
-    r = client.get("/api/v1/pets/summary")
+    r = client.get("/api/pets/summary")
     assert r.status_code == 200
     data = r.json()
     assert data["total_pets"] >= 2

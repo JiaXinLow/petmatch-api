@@ -44,7 +44,7 @@ def test_pets_crud_flow():
         "outcome_datetime": None,
         "shelter_id": None
     }
-    r = client.post("/api/v1/pets", json=payload)
+    r = client.post("/api/pets", json=payload)
     assert r.status_code == 201, r.text
     pet = r.json()
     pid = pet["id"]
@@ -52,24 +52,24 @@ def test_pets_crud_flow():
     assert pet["species"] == "Dog"
 
     # Read
-    r = client.get(f"/api/v1/pets/{pid}")
+    r = client.get(f"/api/pets/{pid}")
     assert r.status_code == 200
     assert r.json()["id"] == pid
 
     # Update
-    r = client.put(f"/api/v1/pets/{pid}", json={"color": "Black/White"})
+    r = client.put(f"/api/pets/{pid}", json={"color": "Black/White"})
     assert r.status_code == 200
     assert r.json()["color"] == "Black/White"
 
     # List
-    r = client.get("/api/v1/pets?species=Dog&limit=10&offset=0")
+    r = client.get("/api/pets?species=Dog&limit=10&offset=0")
     assert r.status_code == 200
     assert len(r.json()) >= 1
 
     # Delete
-    r = client.delete(f"/api/v1/pets/{pid}")
+    r = client.delete(f"/api/pets/{pid}")
     assert r.status_code == 204
 
     # Read-after-delete
-    r = client.get(f"/api/v1/pets/{pid}")
+    r = client.get(f"/api/pets/{pid}")
     assert r.status_code == 404

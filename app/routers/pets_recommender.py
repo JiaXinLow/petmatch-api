@@ -7,7 +7,7 @@ from app.schemas import PetRead
 from app.services.recommender import recommend_pets
 from app.utils.pet_helpers import normalize_species, pet_to_read
 
-router = APIRouter(tags=["pets:recommender"])
+router = APIRouter(tags=["pets.recommend"])
 
 @router.get("/pets/recommend", response_model=List[PetRead])
 def recommend(

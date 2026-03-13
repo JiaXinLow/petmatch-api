@@ -6,7 +6,7 @@ from app.database import get_db
 from app.models import Pet
 from app.schemas import SummaryResponse
 
-router = APIRouter(tags=["pets:stats"])
+router = APIRouter(tags=["pets.summary"])
 
 @router.get("/pets/summary", response_model=SummaryResponse)
 def pets_summary(db: Session = Depends(get_db)):

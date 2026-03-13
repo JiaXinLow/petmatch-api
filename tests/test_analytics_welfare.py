@@ -18,7 +18,7 @@ def test_welfare_happy_path(client, session_factory):
         db.commit()
         pid = p.id
 
-    r = client.get(f"/api/v1/analytics/welfare/{pid}")
+    r = client.get(f"/api/analytics/welfare/{pid}")
     assert r.status_code == 200
     body = r.json()
 
@@ -29,7 +29,7 @@ def test_welfare_happy_path(client, session_factory):
     assert "advisory" in body
 
 def test_welfare_404(client):
-    r = client.get("/api/v1/analytics/welfare/999999")
+    r = client.get("/api/analytics/welfare/999999")
     assert r.status_code == 404
     assert r.json()["detail"] == "Pet not found"
 
@@ -51,7 +51,7 @@ def test_welfare_by_external_id(client, session_factory):
         db.commit()
         pid = p.id
 
-    r = client.get("/api/v1/analytics/welfare/by-external-id/WFTEST-EXT-1")
+    r = client.get("/api/analytics/welfare/by-external-id/WFTEST-EXT-1")
     assert r.status_code == 200
 
     body = r.json()

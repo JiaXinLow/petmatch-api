@@ -8,7 +8,7 @@ from app.models import Pet
 from app.schemas import PetRead
 from app.utils.pet_helpers import normalize_species, pet_to_read
 
-router = APIRouter(tags=["pets:filters"])
+router = APIRouter(tags=["pets.browse"])
 
 @router.get("/pets/species", response_model=List[str])
 def list_species(db: Session = Depends(get_db)):

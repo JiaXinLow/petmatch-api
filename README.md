@@ -121,8 +121,8 @@ Estimates how likely a pet is to be **returned after adoption** using a transpar
 ### Endpoints
 
 ```
-GET /api/v1/analytics/return-risk/{pet_id}
-GET /api/v1/analytics/return-risk/by-external-id/{external_id}
+GET /api/analytics/return-risk/{pet_id}
+GET /api/analytics/return-risk/by-external-id/{external_id}
 ```
 
 Second endpoint is **staff-friendly** for shelters using external IDs.
@@ -174,8 +174,8 @@ Uses evidence-based signals such as:
 ### Endpoints
 
 ```
-GET /api/v1/analytics/welfare/{pet_id}
-GET /api/v1/analytics/welfare/by-external-id/{external_id}
+GET /api/analytics/welfare/{pet_id}
+GET /api/analytics/welfare/by-external-id/{external_id}
 ```
 
 ---
