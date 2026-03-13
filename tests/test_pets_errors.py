@@ -7,7 +7,11 @@ def test_post_duplicate_external_id_conflict(client):
 
     r2 = client.post("/api/v1/pets", json=payload)
     assert r2.status_code == 409
-    assert "already exists" in r2.json()["detail"]
+
+    detail = r2.json()["detail"]
+    assert detail["message"] == "Pet already exists"
+    assert detail["external_id"] == payload["external_id"]
+    assert "pet_id" in detail
 
 @pytest.mark.parametrize("method", ["get", "put", "patch", "delete"])
 def test_not_found_404_on_missing_resource(client, method):

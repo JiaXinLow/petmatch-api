@@ -1,5 +1,5 @@
 from typing import List
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, Response
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -17,7 +17,16 @@ router = APIRouter(tags=["pets:crud"])
     openapi_extra={
         "requestBody": {
             "content": {"application/json": {"example": {
-                "external_id": "AUS-1001", "species": "Dog", "age_months": 12, "breed_name_raw": "Mixed"
+                "external_id": "AUS-2001",
+                "species": "Dog",
+                "age_months": 6,
+                "breed_name_raw": "Beagle",
+                "breed_id": 12,
+                "sex_upon_outcome": "Neutered Male",
+                "color": "Brown/White",
+                "outcome_type": "Adoption",
+                "outcome_datetime": "2026-03-13T10:00:00Z",
+                "shelter_id": 5
             }}}
         },
         "responses": {
@@ -32,11 +41,17 @@ router = APIRouter(tags=["pets:crud"])
         }
     }
 )
-def create_pet(payload: PetCreate, db: Session = Depends(get_db)):
+def create_pet(payload: PetCreate, response: Response, db: Session = Depends(get_db)):
     exists = db.execute(select(Pet).where(Pet.external_id == payload.external_id)).scalar_one_or_none()
     if exists:
-        raise HTTPException(status_code=status.HTTP_409_CONFLICT,
-                            detail=f"Pet with external_id '{payload.external_id}' already exists.")
+        raise HTTPException(
+                                status_code=status.HTTP_409_CONFLICT,
+                                detail={
+                                    "message": "Pet already exists",
+                                    "external_id": payload.external_id,
+                                    "pet_id": exists.id
+                                }
+                            )
     species = normalize_species(payload.species)
     pet = Pet(
         external_id=payload.external_id.strip(),
@@ -53,6 +68,9 @@ def create_pet(payload: PetCreate, db: Session = Depends(get_db)):
     db.add(pet)
     db.commit()
     db.refresh(pet)
+
+    response.headers["Location"] = f"/api/v1/pets/{pet.id}"
+
     return pet_to_read(pet)
 
 @router.get("/pets/{pet_id}", response_model=PetRead)
