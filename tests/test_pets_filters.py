@@ -1,23 +1,37 @@
 from app.models import Pet
 
 def seed_sample(session_factory):
+    # Seed through the SAME engine/connection the API is using (via the fixture override)
     with session_factory() as db:
         db.add_all([
             Pet(
-                external_id="T1", species="Dog", breed_name_raw="Beagle", breed_id=None,
-                sex_upon_outcome="Neutered Male", age_months=24, color="Black",
-                outcome_type="Adoption", outcome_datetime=None, shelter_id=None
+                external_id="T1",
+                species="Dog",
+                breed_name_raw="Beagle",
+                breed_id=None,
+                sex_upon_outcome="Neutered Male",
+                age_months=24,
+                color="Black",
+                outcome_type="Adoption",
+                outcome_datetime=None,
+                shelter_id=None,
             ),
             Pet(
-                external_id="T2", species="Cat", breed_name_raw="Siamese", breed_id=None,
-                sex_upon_outcome="Spayed Female", age_months=12, color="Brown",
-                outcome_type="Transfer", outcome_datetime=None, shelter_id=None
+                external_id="T2",
+                species="Cat",
+                breed_name_raw="Siamese",
+                breed_id=None,
+                sex_upon_outcome="Spayed Female",
+                age_months=12,
+                color="Brown",
+                outcome_type="Transfer",
+                outcome_datetime=None,
+                shelter_id=None,
             ),
         ])
         db.commit()
 
 def test_filters(client, session_factory):
-    # Seed into the SAME engine/connection the API will use (via the fixture override)
     seed_sample(session_factory)
 
     # Species
