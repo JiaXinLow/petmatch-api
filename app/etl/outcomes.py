@@ -102,7 +102,17 @@ def run(config: ETLConfig) -> Path:
             dropped += 1
             log.warning("Dropped row for validation error: %s | %s", rec.get("external_id"), e)
 
-    out_df = pd.DataFrame.from_records(records).sort_values(by=["species","external_id"], kind="stable")
+    # existing: out_df = pd.DataFrame.from_records(records)...
+    out_df = pd.DataFrame.from_records(records)
+
+    # NEW: enforce uniqueness by external_id (keep first occurrence)
+    out_df = out_df.drop_duplicates(subset=["external_id"], keep="first")
+
+    # (optional) sort for determinism
+    out_df = out_df.sort_values(by=["species", "external_id"], kind="stable")
+
+    config.pets_clean_csv.parent.mkdir(parents=True, exist_ok=True)
+    out_df.to_csv(config.pets_clean_csv, index=False)
     config.pets_clean_csv.parent.mkdir(parents=True, exist_ok=True)
     out_df.to_csv(config.pets_clean_csv, index=False)
     log.info("Wrote pets_clean.csv: %s rows (dropped=%s of %s)", len(out_df), dropped, n_before)

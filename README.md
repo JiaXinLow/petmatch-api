@@ -322,6 +322,180 @@ http://127.0.0.1:8000/docs
 ```bash
 pytest -q
 ```
+---
+
+## 📦 Data Ingestion & ETL (Austin Outcomes)
+
+### Pipeline overview
+**Raw inputs**
+- `data/raw/Austin_Animal_Center_Outcomes.csv` — pet outcomes dataset  
+- `data/raw/dogbreeds.json` — dog breed groups dataset  
+**Processing** (via `scripts/run_etl.py`)
+- `app/etl/outcomes.py` → cleans & normalizes outcomes → writes `data/processed/pets_clean.csv`
+- `app/etl/breeds.py` → flattens dog breed groups → writes `data/processed/breeds_clean.csv`
+- `app/etl/seed.py` → idempotent DB load of breeds + pets
+
+---
+
+## Duplicate handling (`external_id`)
+- The Austin dataset can contain repeated rows for the same `external_id`.
+- To respect the DB **UNIQUE constraint** (`pets.external_id`) and keep imports stable, two protection layers are used:
+
+1️⃣ **ETL-level dedupe**
+Implemented in `outcomes.run(...)`
+- Drops duplicates by `external_id`
+- Keeps the **first occurrence**
+- Done before writing `pets_clean.csv`
+
+2️⃣ **Loader-level guard**
+Implemented in `app/etl/seed._load_pets(...)`
+- Tracks `external_id`s already staged during a load
+- Skips duplicates within the same session
+- Also skips entries already present in the DB
+
+**Result**
+- ETL is **repeatable**
+- No `UNIQUE constraint failed`
+- Database remains the **single source of truth**
+
+---
+
+# ▶️ Run the full pipeline
+
+```bash
+# Windows PowerShell
+$env:DATABASE_URL="sqlite:///./petmatch.sqlite"
+python scripts/run_etl.py
+
+# macOS / Linux / WSL
+export DATABASE_URL="sqlite:///./petmatch.sqlite"
+python scripts/run_etl.py
+```
+After this, the DB will be populated from the processed CSVs.
+
+### Demo vs Full Dataset
+You have two ways to get data into the DB:
+
+1. Fast demo seed (3 records) — quick for slides & smoke tests
+```bash
+# Inserts DEMO-D1 / DEMO-C1 / DEMO-O1
+python -m scripts.seed
+```
+
+2. Full ETL load — realistic dataset
+```bash
+python scripts/run_etl.py
+```
+Use the demo seed when you want instant data; use the ETL when you want the real Austin dataset.
+
+### Resetting the Database (Clean State)
+Use scripts/reset_db.py to wipe and rebuild your local DB safely.
+#### Common flows
+```bash
+# Interactive reset (asks for confirmation)
+python -m scripts.reset_db
+
+# Non-interactive reset
+python -m scripts.reset_db --yes
+```
+
+Reset + seed in one go
+- Demo data (3 records)
+```bash
+python -m scripts.reset_db --yes --seed --seed-mode demo
+```
+
+- Full dataset via ETL
+```bash
+python -m scripts.reset_db --yes --seed --seed-mode etl
+# Requires raw inputs under data/raw/ (or override paths via .env)
+```
+
+### Notes & safety
+- Defaults to DATABASE_URL or sqlite:///./petmatch.sqlite.
+- For non‑SQLite URLs, you must pass --force (and confirm) to avoid accidental data loss.
+- The script deletes the SQLite file when possible; otherwise it drops & recreates tables.
+
+### Configuration (.env)
+You can override defaults via environment variables:
+```bash
+# Database URL (used by app, ETL, and tools)
+DATABASE_URL=sqlite:///./petmatch.sqlite
+
+# ETL inputs (defaults are under data/raw/)
+OUTCOMES_CSV=data/raw/Austin_Animal_Center_Outcomes.csv
+DOGBREEDS_JSON=data/raw/dogbreeds.json
+
+# ETL outputs (processed)
+PETS_CLEAN_CSV=data/processed/pets_clean.csv
+BREEDS_CLEAN_CSV=data/processed/breeds_clean.csv
+```
+
+### Troubleshooting ETL & Seeding
+1. “UNIQUE constraint failed: pets.external_id” during ETL
+- Cause: duplicated external_id in the raw file or within the same load session.
+- Fix: pipeline already handles this in two places (ETL dedupe + loader skip). If you still see it:
+  - Ensure you’re running the latest code with dedupe enabled.
+  - Re-run a clean cycle:
+```bash
+python -m scripts.reset_db --yes
+python scripts/run_etl.py
+```
+
+2. “ETL finished but tables look small/empty”
+- Confirm the same DATABASE_URL is used for reset, ETL, and API run (don’t mix DB files).
+- Check that the raw files exist under data/raw/ (or the override paths in .env are correct).
+- Look for “Wrote pets_clean.csv” and “Pets loaded: N new” in the logs.
+
+**“I want to demo quickly”**
+Use:
+```bash
+python -m scripts.reset_db --yes --seed --seed-mode demo
+uvicorn app.main:app --reload
+```
+
+### Security reminder (analytics only)
+If you set ANALYTICS_API_KEY, all /api/analytics/* routes require:
+```bash
+X-API-Key: <your-key>
+```
+For loacl runs:
+```bash
+# Windows PowerShell
+$env:ANALYTICS_API_KEY="demo"
+uvicorn app.main:app --reload
+
+# macOS / Linux / WSL
+export ANALYTICS_API_KEY="demo"
+uvicorn app.main:app --reload
+```
+Swagger → Authorize → enter the key → analytics calls will include the header automatically.
+
+### Suggested “from zero to demo” commands
+```bash
+# 0) (optional) Use a known-clean DB + fast demo data
+python -m scripts.reset_db --yes --seed --seed-mode demo
+
+# 1) Start API
+uvicorn app.main:app --reload
+
+# 2) Try a few endpoints
+# Species
+curl http://127.0.0.1:8000/api/pets/species
+
+# Summary
+curl http://127.0.0.1:8000/api/pets/summary
+
+# Recommend
+curl "http://127.0.0.1:8000/api/pets/recommend?species=Dog&limit=3"
+
+# Analytics (if key is set)
+curl -H "X-API-Key: demo" \
+  "http://127.0.0.1:8000/api/analytics/return-risk/5?window_days=180"
+```
+
+---
+
 ### 4) Seed demo data (optional, instant demo)
 
 You can insert 3 predictable demo pets (Dog, Cat, Other) **without** running the full ETL:
@@ -513,17 +687,12 @@ Key architectural decisions:
 ---
 
 # 📚 References & Licensing
-
 All code written for:
-
 **COMP3011 Coursework**
 
 Datasets:
-
 - **Austin Animal Outcomes Dataset (public)**  
-- Cleaned and preprocessed internally
-
-Dog breed groups:
-
-- Locally supplied dictionary  
-- Non-commercial academic use only
+  - Cleaned and preprocessed internally
+- **Dog breed groups**
+  - Locally supplied dictionary  
+  - Non-commercial academic use only
