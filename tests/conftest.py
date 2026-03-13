@@ -11,9 +11,13 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
+import os
+os.environ.pop("ANALYTICS_API_KEY", None)  # Ensure guard is OFF for test suite
+
 from app.main import app
 from app.database import get_db
 from app.models import Base
+from app.security import require_analytics_api_key
 
 @pytest.fixture(scope="function")
 def engine():
@@ -53,3 +57,23 @@ def client(session_factory):
     with TestClient(app) as c:
         yield c
     app.dependency_overrides.pop(get_db, None)
+
+@pytest.fixture(scope="function")
+def client(session_factory):
+    def override_get_db():
+        db = session_factory()
+        try:
+            yield db
+        finally:
+            db.close()
+
+    # Disable the analytics guard at the dependency level
+    app.dependency_overrides[require_analytics_api_key] = lambda: None  # <- bypass guard
+
+    app.dependency_overrides[get_db] = override_get_db
+    with TestClient(app) as c:
+        yield c
+
+    # Clean up overrides
+    app.dependency_overrides.pop(get_db, None)
+    app.dependency_overrides.pop(require_analytics_api_key, None)

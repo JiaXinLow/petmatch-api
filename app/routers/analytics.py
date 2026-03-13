@@ -1,5 +1,7 @@
 from typing import Dict
 from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi.params import Security
+from app.security import require_analytics_api_key
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 
@@ -8,8 +10,13 @@ from app.models import Pet
 from app.schemas_errors import ErrorResponse
 from app.services.return_risk import return_risk_for_pet
 from app.services.welfare import welfare_for_pet
+from app.schemas_errors import ErrorResponse
 
-router = APIRouter(tags=["pets.analytics"])
+
+router = APIRouter(
+    tags=["analytics"],
+    dependencies=[Security(require_analytics_api_key)],  # <- Swagger will now send X-API-Key
+)
 
 @router.get(
     "/analytics/return-risk/{pet_id}",
@@ -33,6 +40,7 @@ router = APIRouter(tags=["pets.analytics"])
                     }
                 },
             },
+            401: {"model": ErrorResponse, "description": "Invalid or missing API key"},
             404: {
                 "model": ErrorResponse,
                 "description": "Pet not found",
@@ -94,6 +102,7 @@ def get_return_risk_by_external_id(
                     }
                 },
             },
+            401: {"model": ErrorResponse, "description": "Invalid or missing API key"},
             404: {
                 "model": ErrorResponse,
                 "description": "Pet not found",
@@ -135,6 +144,7 @@ def get_welfare_score(
                     }
                 }
             },
+            401: {"model": ErrorResponse, "description": "Invalid or missing API key"},
             404: {
                 "model": ErrorResponse,
                 "description": "Pet not found",

@@ -364,6 +364,106 @@ docs/PetMatch_API_Documentation.pdf
 
 ---
 
+## 🔐 Security (Optional API Key for Analytics)
+
+### Overview
+Analytics endpoints expose higher-level, operational insights (e.g., return-risk and welfare scores). These routes can be protected with a simple API key. Protection is **optional** and **disabled by default**, making the API easy to run for local development and marking.
+
+### What is protected
+Only the analytics routes require the API key when protection is enabled:
+
+- `GET /api/analytics/return-risk/{pet_id}`
+- `GET /api/analytics/return-risk/by-external-id/{external_id}`
+- `GET /api/analytics/welfare/{pet_id}`
+- `GET /api/analytics/welfare/by-external-id/{external_id}`
+
+All other endpoints (health, browsing/filters, CRUD, summary, recommender) remain open for ease of testing and demos.
+
+---
+
+### How it works
+When the environment variable `ANALYTICS_API_KEY` is set, all `/api/analytics/*` requests must include the header:
+
+X-API-Key: <your-key>
+
+- If the header is missing or does not match `ANALYTICS_API_KEY`, the server returns:
+
+```json
+401 Unauthorized
+{"detail": "Invalid or missing API key"}
+
+If ANALYTICS_API_KEY is not set, analytics endpoints are open (no key required).
+
+### Enable protection
+
+Windows PowerShell:
+``` bash
+$env:ANALYTICS_API_KEY="demo"
+uvicorn app.main:app --reload
+```
+
+macOS / Linux / WSL:
+```bash
+export ANALYTICS_API_KEY="demo"
+uvicorn app.main:app --reload
+Call analytics with the key
+```
+
+cURL:
+```bash
+curl -H "X-API-Key: demo" \
+  "http://127.0.0.1:8000/api/analytics/return-risk/5?window_days=180"
+```
+
+Swagger UI:
+1. Open http://127.0.0.1:8000/docs
+2. Click Authorize
+3. Enter your key in the X-API-Key field (e.g., demo)
+4. Execute any ```bash /api/analytics/* ``` request
+
+### Notes about Swagger “Authorize”
+- The Authorize dialog is a client-side convenience; it stores the header for requests.
+- Validity is determined by the server when a request is made (200/404 on success, 401 if key is wrong/missing).
+- If the environment key changes, restart the server and re-authorize in Swagger.
+
+### Troubleshooting
+1. I keep getting 401
+- Ensure ANALYTICS_API_KEY is set in the same shell/session that starts uvicorn.
+- Restart the server after setting the variable.
+- Re-enter the key in Swagger or send the header correctly with cURL: -H "X-API-Key: <your-key>".
+
+2. Swagger shows “Authorized” but I still get 401
+- “Authorized” only attaches the header; the server validates it.
+- Re-enter the exact key and try again.
+
+3. Confirm protection is active
+- Start server with ANALYTICS_API_KEY set, call any analytics endpoint without the header → expect 401.
+- Call again with X-API-Key: <your-key> → expect normal response (200 or 404 depending on data).
+
+### Why only analytics are protected
+- Analytics endpoints encapsulate internal heuristics and higher-level operational insights; typically staff-only in real deployments.
+- CRUD, browsing, recommendations, and summary endpoints remain open for marking and demos.
+- Demonstrates least-privilege design and layered security without adding friction to core endpoints.
+
+### Testing
+- A minimal test is included to verify guard behavior:
+  - Guard off → endpoints open
+  - Guard on → 401 without key
+  - Guard on → pass with key
+
+Run:
+```bash
+pytest -q -k analytics_auth
+```
+
+### Design summary
+- Simple header-based key: X-API-Key
+- Optional by environment toggle: ANALYTICS_API_KEY
+- Applied only to /api/analytics/* for least-privilege and low demo friction
+- Fully documented in Swagger (Authorize button, 401 responses)
+
+---
+
 # 🗂 Project Structure
 
 ```

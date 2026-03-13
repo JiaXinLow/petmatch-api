@@ -1,4 +1,5 @@
 import logging
+import os
 
 logging.basicConfig(
     level=logging.INFO,
@@ -65,6 +66,13 @@ app.include_router(analytics_router, prefix="/api")
 def root():
     return {"name": "PetMatch API", "version": "0.1.0"}
 
+
 @app.on_event("startup")
 def on_startup():
-    logger.info("PetMatch API starting... ready to serve requests.")
+    masked = None
+    val = os.getenv("ANALYTICS_API_KEY")
+    if val:
+        masked = f"{val[:2]}*** (len={len(val)})"
+    logger.info("PetMatch API starting... ready to serve requests. Analytics key set: %s", bool(val))
+    if val:
+        logger.info("Analytics key (masked preview): %s", masked)
