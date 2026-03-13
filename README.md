@@ -336,6 +336,7 @@ $env:DATABASE_URL="sqlite:///./petmatch.sqlite"; python -m scripts/seed.py
 
 macOS/Linux
 export DATABASE_URL="sqlite:///./petmatch.sqlite"; python -m scripts/seed.py
+```
 
 ---
 
