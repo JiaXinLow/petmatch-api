@@ -1,55 +1,27 @@
-from fastapi.testclient import TestClient
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.pool import StaticPool
-from app.main import app
-from app.database import get_db
-from app.models import Base, Pet
+from app.models import Pet
 
-# Shared in-memory DB
-engine = create_engine(
-    "sqlite:///:memory:",
-    connect_args={"check_same_thread": False},
-    poolclass=StaticPool
-)
-TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base.metadata.create_all(bind=engine)
+def seed_sample(session_factory):
+    with session_factory() as db:
+        db.add_all([
+            Pet(
+                external_id="T1", species="Dog", breed_name_raw="Beagle", breed_id=None,
+                sex_upon_outcome="Neutered Male", age_months=24, color="Black",
+                outcome_type="Adoption", outcome_datetime=None, shelter_id=None
+            ),
+            Pet(
+                external_id="T2", species="Cat", breed_name_raw="Siamese", breed_id=None,
+                sex_upon_outcome="Spayed Female", age_months=12, color="Brown",
+                outcome_type="Transfer", outcome_datetime=None, shelter_id=None
+            ),
+        ])
+        db.commit()
 
-
-# Override dependency
-def override_get_db():
-    db = TestingSessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-
-app.dependency_overrides[get_db] = override_get_db
-client = TestClient(app)
-
-
-def seed_sample():
-    db = TestingSessionLocal()
-    pets = [
-        Pet(external_id="T1", species="Dog", breed_name_raw="Beagle", breed_id=None,
-            sex_upon_outcome="Neutered Male", age_months=24, color="Black",
-            outcome_type="Adoption", outcome_datetime=None, shelter_id=None),
-        Pet(external_id="T2", species="Cat", breed_name_raw="Siamese", breed_id=None,
-            sex_upon_outcome="Spayed Female", age_months=12, color="Brown",
-            outcome_type="Transfer", outcome_datetime=None, shelter_id=None),
-    ]
-    for p in pets:
-        db.add(p)
-    db.commit()
-    db.close()
-
-
-def test_filters():
-    seed_sample()
+def test_filters(client, session_factory):
+    # Seed into the SAME engine/connection the API will use (via the fixture override)
+    seed_sample(session_factory)
 
     # Species
     r = client.get("/api/v1/pets/species")
-    print("DEBUG:", r.json())
     assert r.status_code == 200
     assert "Dog" in r.json()
     assert "Cat" in r.json()
