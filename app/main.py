@@ -1,4 +1,13 @@
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(levelname)s | %(name)s | %(message)s"
+)
+logger = logging.getLogger("petmatch")
+
 from fastapi import FastAPI
+
 from app.database import engine
 from app.models import Base
 from app.routers.health import router as health_router
@@ -28,3 +37,7 @@ app.include_router(analytics_router, prefix="/api/v1")
 @app.get("/")
 def root():
     return {"name": "PetMatch API", "version": "0.1.0"}
+
+@app.on_event("startup")
+def on_startup():
+    logger.info("PetMatch API starting... ready to serve requests.")
