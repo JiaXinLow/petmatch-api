@@ -3,6 +3,5 @@ __pycache__/
 *.pyc
 *.pyo
 .vscode/
-data/processed/
 *.sqlite
 .env
