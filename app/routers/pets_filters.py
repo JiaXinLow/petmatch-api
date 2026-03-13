@@ -23,7 +23,7 @@ def list_outcome_types(db: Session = Depends(get_db)):
 @router.get("/pets/breeds", response_model=List[str])
 def list_breeds(
     species: Optional[str] = Query(None, description="Filter by species (Dog|Cat|Other)"),
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
 ):
     stmt = select(Pet.breed_name_raw).distinct()
     if species:

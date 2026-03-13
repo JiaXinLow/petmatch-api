@@ -5,6 +5,7 @@ from sqlalchemy import select
 
 from app.database import get_db
 from app.models import Pet
+from app.schemas_errors import ErrorResponse
 from app.services.return_risk import return_risk_for_pet
 from app.services.welfare import welfare_for_pet
 
@@ -12,9 +13,8 @@ router = APIRouter(tags=["analytics"])
 
 @router.get(
     "/analytics/return-risk/{pet_id}",
-    openapi_extra={
-        "responses": {
-            "200": {
+    responses={
+        200: {
                 "description": "Return risk (heuristic) with component reasons.",
                 "content": {
                     "application/json": {
@@ -33,7 +33,8 @@ router = APIRouter(tags=["analytics"])
                     }
                 },
             },
-            "404": {
+            404: {
+                "model": ErrorResponse,
                 "description": "Pet not found",
                 "content": {
                     "application/json": {
@@ -42,7 +43,6 @@ router = APIRouter(tags=["analytics"])
                 }
             }
         }
-    }
 )
 
 def get_return_risk(
@@ -73,9 +73,8 @@ def get_return_risk_by_external_id(
 
 @router.get(
     "/analytics/welfare/{pet_id}",
-    openapi_extra={
-        "responses": {
-            "200": {
+    responses={
+            200: {
                 "description": "Welfare/behavior heuristic score.",
                 "content": {
                     "application/json": {
@@ -95,12 +94,12 @@ def get_return_risk_by_external_id(
                     }
                 },
             },
-            "404": {
+            404: {
+                "model": ErrorResponse,
                 "description": "Pet not found",
                 "content": {"application/json": {"example": {"detail": "Pet not found"}}}
             }
         }
-    }
 )
 
 def get_welfare_score(
@@ -114,9 +113,8 @@ def get_welfare_score(
 
 @router.get(
     "/analytics/welfare/by-external-id/{external_id}",
-    openapi_extra={
-        "responses": {
-            "200": {
+    responses={
+        200: {
                 "description": "Welfare/behavior score using external_id lookup.",
                 "content": {
                     "application/json": {
@@ -137,7 +135,8 @@ def get_welfare_score(
                     }
                 }
             },
-            "404": {
+            404: {
+                "model": ErrorResponse,
                 "description": "Pet not found",
                 "content": {
                     "application/json": {
@@ -146,7 +145,6 @@ def get_welfare_score(
                 }
             }
         }
-    }
 )
 def get_welfare_by_external_id(
     external_id: str,

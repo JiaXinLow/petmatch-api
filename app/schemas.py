@@ -1,5 +1,5 @@
 from pydantic import BaseModel, ConfigDict, NonNegativeInt, validator
-from typing import Optional
+from typing import Dict, Optional, List
 from datetime import datetime
 from pydantic import Field
 from enum import Enum
@@ -102,3 +102,39 @@ class PetRead(PetBase):
     created_at: Optional[datetime] = None
     updated_at: Optional[datetime] = None
     model_config = ConfigDict(from_attributes=True)
+
+# ----------------- HEALTH -----------------
+class HealthStatus(BaseModel):
+    status: str = "ok"
+
+# ----------------- SUMMARY -----------------
+
+class SummaryResponse(BaseModel):
+    total_pets: int
+    species_counts: Dict[str, int]
+    average_age_months: Optional[float] = None
+
+
+# ----------------- ANALYTICS -----------------
+class Component(BaseModel):
+    name: str
+    weight: int
+
+class ReturnRiskResponse(BaseModel):
+    pet_id: int
+    risk_score: int
+    components: List[Component]
+    explanation: str
+
+class ReturnRiskByExternalIdResponse(ReturnRiskResponse):
+    external_id: str
+
+class WelfareResponse(BaseModel):
+    pet_id: int
+    welfare_score: int
+    components: List[Component]
+    advisory: List[str]
+    explanation: str
+
+class WelfareByExternalIdResponse(WelfareResponse):
+    external_id: str

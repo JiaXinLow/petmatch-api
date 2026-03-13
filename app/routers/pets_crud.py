@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app.models import Pet
 from app.schemas import PetCreate, PetUpdate, PetRead
+from app.schemas_errors import ErrorResponse
 from app.utils.pet_helpers import normalize_species, pet_to_read
 
 router = APIRouter(tags=["pets:crud"])
@@ -14,33 +15,41 @@ router = APIRouter(tags=["pets:crud"])
     "/pets",
     response_model=PetRead,
     status_code=status.HTTP_201_CREATED,
-    openapi_extra={
-        "requestBody": {
-            "content": {"application/json": {"example": {
-                "external_id": "AUS-2001",
-                "species": "Dog",
-                "age_months": 6,
-                "breed_name_raw": "Beagle",
-                "breed_id": 12,
-                "sex_upon_outcome": "Neutered Male",
-                "color": "Brown/White",
-                "outcome_type": "Adoption",
-                "outcome_datetime": "2026-03-13T10:00:00Z",
-                "shelter_id": 5
-            }}}
+    responses={
+        201: {
+            "description": "Pet created",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "id": 1,
+                        "external_id": "AUS-1001",
+                        "species": "Dog",
+                        "age_months": 12,
+                        "breed_name_raw": "Mixed",
+                        "breed_id": None,
+                        "sex_upon_outcome": None,
+                        "color": None,
+                        "outcome_type": None,
+                        "outcome_datetime": None,
+                        "shelter_id": None
+                    }
+                }
+            }
         },
-        "responses": {
-            "201": {"description": "Pet created", "content": {"application/json": {"example": {
-                "id": 1, "external_id": "AUS-1001", "species": "Dog", "age_months": 12,
-                "breed_name_raw": "Mixed", "breed_id": None, "sex_upon_outcome": None,
-                "color": None, "outcome_type": None, "outcome_datetime": None, "shelter_id": None
-            }}}},
-            "409": {"description": "external_id already exists", "content": {"application/json": {"example": {
-                "detail": "Pet with external_id 'AUS-1001' already exists."
-            }}}}
+        409: {
+            "model": ErrorResponse,
+            "description": "external_id already exists",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "detail": "Pet with external_id 'AUS-1001' already exists."
+                    }
+                }
+            }
         }
     }
 )
+
 def create_pet(payload: PetCreate, response: Response, db: Session = Depends(get_db)):
     exists = db.execute(select(Pet).where(Pet.external_id == payload.external_id)).scalar_one_or_none()
     if exists:

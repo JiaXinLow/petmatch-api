@@ -1,17 +1,14 @@
-from typing import List, Optional
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 
 from app.database import get_db
 from app.models import Pet
-from app.schemas import PetRead
-from app.services.recommender import recommend_pets
-from app.utils.pet_helpers import normalize_species, pet_to_read
+from app.schemas import SummaryResponse
 
 router = APIRouter(tags=["pets:stats"])
 
-@router.get("/pets/summary")
+@router.get("/pets/summary", response_model=SummaryResponse)
 def pets_summary(db: Session = Depends(get_db)):
     total = db.query(func.count(Pet.id)).scalar()
 
