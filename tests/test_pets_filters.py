@@ -1,7 +1,7 @@
 from app.models import Pet
 
 def seed_sample(session_factory):
-    # Seed through the SAME engine/connection the API is using (via the fixture override)
+    # Seed through the SAME engine/connection the API uses (via the fixture override)
     with session_factory() as db:
         db.add_all([
             Pet(
