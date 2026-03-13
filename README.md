@@ -322,6 +322,20 @@ http://127.0.0.1:8000/docs
 ```bash
 pytest -q
 ```
+### 4) Seed demo data (optional, instant demo)
+
+You can insert 3 predictable demo pets (Dog, Cat, Other) **without** running the full ETL:
+
+```bash
+# Default local SQLite DB
+python scripts/seed.py
+
+# Or target a specific DB:
+Windows PowerShell
+$env:DATABASE_URL="sqlite:///./petmatch.sqlite"; python -m scripts/seed.py
+
+macOS/Linux
+export DATABASE_URL="sqlite:///./petmatch.sqlite"; python -m scripts/seed.py
 
 ---
 
