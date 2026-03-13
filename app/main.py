@@ -66,13 +66,21 @@ app.include_router(analytics_router, prefix="/api")
 def root():
     return {"name": "PetMatch API", "version": "0.1.0"}
 
-
 @app.on_event("startup")
 def on_startup():
-    masked = None
-    val = os.getenv("ANALYTICS_API_KEY")
-    if val:
-        masked = f"{val[:2]}*** (len={len(val)})"
-    logger.info("PetMatch API starting... ready to serve requests. Analytics key set: %s", bool(val))
-    if val:
-        logger.info("Analytics key (masked preview): %s", masked)
+    ana = os.getenv("ANALYTICS_API_KEY")
+    wrt = os.getenv("WRITE_API_KEY")
+
+    def mask(val: str | None):
+        if not val:
+            return None
+        return f"{val[:2]}*** (len={len(val)})"
+
+    logger.info(
+        "PetMatch API starting... ready to serve requests. Analytics key set: %s | Write key set: %s",
+        bool(ana), bool(wrt)
+    )
+    if ana:
+        logger.info("Analytics key (masked preview): %s", mask(ana))
+    if wrt:
+        logger.info("Write key (masked preview): %s", mask(wrt))

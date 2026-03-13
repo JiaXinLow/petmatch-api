@@ -638,6 +638,56 @@ pytest -q -k analytics_auth
 
 ---
 
+## 🔐 Security: Optional API Keys for Analytics & Writes
+
+This API supports **two independent, optional API-key guards** using the same header name (`X-API-Key`), designed to keep **reads open** for demos while protecting **analytics** and **mutating** operations when desired.
+
+### Why this design?
+- **Local/classroom demos**: Reads remain open → minimal friction.
+- **Least‑privilege**: Protect expensive/sensitive endpoints (analytics) and data‑changing endpoints (writes) when needed.
+- **Toggle via env vars**: No code changes to enable/disable.
+
+---
+
+### 🧭 Behavior Summary
+
+- **Header used**: `X-API-Key`
+- **Analytics guard** (`ANALYTICS_API_KEY`)
+  - **Unset** → guard **OFF** (analytics open)
+  - **Set** → requests to `/api/analytics/*` must include `X-API-Key: <ANALYTICS_API_KEY>`
+- **Write guard** (`WRITE_API_KEY`)
+  - **Unset** → guard **OFF** (writes open)
+  - **Set** → `POST/PUT/PATCH/DELETE /api/pets/*` must include `X-API-Key: <WRITE_API_KEY>`
+- **Reads** (e.g., `GET /api/pets/{id}`) are **always open**.
+
+Both guards are **independent**. Keys do **not** cross‑work.
+
+---
+
+### 🔧 Environment Variables
+
+Set these before starting the app to enable guards:
+
+```bash
+# PowerShell (Windows)
+$env:ANALYTICS_API_KEY = "asecret"   # protects /api/analytics/*
+$env:WRITE_API_KEY     = "wsecret"   # protects POST/PUT/PATCH/DELETE /api/pets/*
+
+# Start server
+uvicorn app.main:app --reload
+``
+
+Turn guards off (demo mode):
+```bash
+# PowerShell (Windows)
+Remove-Item Env:ANALYTICS_API_KEY -ErrorAction Ignore
+Remove-Item Env:WRITE_API_KEY -ErrorAction Ignore
+uvicorn app.main:app --reload
+```
+On startup, the app logs whether each key is set (masked preview) and which protections are active.
+
+---
+
 # 🗂 Project Structure
 
 ```

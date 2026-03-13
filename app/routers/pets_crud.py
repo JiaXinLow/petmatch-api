@@ -8,6 +8,7 @@ from app.models import Pet
 from app.schemas import PetCreate, PetUpdate, PetRead
 from app.schemas_errors import ErrorResponse
 from app.utils.pet_helpers import normalize_species, pet_to_read
+from app.security import require_write_api_key
 
 router = APIRouter(tags=["pets.manage"])
 
@@ -50,7 +51,7 @@ router = APIRouter(tags=["pets.manage"])
     }
 )
 
-def create_pet(payload: PetCreate, response: Response, db: Session = Depends(get_db)):
+def create_pet(payload: PetCreate, response: Response, db: Session = Depends(get_db), _auth: None = Depends(require_write_api_key)):
     exists = db.execute(select(Pet).where(Pet.external_id == payload.external_id)).scalar_one_or_none()
     if exists:
         raise HTTPException(
@@ -90,7 +91,7 @@ def get_pet(pet_id: int, db: Session = Depends(get_db)):
     return pet_to_read(pet)
 
 @router.patch("/pets/{pet_id}", response_model=PetRead)
-def patch_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db)):
+def patch_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db), _auth: None = Depends(require_write_api_key)):
     pet = db.get(Pet, pet_id)
     if not pet:
         raise HTTPException(status_code=404, detail="Pet not found.")
@@ -106,7 +107,7 @@ def patch_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db)):
     return pet_to_read(pet)
 
 @router.put("/pets/{pet_id}", response_model=PetRead)
-def update_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db)):
+def update_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db), _auth: None = Depends(require_write_api_key)):
     """
     Note: In this API, PUT performs a *partial* update (same as PATCH).
     """
@@ -139,7 +140,7 @@ def update_pet(pet_id: int, payload: PetUpdate, db: Session = Depends(get_db)):
     return pet_to_read(pet)
 
 @router.delete("/pets/{pet_id}", status_code=status.HTTP_204_NO_CONTENT)
-def delete_pet(pet_id: int, db: Session = Depends(get_db)):
+def delete_pet(pet_id: int, db: Session = Depends(get_db), _auth: None = Depends(require_write_api_key)):
     pet = db.get(Pet, pet_id)
     if not pet:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Pet not found.")

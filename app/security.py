@@ -25,3 +25,24 @@ def require_analytics_api_key(x_api_key: str | None = Security(api_key_header)) 
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid or missing API key",
         )
+
+def require_write_api_key(x_api_key: str | None = Security(api_key_header)) -> None:
+    """
+    Optional API key guard for WRITE endpoints.
+
+    Behavior:
+      - If env WRITE_API_KEY is NOT set -> guard is DISABLED (writes open for local/demo).
+      - If env WRITE_API_KEY is set     -> require header 'X-API-Key: <value>' or 401.
+
+    NOTE: This does NOT fall back to ANALYTICS_API_KEY by design, to keep concerns separate.
+    """
+    expected = os.getenv("WRITE_API_KEY")
+    if not expected:
+        # Guard off -> allow writes (preserves previous local/demo behavior)
+        return
+
+    if not x_api_key or x_api_key != expected:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid or missing API key",
+        )
