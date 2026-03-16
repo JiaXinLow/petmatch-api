@@ -34,27 +34,57 @@ def seed_sample(session_factory):
 def test_filters(client, session_factory):
     seed_sample(session_factory)
 
-    # Species
+    # --- Species list ---
     r = client.get("/api/pets/species")
     assert r.status_code == 200
-    assert "Dog" in r.json()
-    assert "Cat" in r.json()
+    species_vals = r.json()
+    assert "Dog" in species_vals
+    assert "Cat" in species_vals
 
-    # Outcomes
+    # --- Outcomes list ---
     r = client.get("/api/pets/outcomes")
     assert r.status_code == 200
-    assert "Adoption" in r.json()
-    assert "Transfer" in r.json()
+    outcomes_vals = r.json()
+    assert "Adoption" in outcomes_vals
+    assert "Transfer" in outcomes_vals
 
-    # Breeds for Dogs
+    # --- Breeds for Dogs (Title Case) ---
     r = client.get("/api/pets/breeds?species=Dog")
     assert r.status_code == 200
     assert "Beagle" in r.json()
 
-    # Summary
+    # --- Summary ---
     r = client.get("/api/pets/summary")
     assert r.status_code == 200
     data = r.json()
     assert data["total_pets"] >= 2
     assert data["species_counts"]["Dog"] >= 1
     assert data["species_counts"]["Cat"] >= 1
+
+    # --- NEW: Case-insensitive species filter ---
+    r_title = client.get("/api/pets", params={"species": "Dog", "limit": 50})
+    r_lower = client.get("/api/pets", params={"species": "dog", "limit": 50})
+    assert r_title.status_code == 200 and r_lower.status_code == 200
+    assert r_title.json() == r_lower.json()
+
+    # --- NEW: Case-insensitive outcome_type filter ---
+    r_title = client.get("/api/pets", params={"outcome_type": "Transfer", "limit": 50})
+    r_lower = client.get("/api/pets", params={"outcome_type": "transfer", "limit": 50})
+    assert r_title.status_code == 200 and r_lower.status_code == 200
+    assert r_title.json() == r_lower.json()
+
+    # --- NEW: Combined case-insensitive filter (should match the seeded Cat/Transfer) ---
+    r = client.get("/api/pets", params={
+        "species": "cat",              # lower
+        "outcome_type": "transfer",    # lower
+        "limit": 10,
+        "offset": 0
+    })
+    assert r.status_code == 200
+    rows = r.json()
+    assert any(p["species"] == "Cat" and p["outcome_type"] == "Transfer" for p in rows)
+
+    # --- NEW: Breeds endpoint accepts lowercase species too ---
+    r = client.get("/api/pets/breeds", params={"species": "dog"})
+    assert r.status_code == 200
+    assert "Beagle" in r.json()

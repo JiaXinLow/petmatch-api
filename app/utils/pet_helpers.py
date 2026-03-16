@@ -2,6 +2,21 @@ from typing import Optional
 from app.models import Pet
 from app.schemas import PetRead
 
+# Canonical mapping for outcome_type (lower input -> exact output)
+_OUTCOME_CANONICAL = {
+    "adoption": "Adoption",
+    "transfer": "Transfer",
+    "return to owner": "Return to Owner",
+    "rto-adopt": "Rto-Adopt",
+    "euthanasia": "Euthanasia",
+    "died": "Died",
+    "disposal": "Disposal",
+    "lost": "Lost",
+    "missing": "Missing",
+    "relocate": "Relocate",
+    "stolen": "Stolen",
+}
+
 def normalize_species(v: Optional[str]) -> Optional[str]:
     if not v:
         return v
@@ -10,7 +25,16 @@ def normalize_species(v: Optional[str]) -> Optional[str]:
         return v
     return "Other"
 
+def normalize_outcome_type(v: Optional[str]) -> Optional[str]:
+    if v is None:
+        return None
+    key = v.strip().lower()
+    return _OUTCOME_CANONICAL.get(key) or v.strip()  # fall back to original if unknown
+
 def pet_to_read(p: Pet) -> PetRead:
+    # If you want to be extra defensive, normalize here too before building the schema:
+    ot = normalize_outcome_type(p.outcome_type) if p.outcome_type else None
+
     return PetRead(
         id=p.id,
         external_id=p.external_id,
@@ -20,7 +44,7 @@ def pet_to_read(p: Pet) -> PetRead:
         sex_upon_outcome=p.sex_upon_outcome,
         age_months=p.age_months,
         color=p.color,
-        outcome_type=p.outcome_type,
+        outcome_type=ot,
         outcome_datetime=p.outcome_datetime,
         shelter_id=p.shelter_id,
     )

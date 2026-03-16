@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app.models import Pet
 from app.schemas import PetRead
-from app.utils.pet_helpers import normalize_species, pet_to_read
+from app.utils.pet_helpers import normalize_species, normalize_outcome_type, pet_to_read
 
 router = APIRouter(tags=["pets.browse"])
 
@@ -33,8 +33,8 @@ def list_breeds(
 
 @router.get("/pets", response_model=List[PetRead])
 def list_pets(
-    species: Optional[str] = Query(None, description="Dog|Cat|Other"),
-    outcome_type: Optional[str] = Query(None),
+    species: Optional[str] = Query(None, description="Dog|Cat|Other (case-insensitive)"),
+    outcome_type: Optional[str] = Query(None, description="e.g., Adoption, Transfer (case-insensitive)"),
     min_age_months: Optional[int] = Query(None, ge=0),
     max_age_months: Optional[int] = Query(None, ge=0),
     limit: int = Query(50, ge=1, le=200),
@@ -45,7 +45,7 @@ def list_pets(
     if species:
         filters.append(Pet.species == normalize_species(species))
     if outcome_type:
-        filters.append(Pet.outcome_type == outcome_type)
+        filters.append(Pet.outcome_type == normalize_outcome_type(outcome_type))
     if min_age_months is not None:
         filters.append(Pet.age_months >= min_age_months)
     if max_age_months is not None:
@@ -54,7 +54,9 @@ def list_pets(
     stmt = select(Pet)
     if filters:
         stmt = stmt.where(and_(*filters))
-    stmt = stmt.offset(offset).limit(limit)
+
+    # ✅ Add deterministic ordering so pagination is stable
+    stmt = stmt.order_by(Pet.id.desc()).offset(offset).limit(limit)
 
     rows = db.execute(stmt).scalars().all()
     return [pet_to_read(p) for p in rows]
