@@ -46,7 +46,7 @@ Estimates the current level of stress or welfare concerns for a pet inside a she
 
 Factors chosen reflect handling practices and enrichment guidelines from real shelters.
 
-# 2.1 Factors Used
+## 2.1 Factors Used
 | Factor               | Description                                           |
 |----------------------|-------------------------------------------------------|
 | Breed group          | e.g. herding breeds → high stimulation needs         |
@@ -55,13 +55,13 @@ Factors chosen reflect handling practices and enrichment guidelines from real sh
 | Documentation quality| missing sex info adds uncertainty                    |
 | Coat visibility      | minor impact on behavior assessment                  |
 
-# 2.2 Endpoint
+## 2.2 Endpoint
 ```bash
 GET /api/analytics/welfare/{pet_id}
 GET /api/analytics/welfare/by-external-id/{external_id}
 ```
 
-# 2.3 Example Response
+## 2.3 Example Response
 ```json
 {
   "pet_id": 201,
