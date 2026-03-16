@@ -1,6 +1,13 @@
 import os
 import sys
 import pytest
+
+@pytest.fixture(autouse=True, scope="session")
+def _unset_write_key_for_tests():
+    # Ensure write guard is OFF for the entire test session
+    os.environ.pop("WRITE_API_KEY", None)
+    os.environ.pop("ANALYTICS_API_KEY", None)
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
