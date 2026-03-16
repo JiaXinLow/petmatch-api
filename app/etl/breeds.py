@@ -27,9 +27,7 @@ def run(config: ETLConfig) -> Path:
         rows.append({
             "species": "Dog",
             "name": clean_name,
-            "size": None,
             "group": group_str or None,
-            "energy_level": None
         })
 
     df = pd.DataFrame(rows)

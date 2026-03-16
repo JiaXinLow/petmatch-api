@@ -1,1679 +1,1679 @@
-species,name,size,group,energy_level
-Dog,German Shepherd/Australian Cattle Dog,,Herding,
-Dog,English Cocker Spaniel Mix,,Sporting,
-Dog,Dachshund/Pug,,Toy; Hound,
-Dog,Miniature Schnauzer/Shih Tzu,,Toy; Terrier,
-Dog,Harrier,,Hound,
-Dog,Pointer/Staffordshire,,Sporting; Terrier,
-Dog,Australian Shepherd/Dalmatian,,Non-Sporting; Herding,
-Dog,Labrador Retriever/Australian Shepherd,,Sporting; Herding,
-Dog,Chihuahua Longhair/Cairn Terrier,,Toy; Terrier,
-Dog,Cairn Terrier/Dachshund,,Hound; Terrier,
-Dog,Belgian Tervuren/German Shepherd,,Herding,
-Dog,Pug Mix,,Toy,
-Dog,Chihuahua Longhair/Dachshund Longhair,,Hound; Toy,
-Dog,Anatol Shepherd/Catahoula,,Toy; Working,
-Dog,Yorkshire Terrier/Maltese,,Toy,
-Dog,Great Dane/German Shepherd,,Herding; Working,
-Dog,Australian Kelpie/Pit Bull,,Terrier,
-Dog,Golden Retriever/Pit Bull,,Sporting; Terrier,
-Dog,Basenji/Jack Russell Terrier,,Hound; Terrier,
-Dog,Australian Kelpie Mix,,Terrier,
-Dog,Black/Tan Hound Mix,,Herding; Hound,
-Dog,Dachshund/Miniature Pinscher,,Toy; Hound,
-Dog,Border Collie/Basenji,,Herding; Hound,
-Dog,Toy Fox Terrier/Dachshund,,Hound; Toy,
-Dog,Pointer/Border Collie,,Sporting; Herding,
-Dog,Chihuahua Shorthair,,Toy,
-Dog,Rat Terrier/Australian Cattle Dog,,Herding; Terrier,
-Dog,Shetland Sheepdog,,Herding,
-Dog,Belgian Malinois,,Herding,
-Dog,British Shorthair Mix,,Sporting,
-Dog,Boxer/Chow Chow,,Non-Sporting; Working,
-Dog,Basset Hound/Beagle,,Hound,
-Dog,Great Pyrenees/Boxer,,Working,
-Dog,American Pit Bull Terrier/American Bulldog,,Hound; Terrier,
-Dog,Yorkshire Terrier/Border Terrier,,Toy; Terrier,
-Dog,Anatol Shepherd/Border Collie,,Herding; Working,
-Dog,Bluetick Hound,,Hound,
-Dog,Swiss Hound/Pit Bull,,Hound; Terrier,
-Dog,Anatol Shepherd Mix,,Working,
-Dog,Harrier/Pit Bull,,Hound; Terrier,
-Dog,Norwich Terrier/Border Terrier,,Terrier,
-Dog,Swedish Vallhund/Miniature Poodle,,Herding; Toy,
-Dog,German Shorthair Pointer/Brittany,,Sporting,
-Dog,American Staffordshire Terrier/Australian Cattle Dog,,Herding; Terrier,
-Dog,Dalmatian/Pointer,,Non-Sporting; Sporting,
-Dog,German Pinscher/Whippet,,Hound; Working,
-Dog,Basset Hound/Dachshund,,Hound,
-Dog,Boxer/Staffordshire,,Terrier; Working,
-Dog,Boxer/Great Dane,,Working,
-Dog,German Shepherd,,Herding,
-Dog,Cardigan Welsh Corgi/Miniature Pinscher,,Herding; Toy,
-Dog,Labrador Retriever/Blue Lacy,,Sporting; Herding,
-Dog,Beauceron Mix,,Herding,
-Dog,Siberian Husky/Rottweiler,,Working,
-Dog,Great Pyrenees/St. Bernard Rough Coat,,Working,
-Dog,American Bulldog/Blue Lacy,,Herding; Hound,
-Dog,Ocicat Mix,,Sporting,
-Dog,Dachshund/American Staffordshire Terrier,,Hound; Terrier,
-Dog,Jack Russell Terrier Mix,,Terrier,
-Dog,English Springer Spaniel/Cardigan Welsh Corgi,,Sporting; Herding,
-Dog,Basset Hound/Pointer,,Sporting; Hound,
-Dog,Dachshund/Pit Bull,,Hound; Terrier,
-Dog,Miniature Poodle/Dachshund,,Hound; Toy,
-Dog,Skye Terrier Mix,,Terrier,
-Dog,Jack Russell Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Basenji/Australian Cattle Dog,,Herding; Hound,
-Dog,Chinese Sharpei/Boxer,,Toy; Working,
-Dog,Silky Terrier Mix,,Toy,
-Dog,English Coonhound/Australian Cattle Dog,,Herding; Hound,
-Dog,Pointer/Boxer,,Sporting; Working,
-Dog,Pixiebob Shorthair Mix,,Sporting,
-Dog,Pit Bull/Bulldog,,Non-Sporting; Terrier,
-Dog,Miniature Poodle,,Toy,
-Dog,Chihuahua Shorthair/Pembroke Welsh Corgi,,Herding; Toy,
-Dog,Great Pyrenees/Pointer,,Sporting; Working,
-Dog,Chihuahua Shorthair/Cavalier Span,,Sporting; Toy,
-Dog,Treeing Walker Coonhound/Labrador Retriever,,Sporting; Hound,
-Dog,Labrador Retriever/Flat Coat Retriever,,Sporting,
-Dog,Tibetan Spaniel,,Non-Sporting,
-Dog,Belgian Tervuren Mix,,Herding,
-Dog,Papillon/Chihuahua Shorthair,,Toy,
-Dog,Cardigan Welsh Corgi/Chihuahua Shorthair,,Herding; Toy,
-Dog,Labrador Retriever/American Staffordshire Terrier,,Sporting; Terrier,
-Dog,Miniature Pinscher Mix,,Toy,
-Dog,German Shepherd/Rottweiler,,Herding; Working,
-Dog,Basset Hound/French Bulldog,,Non-Sporting; Hound,
-Dog,German Shepherd/Pit Bull,,Herding; Terrier,
-Dog,Alaskan Malamute,,Working,
-Dog,Anatol Shepherd/Great Pyrenees,,Working,
-Dog,Siamese/Japanese Bobtail,,Toy; Working,
-Dog,Whippet/Chihuahua Shorthair,,Toy; Hound,
-Dog,Chow Chow/Golden Retriever,,Non-Sporting; Sporting,
-Dog,Wire Hair Fox Terrier Mix,,Terrier,
-Dog,Labrador Retriever/Irish Setter,,Sporting,
-Dog,Rat Terrier/Cardigan Welsh Corgi,,Herding; Terrier,
-Dog,Great Dane,,Working,
-Dog,Dachshund Longhair/Cardigan Welsh Corgi,,Herding; Hound,
-Dog,St. Bernard Rough Coat/Border Collie,,Herding; Working,
-Dog,German Shepherd Mix,,Herding,
-Dog,St. Bernard Rough Coat/Standard Schnauzer,,Working,
-Dog,Papillon/Miniature Poodle,,Toy,
-Dog,Italian Greyhound Mix,,Toy,
-Dog,Greyhound/Great Dane,,Hound; Working,
-Dog,Jack Russell Terrier/American Staffordshire Terrier,,Terrier,
-Dog,Siberian Husky/Labrador Retriever,,Sporting; Working,
-Dog,Chihuahua Longhair/Papillon,,Toy,
-Dog,Pekingese Mix,,Toy,
-Dog,Australian Shepherd/Australian Kelpie,,Herding; Terrier,
-Dog,Shih Tzu/Australian Shepherd,,Herding; Toy,
-Dog,English Bulldog/Dachshund,,Non-Sporting; Hound,
-Dog,Belgian Sheepdog Mix,,Herding,
-Dog,Border Terrier Mix,,Terrier,
-Dog,Papillon/Border Collie,,Herding; Toy,
-Dog,German Shepherd/Weimaraner,,Herding; Sporting,
-Dog,Chow Chow/Border Collie,,Non-Sporting; Herding,
-Dog,Labrador Retriever/Redbone Hound,,Sporting; Hound,
-Dog,Queensland Heeler,,Herding,
-Dog,Chihuahua Shorthair/Boston Terrier,,Non-Sporting; Toy,
-Dog,Miniature Schnauzer,,Terrier,
-Dog,Boxer/Jack Russell Terrier,,Terrier; Working,
-Dog,Miniature Schnauzer/Soft Coated Wheaten Terrier,,Terrier,
-Dog,Yorkshire Terrier,,Toy,
-Dog,Catahoula/American Bulldog,,Hound; Toy,
-Dog,German Shepherd/Black Mouth Cur,,Herding; Hound,
-Dog,Miniature Schnauzer/Australian Cattle Dog,,Herding; Terrier,
-Dog,Siberian Husky/Catahoula,,Toy; Working,
-Dog,Border Terrier/Cardigan Welsh Corgi,,Herding; Terrier,
-Dog,Black Mouth Cur/Catahoula,,Toy; Hound,
-Dog,Basenji/Rhod Ridgeback,,Hound,
-Dog,Cardigan Welsh Corgi/Australian Kelpie,,Herding; Terrier,
-Dog,Alaskan Malamute/Australian Kelpie,,Terrier; Working,
-Dog,Australian Cattle Dog/Dachshund,,Herding; Hound,
-Dog,Irish Terrier/Border Terrier,,Terrier,
-Dog,Boxer/English Bulldog,,Non-Sporting; Working,
-Dog,Siberian Husky/Pit Bull,,Terrier; Working,
-Dog,Labrador Retriever/Catahoula,,Sporting; Toy,
-Dog,Labrador Retriever/Basset Hound,,Sporting; Hound,
-Dog,Shetland Sheepdog/Brittany,,Herding; Sporting,
-Dog,Chihuahua Shorthair/Italian Greyhound,,Toy,
-Dog,Cairn Terrier/Border Terrier,,Terrier,
-Dog,Cocker Spaniel Mix,,Sporting,
-Dog,Pit Bull/Weimaraner,,Sporting; Terrier,
-Dog,Manchester Terrier,,Toy; Terrier,
-Dog,French Bulldog/Pug,,Non-Sporting; Toy,
-Dog,German Shorthair Pointer Mix,,Sporting,
-Dog,Miniature Schnauzer/Jack Russell Terrier,,Terrier,
-Dog,Catahoula/Boxer,,Toy; Working,
-Dog,Toy Poodle/Cocker Spaniel,,Non-Sporting; Sporting; Toy,
-Dog,Shetland Sheepdog/Pomeranian,,Herding; Toy,
-Dog,Great Pyrenees Mix,,Working,
-Dog,Australian Cattle Dog/Jack Russell Terrier,,Herding; Terrier,
-Dog,Rottweiler/Labrador Retriever,,Sporting; Working,
-Dog,Australian Shepherd/Feist,,Non-Sporting; Herding,
-Dog,Shetland Sheepdog/Basenji,,Herding; Hound,
-Dog,Labrador Retriever/Boxer,,Sporting; Working,
-Dog,Chihuahua Longhair/Italian Greyhound,,Toy,
-Dog,Pekingese/Jack Russell Terrier,,Toy; Terrier,
-Dog,Chihuahua Shorthair/Queensland Heeler,,Herding; Toy,
-Dog,Australian Cattle Dog/Pit Bull,,Herding; Terrier,
-Dog,Havanese Mix,,Toy,
-Dog,Maltese/Yorkshire Terrier,,Toy,
-Dog,Jack Russell Terrier/Yorkshire Terrier,,Toy; Terrier,
-Dog,Jack Russell Terrier/Dachshund Wirehair,,Hound; Terrier,
-Dog,Black/Tan Hound/German Shepherd,,Herding; Hound,
-Dog,Beagle/Black Mouth Cur,,Hound,
-Dog,Dutch Shepherd/Mastiff,,Herding; Working,
-Dog,Cardigan Welsh Corgi/Beagle,,Herding; Hound,
-Dog,Dachshund/Whippet,,Hound,
-Dog,Beagle/Queensland Heeler,,Herding; Hound,
-Dog,Dachshund/Miniature Poodle,,Toy; Hound,
-Dog,English Foxhound,,Hound,
-Dog,Golden Retriever/Border Collie,,Sporting; Herding,
-Dog,Rat Terrier/Pointer,,Sporting; Terrier,
-Dog,Kuvasz/Labrador Retriever,,Sporting; Working,
-Dog,Blue Lacy/American Bulldog,,Herding; Hound,
-Dog,Maltese/Dalmatian,,Non-Sporting; Toy,
-Dog,English Bulldog/American Bulldog,,Non-Sporting; Hound,
-Dog,Toy Poodle/Miniature Schnauzer,,Non-Sporting; Toy; Terrier,
-Dog,Australian Cattle Dog/Bull Terrier,,Herding; Terrier,
-Dog,Rottweiler,,Working,
-Dog,Weimaraner/Pit Bull,,Sporting; Terrier,
-Dog,Yorkshire Terrier/Chihuahua Shorthair,,Toy,
-Dog,Kuvasz Mix,,Working,
-Dog,Golden Retriever/Cocker Spaniel,,Sporting,
-Dog,Old English Bulldog,,Non-Sporting,
-Dog,Akita,,Working,
-Dog,Lhasa Apso/Cairn Terrier,,Non-Sporting; Terrier,
-Dog,Akita/German Shepherd,,Herding; Working,
-Dog,Beagle/Chinese Sharpei,,Toy; Hound,
-Dog,Brittany/Chihuahua Shorthair,,Sporting; Toy,
-Dog,Plott Hound/Australian Cattle Dog,,Herding; Hound,
-Dog,Lhasa Apso/West Highland,,Non-Sporting; Terrier,
-Dog,Manchester Terrier/Beagle,,Toy; Hound; Terrier,
-Dog,Vizsla/German Shepherd,,Sporting; Herding,
-Dog,Rottweiler/Rhod Ridgeback,,Hound; Working,
-Dog,Munchkin Longhair Mix,,Herding,
-Dog,Pbgv/Jack Russell Terrier,,Toy; Terrier,
-Dog,Miniature Schnauzer/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Miniature Pinscher/Maltese,,Toy,
-Dog,Pit Bull/Jack Russell Terrier,,Terrier,
-Dog,Whippet/Miniature Pinscher,,Toy; Hound,
-Dog,Nova Scotia Duck Tolling Retriever,,Sporting,
-Dog,Labrador Retriever/Alaskan Husky,,Sporting; Working,
-Dog,Chinese Sharpei/Bull Terrier,,Toy; Terrier,
-Dog,Keeshond Mix,,Non-Sporting,
-Dog,Bull Terrier,,Terrier,
-Dog,Pit Bull/Boxer,,Terrier; Working,
-Dog,Carolina Dog/Australian Cattle Dog,,Herding; Working,
-Dog,Skye Terrier/Miniature Poodle,,Toy; Terrier,
-Dog,Bengal Mix,,Hound,
-Dog,Doberman Pinsch/Rottweiler,,Working,
-Dog,Basset Hound/Australian Cattle Dog,,Herding; Hound,
-Dog,Miniature Pinscher/Australian Cattle Dog,,Herding; Toy,
-Dog,Australian Shepherd/Anatol Shepherd,,Herding; Working,
-Dog,Catahoula/Bulldog,,Non-Sporting; Toy,
-Dog,Cardigan Welsh Corgi/Pit Bull,,Herding; Terrier,
-Dog,Pit Bull/Dogue De Bordeaux,,Terrier; Working,
-Dog,Boston Terrier/Dachshund,,Non-Sporting; Hound,
-Dog,Pug,,Toy,
-Dog,Labrador Retriever/Great Dane,,Sporting; Working,
-Dog,Flat Coat Retriever/Chow Chow,,Non-Sporting; Sporting,
-Dog,Miniature Poodle Mix,,Toy,
-Dog,Border Collie,,Herding,
-Dog,Akita/Border Collie,,Herding; Working,
-Dog,Yorkshire Terrier/Rat Terrier,,Toy; Terrier,
-Dog,Great Dane/Boerboel,,Working,
-Dog,Chihuahua Shorthair/Papillon,,Toy,
-Dog,Collie Smooth/Chow Chow,,Non-Sporting; Herding,
-Dog,Bulldog/Australian Cattle Dog,,Non-Sporting; Herding,
-Dog,Chihuahua Shorthair/Toy Fox Terrier,,Toy,
-Dog,Cocker Spaniel,,Sporting,
-Dog,Pembroke Welsh Corgi/German Shepherd,,Herding,
-Dog,Coton De Tulear,,Non-Sporting,
-Dog,Snowshoe/Domestic Shorthair,,Non-Sporting; Sporting,
-Dog,Staffordshire/French Bulldog,,Non-Sporting; Terrier,
-Dog,Pointer/Ibizan Hound,,Sporting; Hound,
-Dog,Pharaoh Hound,,Hound,
-Dog,Cairn Terrier/Dachshund Wirehair,,Hound; Terrier,
-Dog,Anatol Shepherd/Australian Cattle Dog,,Herding; Working,
-Dog,Dachshund/Swedish Vallhund,,Herding; Hound,
-Dog,Parson Russell Terrier,,Terrier,
-Dog,Beagle/Basset Hound,,Hound,
-Dog,Cocker Spaniel/Standard Poodle,,Sporting; Working,
-Dog,Carolina Dog Mix,,Working,
-Dog,Nova Scotia Duck Tolling Retriever/Border Collie,,Sporting; Herding,
-Dog,Great Pyrenees/Alaskan Husky,,Working,
-Dog,West Highland Mix,,Terrier,
-Dog,Boykin Span/Dachshund,,Sporting; Hound,
-Dog,Labrador Retriever/Standard Poodle,,Sporting; Working,
-Dog,Domestic Shorthair/British Shorthair,,Sporting,
-Dog,Border Collie/Pointer,,Herding; Sporting,
-Dog,Siberian Husky/Alaskan Malamute,,Working,
-Dog,Jack Russell Terrier,,Terrier,
-Dog,Chihuahua Longhair/Cardigan Welsh Corgi,,Herding; Toy,
-Dog,Catahoula/Beagle,,Hound; Toy,
-Dog,Dachshund Wirehair/Cairn Terrier,,Hound; Terrier,
-Dog,Border Terrier/Miniature Schnauzer,,Terrier,
-Dog,Dachshund/Jack Russell Terrier,,Hound; Terrier,
-Dog,Norwich Terrier/Pug,,Toy; Terrier,
-Dog,Finnish Spitz/Chow Chow,,Non-Sporting,
-Dog,Rhod Ridgeback/German Shepherd,,Herding; Hound,
-Dog,Staffordshire,,Terrier,
-Dog,Redbone Hound/Dachshund,,Hound,
-Dog,Border Terrier/Soft Coated Wheaten Terrier,,Terrier,
-Dog,Standard Schnauzer Mix,,Working,
-Dog,Chihuahua Longhair/West Highland,,Toy; Terrier,
-Dog,Beagle/Treeing Walker Coonhound,,Hound,
-Dog,Cane Corso/Mastiff,,Working,
-Dog,American Bulldog/Labrador Retriever,,Sporting; Hound,
-Dog,Pointer/Australian Kelpie,,Sporting; Terrier,
-Dog,Siamese/Angora,,Working,
-Dog,Black Mouth Cur/Basset Hound,,Hound,
-Dog,Cardigan Welsh Corgi/Cairn Terrier,,Herding; Terrier,
-Dog,Beagle/Border Terrier,,Hound; Terrier,
-Dog,Blue Lacy/Labrador Retriever,,Herding; Sporting,
-Dog,Pointer/Bull Terrier,,Sporting; Terrier,
-Dog,Bull Terrier/Pit Bull,,Terrier,
-Dog,Picardy Sheepdog,,Herding,
-Dog,Australian Cattle Dog/Parson Russell Terrier,,Herding; Terrier,
-Dog,Border Terrier/Border Collie,,Herding; Terrier,
-Dog,Border Collie/Beagle,,Herding; Hound,
-Dog,Black Mouth Cur/American Staffordshire Terrier,,Hound; Terrier,
-Dog,Australian Kelpie/Finnish Spitz,,Non-Sporting; Terrier,
-Dog,Staffordshire/Beagle,,Hound; Terrier,
-Dog,Labrador Retriever/Rottweiler,,Sporting; Working,
-Dog,Labrador Retriever/English Pointer,,Sporting,
-Dog,Boxer,,Working,
-Dog,Queensland Heeler/German Shepherd,,Herding,
-Dog,Norwegian Forest Cat Mix,,Hound,
-Dog,Domestic Longhair,,Hound,
-Dog,Australian Kelpie/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Domestic Shorthair Mix,,Sporting,
-Dog,Whippet Mix,,Hound,
-Dog,Vizsla/Beagle,,Sporting; Hound,
-Dog,German Shepherd/Great Pyrenees,,Herding; Working,
-Dog,Border Terrier/Shih Tzu,,Toy; Terrier,
-Dog,Persian,,Toy,
-Dog,Doberman Pinsch/Border Collie,,Herding; Working,
-Dog,Miniature Pinscher/Smooth Fox Terrier,,Toy; Terrier,
-Dog,Beagle/Chihuahua Shorthair,,Toy; Hound,
-Dog,Border Collie/Boxer,,Herding; Working,
-Dog,Staffordshire/Boston Terrier,,Non-Sporting; Terrier,
-Dog,St. Bernard Rough Coat Mix,,Working,
-Dog,Pekingese/Lhasa Apso,,Non-Sporting; Toy,
-Dog,Dachshund Longhair/Toy Poodle,,Non-Sporting; Hound; Toy,
-Dog,Miniature Poodle/Pomeranian,,Toy,
-Dog,Pit Bull/Cardigan Welsh Corgi,,Herding; Terrier,
-Dog,Anatol Shepherd,,Working,
-Dog,Whippet/Jack Russell Terrier,,Hound; Terrier,
-Dog,Australian Shepherd/Jack Russell Terrier,,Herding; Terrier,
-Dog,Pekingese/Pug,,Toy,
-Dog,Border Collie/Catahoula,,Herding; Toy,
-Dog,Shetland Sheepdog/Cavalier Span,,Herding; Sporting,
-Dog,Manx/Siamese,,Non-Sporting; Working,
-Dog,Collie Smooth/Saluki,,Herding; Hound,
-Dog,Doberman Pinsch/German Shepherd,,Herding; Working,
-Dog,Ragdoll,,Herding,
-Dog,American Bulldog/English Bulldog,,Non-Sporting; Hound,
-Dog,Shiba Inu/German Shepherd,,Non-Sporting; Herding,
-Dog,Border Terrier,,Terrier,
-Dog,Golden Retriever/Australian Shepherd,,Sporting; Herding,
-Dog,Black Mouth Cur/Siberian Husky,,Hound; Working,
-Dog,Yorkshire Terrier/Shih Tzu,,Toy,
-Dog,Border Collie/Alaskan Husky,,Herding; Working,
-Dog,Beagle/Vizsla,,Sporting; Hound,
-Dog,Catahoula/Australian Shepherd,,Herding; Toy,
-Dog,Beagle/Australian Kelpie,,Hound; Terrier,
-Dog,Cardigan Welsh Corgi,,Herding,
-Dog,Australian Cattle Dog/Catahoula,,Herding; Toy,
-Dog,Bruss Griffon/Pug,,Toy,
-Dog,Border Collie/Queensland Heeler,,Herding,
-Dog,Manchester Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Pomeranian/American Eskimo,,Non-Sporting; Toy,
-Dog,Australian Shepherd/Brittany,,Herding; Sporting,
-Dog,Irish Wolfhound/Great Dane,,Hound; Working,
-Dog,German Shepherd/Anatol Shepherd,,Herding; Working,
-Dog,Cardigan Welsh Corgi/Chihuahua Longhair,,Herding; Toy,
-Dog,Scottish Fold Mix,,Hound,
-Dog,Great Dane/Australian Shepherd,,Herding; Working,
-Dog,Siberian Husky/Beagle,,Hound; Working,
-Dog,Maltese/Miniature Poodle,,Toy,
-Dog,Chihuahua Shorthair/Pug,,Toy,
-Dog,Labrador Retriever/American Bulldog,,Sporting; Hound,
-Dog,Queensland Heeler/Great Dane,,Herding; Working,
-Dog,Dachshund Wirehair/Yorkshire Terrier,,Toy; Hound,
-Dog,Great Pyrenees/German Shepherd,,Herding; Working,
-Dog,Irish Wolfhound/Australian Shepherd,,Herding; Hound,
-Dog,Manchester Terrier/Labrador Retriever,,Sporting; Toy; Terrier,
-Dog,Pit Bull Mix,,Terrier,
-Dog,Pit Bull/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Bluetick Hound/Treeing Walker Coonhound,,Hound,
-Dog,Border Collie/Australian Shepherd,,Herding,
-Dog,Dutch Shepherd Mix,,Herding,
-Dog,Blue Lacy/Beagle,,Herding; Hound,
-Dog,Dalmatian/Labrador Retriever,,Non-Sporting; Sporting,
-Dog,Alaskan Husky,,Working,
-Dog,Catahoula/Australian Cattle Dog,,Herding; Toy,
-Dog,Cairn Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Standard Schnauzer/Toy Poodle,,Non-Sporting; Toy; Working,
-Dog,Dachshund/Labrador Retriever,,Sporting; Hound,
-Dog,English Bulldog/Staffordshire,,Non-Sporting; Terrier,
-Dog,Shih Tzu,,Toy,
-Dog,Golden Retriever/Dachshund,,Sporting; Hound,
-Dog,Boston Terrier/Labrador Retriever,,Non-Sporting; Sporting,
-Dog,Jack Russell Terrier/Whippet,,Hound; Terrier,
-Dog,Boston Terrier/Chihuahua Shorthair,,Non-Sporting; Toy,
-Dog,Otterhound Mix,,Hound,
-Dog,Beagle/Whippet,,Hound,
-Dog,Australian Shepherd/German Shepherd,,Herding,
-Dog,Domestic Shorthair/Manx,,Non-Sporting; Sporting,
-Dog,Dalmatian/Basset Hound,,Non-Sporting; Hound,
-Dog,Flat Coat Retriever/Pit Bull,,Sporting; Terrier,
-Dog,Redbone Hound/Redbone Hound,,Hound,
-Dog,Vizsla/Rhod Ridgeback,,Sporting; Hound,
-Dog,Australian Cattle Dog/Golden Retriever,,Herding; Sporting,
-Dog,Great Pyrenees,,Working,
-Dog,Lhasa Apso/Miniature Schnauzer,,Non-Sporting; Terrier,
-Dog,Domestic Shorthair/Siamese,,Sporting; Working,
-Dog,Bearded Collie Mix,,Herding,
-Dog,Toy Fox Terrier/Yorkshire Terrier,,Toy,
-Dog,Australian Cattle Dog/Australian Shepherd,,Herding,
-Dog,German Pinscher Mix,,Working,
-Dog,Papillon Mix,,Toy,
-Dog,Staffordshire/Bull Terrier,,Terrier,
-Dog,Rat Terrier/Dachshund,,Hound; Terrier,
-Dog,Labrador Retriever/Border Terrier,,Sporting; Terrier,
-Dog,Glen Of Imaal/Ibizan Hound,,Hound; Terrier,
-Dog,Dachshund Wirehair/Norfolk Terrier,,Hound; Terrier,
-Dog,West Highland,,Terrier,
-Dog,Boxer/Rhod Ridgeback,,Hound; Working,
-Dog,Labrador Retriever/Anatol Shepherd,,Sporting; Working,
-Dog,Rottweiler/Australian Cattle Dog,,Herding; Working,
-Dog,English Bulldog/Pit Bull,,Non-Sporting; Terrier,
-Dog,Australian Shepherd/Rottweiler,,Herding; Working,
-Dog,Pointer/Blue Lacy,,Sporting; Herding,
-Dog,Collie Smooth/Jack Russell Terrier,,Herding; Terrier,
-Dog,Border Terrier/Bruss Griffon,,Toy; Terrier,
-Dog,Jack Russell Terrier/Basenji,,Hound; Terrier,
-Dog,Pomeranian/Chihuahua Longhair,,Toy,
-Dog,Patterdale Terr Mix,,Terrier,
-Dog,Australian Cattle Dog/Anatol Shepherd,,Herding; Working,
-Dog,Basset Hound/Pit Bull,,Hound; Terrier,
-Dog,Sphynx,,Non-Sporting,
-Dog,Boxer/Redbone Hound,,Hound; Working,
-Dog,Chinese Sharpei/Border Collie,,Herding; Toy,
-Dog,Pekingese/Dachshund,,Hound; Toy,
-Dog,Plott Hound/Blue Lacy,,Herding; Hound,
-Dog,Wire Hair Fox Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Miniature Schnauzer/Lhasa Apso,,Non-Sporting; Terrier,
-Dog,Staffordshire Mix,,Terrier,
-Dog,Golden Retriever/Great Pyrenees,,Sporting; Working,
-Dog,Pomeranian Mix,,Toy,
-Dog,Miniature Schnauzer/Labrador Retriever,,Sporting; Terrier,
-Dog,Shih Tzu/Miniature Schnauzer,,Toy; Terrier,
-Dog,Beagle/Parson Russell Terrier,,Hound; Terrier,
-Dog,Maltese Mix,,Toy,
-Dog,Dalmatian/Boxer,,Non-Sporting; Working,
-Dog,Airedale Terrier/Irish Terrier,,Terrier,
-Dog,Border Terrier/Yorkshire Terrier,,Toy; Terrier,
-Dog,Golden Retriever/Labrador Retriever,,Sporting,
-Dog,Dachshund Longhair/Australian Shepherd,,Herding; Hound,
-Dog,Australian Kelpie/Rat Terrier,,Terrier,
-Dog,Chinese Sharpei/American Staffordshire Terrier,,Toy; Terrier,
-Dog,Dachshund Longhair/Chihuahua Longhair,,Toy; Hound,
-Dog,Ibizan Hound/Pit Bull,,Hound; Terrier,
-Dog,Collie Rough/Pembroke Welsh Corgi,,Herding,
-Dog,Boerboel,,Working,
-Dog,Dachshund/Manchester Terrier,,Toy; Hound; Terrier,
-Dog,Japanese Chin,,Toy,
-Dog,Alaskan Husky/German Shepherd,,Herding; Working,
-Dog,Boxer/Cardigan Welsh Corgi,,Herding; Working,
-Dog,Black Mouth Cur/Labrador Retriever,,Sporting; Hound,
-Dog,Whippet/Australian Cattle Dog,,Herding; Hound,
-Dog,Rottweiler/Doberman Pinsch,,Working,
-Dog,Miniature Poodle/Chihuahua Shorthair,,Toy,
-Dog,Spanish Mastiff Mix,,Working,
-Dog,Scottish Terrier,,Terrier,
-Dog,Jack Russell Terrier/Boston Terrier,,Non-Sporting; Terrier,
-Dog,Lhasa Apso/Yorkshire Terrier,,Non-Sporting; Toy,
-Dog,Mastiff/German Shepherd,,Herding; Working,
-Dog,Maltese/Cocker Spaniel,,Sporting; Toy,
-Dog,Shetland Sheepdog/Border Collie,,Herding,
-Dog,Greyhound/Airedale Terrier,,Hound; Terrier,
-Dog,Australian Shepherd/Nova Scotia Duck Tolling Retriever,,Herding; Sporting,
-Dog,Australian Cattle Dog/Dalmatian,,Non-Sporting; Herding,
-Dog,Newfoundland/Border Collie,,Herding; Working,
-Dog,Blue Lacy,,Herding,
-Dog,Norfolk Terrier/Yorkshire Terrier,,Toy; Terrier,
-Dog,Port Water Dog Mix,,Working,
-Dog,Pit Bull,,Terrier,
-Dog,Dogue De Bordeaux/Labrador Retriever,,Sporting; Working,
-Dog,Catahoula/Treeing Walker Coonhound,,Hound; Toy,
-Dog,American Bulldog/Basset Hound,,Hound,
-Dog,Patterdale Terr/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Australian Kelpie/Dachshund,,Hound; Terrier,
-Dog,Welsh Springer Spaniel Mix,,Sporting,
-Dog,Lowchen/Miniature Poodle,,Non-Sporting; Toy,
-Dog,Australian Cattle Dog/Bloodhound,,Herding; Hound,
-Dog,Whippet/Australian Kelpie,,Hound; Terrier,
-Dog,Australian Kelpie/Miniature Pinscher,,Toy; Terrier,
-Dog,Wire Hair Fox Terrier/Beagle,,Hound; Terrier,
-Dog,Bichon Frise/Miniature Poodle,,Non-Sporting; Toy,
-Dog,American Pit Bull Terrier,,Terrier,
-Dog,English Pointer/Labrador Retriever,,Sporting,
-Dog,Pit Bull/Doberman Pinsch,,Terrier; Working,
-Dog,Plott Hound/Rhod Ridgeback,,Hound,
-Dog,Jack Russell Terrier/Dachshund,,Hound; Terrier,
-Dog,Smooth Fox Terrier/Rat Terrier,,Terrier,
-Dog,Great Pyrenees/Golden Retriever,,Sporting; Working,
-Dog,Boxer/Australian Cattle Dog,,Herding; Working,
-Dog,Shiba Inu/Dachshund,,Non-Sporting; Hound,
-Dog,Mastiff/Labrador Retriever,,Sporting; Working,
-Dog,Queensland Heeler/Basset Hound,,Herding; Hound,
-Dog,Blue Lacy/Pit Bull,,Herding; Terrier,
-Dog,Presa Canario,,Working,
-Dog,Pug/Beagle,,Hound; Toy,
-Dog,Bulldog/Pit Bull,,Non-Sporting; Terrier,
-Dog,Border Collie/Dalmatian,,Non-Sporting; Herding,
-Dog,Labrador Retriever/German Shepherd,,Sporting; Herding,
-Dog,Dachshund Wirehair/Toy Poodle,,Non-Sporting; Hound; Toy,
-Dog,English Springer Spaniel Mix,,Sporting,
-Dog,Border Collie/German Shepherd,,Herding,
-Dog,Newfoundland/Labrador Retriever,,Sporting; Working,
-Dog,Plott Hound/Mastiff,,Hound; Working,
-Dog,Labrador Retriever/St. Bernard Rough Coat,,Sporting; Working,
-Dog,Border Collie/Parson Russell Terrier,,Herding; Terrier,
-Dog,Pointer/Catahoula,,Sporting; Toy,
-Dog,Dogue De Bordeaux/American Bulldog,,Hound; Working,
-Dog,Collie Smooth/Siberian Husky,,Herding; Working,
-Dog,Jack Russell Terrier/Pug,,Toy; Terrier,
-Dog,Chihuahua Shorthair/Border Terrier,,Toy; Terrier,
-Dog,Catahoula Mix,,Toy,
-Dog,Spinone Italiano Mix,,Sporting,
-Dog,Border Terrier/Dachshund Wirehair,,Hound; Terrier,
-Dog,Australian Kelpie/Australian Shepherd,,Herding; Terrier,
-Dog,German Shepherd/Cardigan Welsh Corgi,,Herding,
-Dog,Dachshund Longhair/Cocker Spaniel,,Sporting; Hound,
-Dog,Dalmatian,,Non-Sporting,
-Dog,Scottish Terrier/Miniature Poodle,,Toy; Terrier,
-Dog,St. Bernard Rough Coat,,Working,
-Dog,Glen Of Imaal Mix,,Terrier,
-Dog,Maltese/Border Terrier,,Toy; Terrier,
-Dog,Australian Cattle Dog/Queensland Heeler,,Herding,
-Dog,Anatol Shepherd/Labrador Retriever,,Sporting; Working,
-Dog,Keeshond,,Non-Sporting,
-Dog,Catahoula/Irish Wolfhound,,Hound; Toy,
-Dog,Labrador Retriever,,Sporting,
-Dog,Border Collie/Chow Chow,,Non-Sporting; Herding,
-Dog,Chihuahua Shorthair/Jack Russell Terrier,,Toy; Terrier,
-Dog,Dalmatian/Australian Cattle Dog,,Non-Sporting; Herding,
-Dog,Bull Terrier/Jack Russell Terrier,,Terrier,
-Dog,Chihuahua Shorthair/Beagle,,Hound; Toy,
-Dog,American Staffordshire Terrier/Rhod Ridgeback,,Hound; Terrier,
-Dog,Siberian Husky/Chinese Sharpei,,Toy; Working,
-Dog,Pit Bull/Queensland Heeler,,Herding; Terrier,
-Dog,Chihuahua Shorthair/Wire Hair Fox Terrier,,Toy; Terrier,
-Dog,Cane Corso Mix,,Working,
-Dog,Miniature Schnauzer/Queensland Heeler,,Herding; Terrier,
-Dog,German Shepherd/Boxer,,Herding; Working,
-Dog,Maltese/Chihuahua Shorthair,,Toy,
-Dog,Border Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Labrador Retriever/Miniature Poodle,,Sporting; Toy,
-Dog,Lhasa Apso/Miniature Poodle,,Non-Sporting; Toy,
-Dog,Airedale Terrier Mix,,Terrier,
-Dog,Rhod Ridgeback/Labrador Retriever,,Sporting; Hound,
-Dog,Dachshund/Cardigan Welsh Corgi,,Herding; Hound,
-Dog,Dachshund/Chinese Sharpei,,Toy; Hound,
-Dog,Great Pyrenees/English Setter,,Sporting; Working,
-Dog,Labrador Retriever/Bloodhound,,Sporting; Hound,
-Dog,Miniature Schnauzer/Scottish Terrier,,Terrier,
-Dog,Great Dane/Pit Bull,,Terrier; Working,
-Dog,American Bulldog/Chinese Sharpei,,Toy; Hound,
-Dog,Shiba Inu/Chinese Sharpei,,Non-Sporting; Toy,
-Dog,Black Mouth Cur/Blue Lacy,,Herding; Hound,
-Dog,German Shepherd/Chinese Sharpei,,Herding; Toy,
-Dog,Newfoundland/Queensland Heeler,,Herding; Working,
-Dog,Standard Schnauzer/Soft Coated Wheaten Terrier,,Terrier; Working,
-Dog,Border Collie/Plott Hound,,Herding; Hound,
-Dog,Pug/French Bulldog,,Non-Sporting; Toy,
-Dog,Boxer/American Staffordshire Terrier,,Terrier; Working,
-Dog,Shih Tzu/Dachshund,,Hound; Toy,
-Dog,Norfolk Terrier/Bruss Griffon,,Toy; Terrier,
-Dog,Miniature Poodle/Cairn Terrier,,Toy; Terrier,
-Dog,Schnauzer Giant Mix,,Working,
-Dog,Dachshund Longhair/Cairn Terrier,,Hound; Terrier,
-Dog,Chow Chow/Labrador Retriever,,Non-Sporting; Sporting,
-Dog,Greater Swiss Mountain Dog Mix,,Working,
-Dog,Jack Russell Terrier/Unknown,,Herding; Terrier,
-Dog,Pit Bull/Dachshund,,Hound; Terrier,
-Dog,Catahoula/Black Mouth Cur,,Hound; Toy,
-Dog,Chow Chow/Chinese Sharpei,,Non-Sporting; Toy,
-Dog,Maltese/Yorkshire,,Toy,
-Dog,American Wirehair Mix,,Terrier,
-Dog,Finnish Spitz/Dachshund,,Non-Sporting; Hound,
-Dog,Basset Hound/Golden Retriever,,Sporting; Hound,
-Dog,Pit Bull/Border Collie,,Herding; Terrier,
-Dog,Cairn Terrier/Affenpinscher,,Toy; Terrier,
-Dog,Chow Chow/Australian Kelpie,,Non-Sporting; Terrier,
-Dog,Beagle/American Staffordshire Terrier,,Hound; Terrier,
-Dog,Siberian Husky,,Working,
-Dog,Border Terrier/Dachshund,,Hound; Terrier,
-Dog,Boxer/Chinese Sharpei,,Toy; Working,
-Dog,English Bulldog,,Non-Sporting,
-Dog,Labrador Retriever/Rhod Ridgeback,,Sporting; Hound,
-Dog,Shih Tzu/Affenpinscher,,Toy,
-Dog,American Pit Bull Terrier/Pit Bull,,Terrier,
-Dog,German Shepherd/Chow Chow,,Non-Sporting; Herding,
-Dog,Beagle/Cardigan Welsh Corgi,,Herding; Hound,
-Dog,Irish Wolfhound Mix,,Hound,
-Dog,Pit Bull/Flat Coat Retriever,,Sporting; Terrier,
-Dog,West Highland/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Australian Shepherd/Chihuahua Shorthair,,Herding; Toy,
-Dog,Yorkshire Terrier/Chinese Crested,,Toy,
-Dog,Boston Terrier Mix,,Non-Sporting,
-Dog,Alaskan Malamute/German Shepherd,,Herding; Working,
-Dog,Australian Shepherd/Rhod Ridgeback,,Herding; Hound,
-Dog,Miniature Schnauzer/West Highland,,Terrier,
-Dog,Miniature Poodle/Miniature Schnauzer,,Toy; Terrier,
-Dog,Cairn Terrier/Shih Tzu,,Toy; Terrier,
-Dog,Alaskan Husky Mix,,Working,
-Dog,Jack Russell Terrier/Italian Greyhound,,Toy; Terrier,
-Dog,Siberian Husky Mix,,Working,
-Dog,Norfolk Terrier Mix,,Terrier,
-Dog,Boxer/Beagle,,Hound; Working,
-Dog,Cardigan Welsh Corgi/Dachshund,,Herding; Hound,
-Dog,Vizsla,,Sporting,
-Dog,Boxer/Akita,,Working,
-Dog,Beagle/Pembroke Welsh Corgi,,Herding; Hound,
-Dog,Dachshund/Beagle,,Hound,
-Dog,Chihuahua Shorthair/Pomeranian,,Toy,
-Dog,Boston Terrier,,Non-Sporting,
-Dog,Boxer/Miniature Poodle,,Toy; Working,
-Dog,Bluetick Hound Mix,,Hound,
-Dog,Siamese,,Working,
-Dog,Cocker Spaniel/Pembroke Welsh Corgi,,Sporting; Herding,
-Dog,American Bulldog/Schnauzer Giant,,Hound; Working,
-Dog,Rhod Ridgeback/Pit Bull,,Hound; Terrier,
-Dog,Pit Bull/Carolina Dog,,Terrier; Working,
-Dog,Boxer/American Pit Bull Terrier,,Terrier; Working,
-Dog,American Foxhound,,Hound,
-Dog,Bombay Mix,,Sporting,
-Dog,Russian Blue Mix,,Working,
-Dog,Newfoundland/Australian Cattle Dog,,Herding; Working,
-Dog,Doberman Pinsch Mix,,Working,
-Dog,Boxer/Pointer,,Sporting; Working,
-Dog,Angora/Persian,,Toy; Working,
-Dog,Manchester Terrier/Norfolk Terrier,,Toy; Terrier,
-Dog,Dachshund/German Shepherd,,Herding; Hound,
-Dog,Boston Terrier/Pointer,,Non-Sporting; Sporting,
-Dog,Australian Cattle Dog/Staffordshire,,Herding; Terrier,
-Dog,Pit Bull/Blue Lacy,,Herding; Terrier,
-Dog,Dachshund,,Hound,
-Dog,German Shepherd/Collie Rough,,Herding,
-Dog,Plott Hound Mix,,Hound,
-Dog,Rat Terrier/Boston Terrier,,Non-Sporting; Terrier,
-Dog,Border Collie/Dachshund,,Herding; Hound,
-Dog,German Shepherd/Redbone Hound,,Herding; Hound,
-Dog,Border Collie/Standard Schnauzer,,Herding; Working,
-Dog,Bichon Frise/Toy Poodle,,Non-Sporting; Toy,
-Dog,Labrador Retriever/Shiba Inu,,Non-Sporting; Sporting,
-Dog,Labrador Retriever/Pembroke Welsh Corgi,,Sporting; Herding,
-Dog,Pomeranian/Border Terrier,,Toy; Terrier,
-Dog,Australian Shepherd Mix,,Herding,
-Dog,Border Collie/Pembroke Welsh Corgi,,Herding,
-Dog,Basset Hound/English Cocker Spaniel,,Sporting; Hound,
-Dog,Chihuahua Shorthair/Basset Hound,,Hound; Toy,
-Dog,Cairn Terrier Mix,,Terrier,
-Dog,Dachshund Wirehair/Miniature Schnauzer,,Hound; Terrier,
-Dog,Rottweiler/Basset Hound,,Hound; Working,
-Dog,Miniature Poodle/Bichon Frise,,Non-Sporting; Toy,
-Dog,Chihuahua Shorthair/Cardigan Welsh Corgi,,Herding; Toy,
-Dog,Pit Bull/Pointer,,Sporting; Terrier,
-Dog,Australian Cattle Dog/Vizsla,,Herding; Sporting,
-Dog,Beagle/Pit Bull,,Hound; Terrier,
-Dog,Australian Kelpie/Shiba Inu,,Non-Sporting; Terrier,
-Dog,Chinese Sharpei/Airedale Terrier,,Toy; Terrier,
-Dog,Great Pyrenees/Collie Rough,,Herding; Working,
-Dog,Cavalier Span/Toy Poodle,,Non-Sporting; Sporting; Toy,
-Dog,Black Mouth Cur/German Shepherd,,Herding; Hound,
-Dog,American Foxhound/Labrador Retriever,,Sporting; Hound,
-Dog,Maltese,,Toy,
-Dog,Pointer/Labrador Retriever,,Sporting,
-Dog,Plott Hound/Bull Terrier,,Hound; Terrier,
-Dog,Pug/Schipperke,,Non-Sporting; Toy,
-Dog,Norwich Terrier Mix,,Terrier,
-Dog,Shetland Sheepdog Mix,,Herding,
-Dog,French Bulldog/Miniature Schnauzer,,Non-Sporting; Terrier,
-Dog,Silky Terrier/Maltese,,Toy,
-Dog,Australian Kelpie/Blue Lacy,,Herding; Terrier,
-Dog,Labrador Retriever/Dalmatian,,Non-Sporting; Sporting,
-Dog,Boykin Span Mix,,Sporting,
-Dog,Feist/Chihuahua Shorthair,,Non-Sporting; Toy,
-Dog,Belgian Malinois/Australian Shepherd,,Herding,
-Dog,Redbone Hound/Anatol Shepherd,,Hound; Working,
-Dog,Rat Terrier/Chihuahua Longhair,,Toy; Terrier,
-Dog,Yorkshire Terrier/Pomeranian,,Toy,
-Dog,Chihuahua Shorthair/Whippet,,Hound; Toy,
-Dog,Maltese/Dachshund,,Hound; Toy,
-Dog,Jack Russell Terrier/Border Collie,,Herding; Terrier,
-Dog,American Bulldog,,Hound,
-Dog,Miniature Schnauzer/Cairn Terrier,,Terrier,
-Dog,Miniature Pinscher/Whippet,,Hound; Toy,
-Dog,German Shepherd/Catahoula,,Herding; Toy,
-Dog,Border Terrier/Standard Schnauzer,,Terrier; Working,
-Dog,Catahoula/Jack Russell Terrier,,Toy; Terrier,
-Dog,Chihuahua Shorthair/Smooth Fox Terrier,,Toy; Terrier,
-Dog,Australian Shepherd/English Setter,,Herding; Sporting,
-Dog,Golden Retriever/Chow Chow,,Non-Sporting; Sporting,
-Dog,English Foxhound Mix,,Hound,
-Dog,Blue Lacy Mix,,Herding,
-Dog,Jack Russell Terrier/Beagle,,Hound; Terrier,
-Dog,Basenji Mix,,Hound,
-Dog,Dachshund/Belgian Malinois,,Herding; Hound,
-Dog,American Staffordshire Terrier/Plott Hound,,Hound; Terrier,
-Dog,Shiba Inu,,Non-Sporting,
-Dog,Domestic Shorthair,,Sporting,
-Dog,Pit Bull/Chow Chow,,Non-Sporting; Terrier,
-Dog,Standard Poodle,,Working,
-Dog,Carolina Dog,,Working,
-Dog,Lhasa Apso/Cocker Spaniel,,Non-Sporting; Sporting,
-Dog,Doberman Pinsch/Pit Bull,,Terrier; Working,
-Dog,Staffordshire/Australian Cattle Dog,,Herding; Terrier,
-Dog,Toy Poodle/Yorkshire Terrier,,Non-Sporting; Toy,
-Dog,Treeing Tennesse Brindle,,Toy,
-Dog,German Shepherd/Golden Retriever,,Herding; Sporting,
-Dog,Harrier/Catahoula,,Toy; Hound,
-Dog,Miniature Pinscher/Pomeranian,,Toy,
-Dog,Chinese Sharpei/American Bulldog,,Hound; Toy,
-Dog,Border Collie/Siberian Husky,,Herding; Working,
-Dog,Great Pyrenees/Border Collie,,Herding; Working,
-Dog,Mastiff/Dutch Shepherd,,Herding; Working,
-Dog,German Wirehaired Pointer/Labrador Retriever,,Sporting,
-Dog,Collie Rough/Chinese Sharpei,,Herding; Toy,
-Dog,Boxer/Greyhound,,Hound; Working,
-Dog,Whippet/Whippet,,Hound,
-Dog,Cardigan Welsh Corgi/Australian Cattle Dog,,Herding,
-Dog,Himalayan,,Non-Sporting,
-Dog,Border Collie/Pit Bull,,Herding; Terrier,
-Dog,Maltese/Jack Russell Terrier,,Toy; Terrier,
-Dog,German Shepherd/Swedish Vallhund,,Herding,
-Dog,Burmese,,Toy,
-Dog,Chihuahua Shorthair/Shih Tzu,,Toy,
-Dog,Basset Hound,,Hound,
-Dog,American Pit Bull Terrier/American Pit Bull Terrier,,Terrier,
-Dog,Domestic Medium Hair,,Terrier,
-Dog,Pointer/Chinese Sharpei,,Sporting; Toy,
-Dog,Jack Russell Terrier/Manchester Terrier,,Toy; Terrier,
-Dog,Vizsla/Staffordshire,,Sporting; Terrier,
-Dog,Great Pyrenees/Australian Shepherd,,Herding; Working,
-Dog,Javanese Mix,,Toy,
-Dog,Chihuahua Shorthair/Miniature Schnauzer,,Toy; Terrier,
-Dog,Chow Chow/Australian Cattle Dog,,Non-Sporting; Herding,
-Dog,Chihuahua Longhair/Cocker Spaniel,,Sporting; Toy,
-Dog,Border Collie/Labrador Retriever,,Herding; Sporting,
-Dog,American Foxhound Mix,,Hound,
-Dog,English Shepherd,,Sporting,
-Dog,Australian Shepherd/Boxer,,Herding; Working,
-Dog,Australian Kelpie,,Terrier,
-Dog,Chihuahua Shorthair/French Bulldog,,Non-Sporting; Toy,
-Dog,Smooth Fox Terrier/Jack Russell Terrier,,Terrier,
-Dog,Pembroke Welsh Corgi,,Herding,
-Dog,Pembroke Welsh Corgi/Dachshund,,Herding; Hound,
-Dog,English Bulldog Mix,,Non-Sporting,
-Dog,Norfolk Terrier/Standard Poodle,,Terrier; Working,
-Dog,Chow Chow/Pit Bull,,Non-Sporting; Terrier,
-Dog,German Shepherd/Alaskan Husky,,Herding; Working,
-Dog,Dachshund Longhair/Chihuahua Shorthair,,Toy; Hound,
-Dog,Canaan Dog/Pit Bull,,Terrier; Working,
-Dog,Pit Bull/Border Terrier,,Terrier,
-Dog,Lhasa Apso,,Non-Sporting,
-Dog,Bull Terrier Mix,,Terrier,
-Dog,Maltese/Papillon,,Toy,
-Dog,Anatol Shepherd/Redbone Hound,,Hound; Working,
-Dog,Chihuahua Shorthair/German Shepherd,,Herding; Toy,
-Dog,Soft Coated Wheaten Terrier/Yorkshire Terrier,,Toy; Terrier,
-Dog,Chihuahua Shorthair/Basenji,,Hound; Toy,
-Dog,Pug/Pekingese,,Toy,
-Dog,Jack Russell Terrier/Pointer,,Sporting; Terrier,
-Dog,American Eskimo Mix,,Non-Sporting,
-Dog,Domestic Longhair/Rex,,Hound,
-Dog,Boxer/Pit Bull,,Terrier; Working,
-Dog,Wire Hair Fox Terrier/German Shepherd,,Herding; Terrier,
-Dog,Labrador Retriever/Newfoundland,,Sporting; Working,
-Dog,Chow Chow/English Cocker Spaniel,,Non-Sporting; Sporting,
-Dog,Cocker Spaniel/Dachshund,,Sporting; Hound,
-Dog,Pomeranian/Chihuahua Shorthair,,Toy,
-Dog,Dutch Shepherd/Anatol Shepherd,,Herding; Working,
-Dog,Flat Coat Retriever/Labrador Retriever,,Sporting,
-Dog,Toy Poodle/Maltese,,Non-Sporting; Toy,
-Dog,Labrador Retriever/Chesa Bay Retr,,Sporting,
-Dog,Cavalier Span Mix,,Sporting,
-Dog,Rat Terrier/English Pointer,,Sporting; Terrier,
-Dog,Manchester Terrier/Australian Kelpie,,Toy; Terrier,
-Dog,Great Dane/Mastiff,,Working,
-Dog,Australian Cattle Dog/American Staffordshire Terrier,,Herding; Terrier,
-Dog,Great Pyrenees/Labrador Retriever,,Sporting; Working,
-Dog,Pekingese/Catahoula,,Toy,
-Dog,Old English Sheepdog,,Herding,
-Dog,Catahoula/Whippet,,Hound; Toy,
-Dog,Norwegian Elkhound Mix,,Hound,
-Dog,Boxer/Catahoula,,Toy; Working,
-Dog,Australian Cattle Dog/Pembroke Welsh Corgi,,Herding,
-Dog,Wire Hair Fox Terrier/Golden Retriever,,Sporting; Terrier,
-Dog,Manchester Terrier/Toy Fox Terrier,,Toy; Terrier,
-Dog,German Shepherd/Pembroke Welsh Corgi,,Herding,
-Dog,American Pit Bull Terrier/Boxer,,Terrier; Working,
-Dog,American Staffordshire Terrier,,Terrier,
-Dog,Pit Bull/Pharaoh Hound,,Hound; Terrier,
-Dog,Flat Coat Retriever/Papillon,,Sporting; Toy,
-Dog,Bernese Mountain Dog/Rottweiler,,Working,
-Dog,Newfoundland/Great Pyrenees,,Working,
-Dog,Dachshund/Parson Russell Terrier,,Hound; Terrier,
-Dog,Mastiff Mix,,Working,
-Dog,Catahoula/Labrador Retriever,,Sporting; Toy,
-Dog,Catahoula/American Pit Bull Terrier,,Toy; Terrier,
-Dog,Dachshund Longhair/Miniature Poodle,,Toy; Hound,
-Dog,Anatol Shepherd/Mastiff,,Working,
-Dog,Black Mouth Cur/Mastiff,,Hound; Working,
-Dog,Beagle/Rat Terrier,,Hound; Terrier,
-Dog,Rottweiler/Chow Chow,,Non-Sporting; Working,
-Dog,Labrador Retriever/Australian Cattle Dog,,Sporting; Herding,
-Dog,Pointer Mix,,Sporting,
-Dog,Wirehaired Pointing Griffon Mix,,Sporting,
-Dog,Chihuahua Shorthair/Chinese Sharpei,,Toy,
-Dog,Podengo Pequeno Mix,,Non-Sporting; Toy,
-Dog,English Bulldog/Cairn Terrier,,Non-Sporting; Terrier,
-Dog,Pointer/Rhod Ridgeback,,Sporting; Hound,
-Dog,Greyhound,,Hound,
-Dog,Border Terrier/Labrador Retriever,,Sporting; Terrier,
-Dog,Rat Terrier/Beagle,,Hound; Terrier,
-Dog,American Staffordshire Terrier/Labrador Retriever,,Sporting; Terrier,
-Dog,Chihuahua Shorthair/Mexican Hairless,,Toy,
-Dog,Australian Kelpie/Whippet,,Hound; Terrier,
-Dog,Alaskan Malamute/Border Collie,,Herding; Working,
-Dog,Pug/Pomeranian,,Toy,
-Dog,Manx Mix,,Non-Sporting,
-Dog,Cardigan Welsh Corgi/Cocker Spaniel,,Herding; Sporting,
-Dog,Australian Cattle Dog/Labrador Retriever,,Herding; Sporting,
-Dog,Soft Coated Wheaten Terrier,,Terrier,
-Dog,Scottish Terrier/Basset Hound,,Hound; Terrier,
-Dog,Norwich Terrier/Cairn Terrier,,Terrier,
-Dog,Rottweiler/Boxer,,Working,
-Dog,Dachshund/Pembroke Welsh Corgi,,Herding; Hound,
-Dog,Collie Smooth,,Herding,
-Dog,Great Dane/Anatol Shepherd,,Working,
-Dog,Chinese Sharpei Mix,,Toy,
-Dog,Ragdoll Mix,,Herding,
-Dog,Labrador Retriever/Harrier,,Sporting; Hound,
-Dog,Bruss Griffon/Chihuahua Shorthair,,Toy,
-Dog,Norfolk Terrier,,Terrier,
-Dog,Border Collie/Whippet,,Herding; Hound,
-Dog,Leonberger Mix,,Working,
-Dog,Soft Coated Wheaten Terrier/Standard Poodle,,Terrier; Working,
-Dog,Alaskan Husky/Australian Shepherd,,Herding; Working,
-Dog,Chesa Bay Retr/Labrador Retriever,,Sporting,
-Dog,Beagle/Pug,,Toy; Hound,
-Dog,Lhasa Apso/Dachshund,,Non-Sporting; Hound,
-Dog,Labrador Retriever/Great Pyrenees,,Sporting; Working,
-Dog,Shetland Sheepdog/Cardigan Welsh Corgi,,Herding,
-Dog,Border Terrier/Rat Terrier,,Terrier,
-Dog,Wire Hair Fox Terrier,,Terrier,
-Dog,Basenji/Chow Chow,,Non-Sporting; Hound,
-Dog,Mastiff/Boxer,,Working,
-Dog,Queensland Heeler/Border Collie,,Herding,
-Dog,Chihuahua Shorthair Mix,,Toy,
-Dog,American Foxhound/Pointer,,Sporting; Hound,
-Dog,Harrier/Pointer,,Sporting; Hound,
-Dog,Schnauzer Giant/Labrador Retriever,,Sporting; Working,
-Dog,Boxer/Anatol Shepherd,,Working,
-Dog,Miniature Schnauzer/Pug,,Toy; Terrier,
-Dog,Labrador Retriever/Weimaraner,,Sporting,
-Dog,Labrador Retriever/Mastiff,,Sporting; Working,
-Dog,Collie Rough/Pointer,,Herding; Sporting,
-Dog,Yorkshire Terrier/Toy Poodle,,Non-Sporting; Toy,
-Dog,French Bulldog/Chihuahua Shorthair,,Non-Sporting; Toy,
-Dog,Australian Cattle Dog/Collie Smooth,,Herding,
-Dog,Dogo Argentino Mix,,Working,
-Dog,Scottish Terrier/Cairn Terrier,,Terrier,
-Dog,Soft Coated Wheaten Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Chihuahua Shorthair/Welsh Terrier,,Toy; Terrier,
-Dog,Flat Coat Retriever/Australian Cattle Dog,,Sporting; Herding,
-Dog,Plott Hound,,Hound,
-Dog,Pit Bull/Chinese Sharpei,,Toy; Terrier,
-Dog,Feist Mix,,Non-Sporting,
-Dog,Dachshund Wirehair/Border Terrier,,Hound; Terrier,
-Dog,Angora Mix,,Working,
-Dog,Chihuahua Longhair/Pomeranian,,Toy,
-Dog,American Bulldog/Great Pyrenees,,Hound; Working,
-Dog,English Bulldog/Beagle,,Non-Sporting; Hound,
-Dog,Labrador Retriever/Spanish Water Dog,,Sporting; Herding,
-Dog,Weimaraner/Labrador Retriever,,Sporting,
-Dog,Blue Lacy/Australian Kelpie,,Herding; Terrier,
-Dog,Canaan Dog Mix,,Working,
-Dog,Himalayan Mix,,Non-Sporting,
-Dog,Australian Shepherd/Chow Chow,,Non-Sporting; Herding,
-Dog,Italian Greyhound/Beagle,,Hound; Toy,
-Dog,Jack Russell Terrier/Welsh Terrier,,Terrier,
-Dog,Black/Tan Hound/Black Mouth Cur,,Herding; Hound,
-Dog,English Bulldog/American Staffordshire Terrier,,Non-Sporting; Terrier,
-Dog,Cairn Terrier/Miniature Schnauzer,,Terrier,
-Dog,Dachshund/Havanese,,Toy; Hound,
-Dog,Australian Kelpie/Chinese Sharpei,,Toy; Terrier,
-Dog,English Bulldog/Boxer,,Non-Sporting; Working,
-Dog,Bruss Griffon/Maltese,,Toy,
-Dog,Dachshund Longhair,,Hound,
-Dog,Jack Russell Terrier/Brittany,,Sporting; Terrier,
-Dog,Jack Russell Terrier/Cairn Terrier,,Terrier,
-Dog,Dachshund Wirehair Mix,,Hound,
-Dog,Pit Bull/Bull Terrier,,Terrier,
-Dog,Australian Shepherd/Labrador Retriever,,Herding; Sporting,
-Dog,American Staffordshire Terrier/Pit Bull,,Terrier,
-Dog,Black Mouth Cur,,Hound,
-Dog,Nova Scotia Duck Tolling Retriever Mix,,Sporting,
-Dog,Beauceron,,Herding,
-Dog,Blue Lacy/Great Dane,,Herding; Working,
-Dog,Black Mouth Cur/Australian Cattle Dog,,Herding; Hound,
-Dog,Papillon/Australian Cattle Dog,,Herding; Toy,
-Dog,Plott Hound/Whippet,,Hound,
-Dog,Staffordshire/Boxer,,Terrier; Working,
-Dog,Pug/Boston Terrier,,Non-Sporting; Toy,
-Dog,Chihuahua Shorthair/Affenpinscher,,Toy,
-Dog,Silky Terrier,,Toy,
-Dog,Affenpinscher Mix,,Toy,
-Dog,Cardigan Welsh Corgi Mix,,Herding,
-Dog,Hovawart Mix,,Sporting,
-Dog,English Coonhound/Italian Greyhound,,Toy; Hound,
-Dog,Rottweiler Mix,,Working,
-Dog,Manchester Terrier/Pembroke Welsh Corgi,,Herding; Toy; Terrier,
-Dog,Doberman Pinsch/Catahoula,,Toy; Working,
-Dog,Labrador Retriever/Vizsla,,Sporting,
-Dog,Dachshund/Bloodhound,,Hound,
-Dog,Airedale Terrier,,Terrier,
-Dog,Irish Terrier/Irish Wolfhound,,Hound; Terrier,
-Dog,Chihuahua Longhair/Pug,,Toy,
-Dog,Australian Shepherd/Siberian Husky,,Herding; Working,
-Dog,Jack Russell Terrier/Shih Tzu,,Toy; Terrier,
-Dog,Labrador Retriever/Doberman Pinsch,,Sporting; Working,
-Dog,Dogo Argentino/Labrador Retriever,,Sporting; Working,
-Dog,Bichon Frise Mix,,Non-Sporting,
-Dog,Jack Russell Terrier/Labrador Retriever,,Sporting; Terrier,
-Dog,St. Bernard Rough Coat/German Shepherd,,Herding; Working,
-Dog,Whippet/Borzoi,,Hound,
-Dog,Finnish Spitz,,Non-Sporting,
-Dog,Dachshund Wirehair/Pbgv,,Toy; Hound,
-Dog,Dachshund/Harrier,,Hound,
-Dog,Pomeranian/Schipperke,,Non-Sporting; Toy,
-Dog,Miniature Poodle/American Eskimo,,Non-Sporting; Toy,
-Dog,Boxer/Dogue De Bordeaux,,Working,
-Dog,Parson Russell Terrier Mix,,Terrier,
-Dog,Great Dane/Boxer,,Working,
-Dog,German Shepherd/Doberman Pinsch,,Herding; Working,
-Dog,Pit Bull/Labrador Retriever,,Sporting; Terrier,
-Dog,Australian Cattle Dog/Rhod Ridgeback,,Herding; Hound,
-Dog,Greyhound Mix,,Hound,
-Dog,Australian Kelpie/American Pit Bull Terrier,,Terrier,
-Dog,Pembroke Welsh Corgi/Pit Bull,,Herding; Terrier,
-Dog,Chinese Sharpei/Great Dane,,Toy; Working,
-Dog,Chihuahua Shorthair/Dachshund,,Hound; Toy,
-Dog,Treeing Walker Coonhound/Australian Cattle Dog,,Herding; Hound,
-Dog,Italian Greyhound/Chihuahua Shorthair,,Toy,
-Dog,German Shepherd/Collie Smooth,,Herding,
-Dog,Flat Coat Retriever/German Shepherd,,Sporting; Herding,
-Dog,Swedish Vallhund Mix,,Herding,
-Dog,Chihuahua Shorthair/Cairn Terrier,,Toy; Terrier,
-Dog,Golden Retriever/Finnish Spitz,,Non-Sporting; Sporting,
-Dog,Labrador Retriever/Chow Chow,,Non-Sporting; Sporting,
-Dog,Border Collie/Mastiff,,Herding; Working,
-Dog,Queensland Heeler/Chihuahua Shorthair,,Herding; Toy,
-Dog,Pbgv,,Toy,
-Dog,German Shorthair Pointer/Australian Cattle Dog,,Sporting; Herding,
-Dog,Miniature Pinscher/Dachshund,,Hound; Toy,
-Dog,Miniature Pinscher,,Toy,
-Dog,Pit Bull/Alaskan Husky,,Terrier; Working,
-Dog,Devon Rex Mix,,Working,
-Dog,Cairn Terrier/Yorkshire Terrier,,Toy; Terrier,
-Dog,American Staffordshire Terrier/French Bulldog,,Non-Sporting; Terrier,
-Dog,American Pit Bull Terrier Mix,,Terrier,
-Dog,English Shepherd Mix,,Sporting,
-Dog,Australian Cattle Dog/Beagle,,Herding; Hound,
-Dog,Beagle/Staffordshire,,Hound; Terrier,
-Dog,Alaskan Malamute/Alaskan Husky,,Working,
-Dog,Catahoula/Cardigan Welsh Corgi,,Herding; Toy,
-Dog,Black/Tan Hound/Siberian Husky,,Herding; Hound; Working,
-Dog,German Wirehaired Pointer,,Sporting,
-Dog,German Shepherd/Bull Terrier,,Herding; Terrier,
-Dog,Labrador Retriever/American Foxhound,,Sporting; Hound,
-Dog,Great Dane Mix,,Working,
-Dog,Jack Russell Terrier/Australian Cattle Dog,,Herding; Terrier,
-Dog,Smooth Fox Terrier Mix,,Terrier,
-Dog,Lowchen Mix,,Non-Sporting,
-Dog,Basset Hound/Australian Shepherd,,Herding; Hound,
-Dog,American Staffordshire Terrier Mix,,Terrier,
-Dog,Maltese/Lhasa Apso,,Non-Sporting; Toy,
-Dog,Dachshund Longhair Mix,,Hound,
-Dog,Bluetick Hound/Australian Kelpie,,Hound; Terrier,
-Dog,Labrador Retriever/Alaskan Malamute,,Sporting; Working,
-Dog,Dachshund/Australian Cattle Dog,,Herding; Hound,
-Dog,Yorkshire Terrier/Dachshund Wirehair,,Hound; Toy,
-Dog,Dutch Shepherd,,Herding,
-Dog,Cairn Terrier/Chihuahua Longhair,,Toy; Terrier,
-Dog,Papillon/Skye Terrier,,Toy; Terrier,
-Dog,Mastiff/Pit Bull,,Terrier; Working,
-Dog,Queensland Heeler Mix,,Herding,
-Dog,Labrador Retriever/Greyhound,,Sporting; Hound,
-Dog,Boxer/German Shepherd,,Herding; Working,
-Dog,Snowshoe Mix,,Non-Sporting,
-Dog,Labrador Retriever/Queensland Heeler,,Sporting; Herding,
-Dog,Domestic Medium Hair/Siamese,,Terrier; Working,
-Dog,Cardigan Welsh Corgi/Australian Shepherd,,Herding,
-Dog,Beagle/Australian Shepherd,,Herding; Hound,
-Dog,Sealyham Terr Mix,,Terrier,
-Dog,Redbone Hound/Boxer,,Hound; Working,
-Dog,Presa Canario Mix,,Working,
-Dog,Manx/Domestic Longhair,,Non-Sporting; Hound,
-Dog,Australian Cattle Dog Mix,,Herding,
-Dog,Chihuahua Shorthair/Border Collie,,Herding; Toy,
-Dog,Plott Hound/German Shepherd,,Herding; Hound,
-Dog,Miniature Pinscher/Pug,,Toy,
-Dog,Vizsla/Dachshund,,Sporting; Hound,
-Dog,Collie Smooth/Boxer,,Herding; Working,
-Dog,Pit Bull/Basset Hound,,Hound; Terrier,
-Dog,Black/Tan Hound/Labrador Retriever,,Herding; Hound; Sporting,
-Dog,Maltese/Toy Poodle,,Non-Sporting; Toy,
-Dog,Standard Schnauzer,,Working,
-Dog,Dutch Shepherd/Labrador Retriever,,Herding; Sporting,
-Dog,Abyssinian Mix,,Working,
-Dog,Vizsla Mix,,Sporting,
-Dog,Australian Shepherd/Beagle,,Herding; Hound,
-Dog,Shih Tzu/Cocker Spaniel,,Sporting; Toy,
-Dog,Turkish Van Mix,,Herding,
-Dog,Collie Rough Mix,,Herding,
-Dog,Lhasa Apso Mix,,Non-Sporting,
-Dog,Chinese Sharpei/Pit Bull,,Toy; Terrier,
-Dog,Rhod Ridgeback Mix,,Hound,
-Dog,Manchester Terrier Mix,,Toy; Terrier,
-Dog,Jack Russell Terrier/Basset Hound,,Hound; Terrier,
-Dog,English Setter Mix,,Sporting,
-Dog,Parson Russell Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Border Collie/Rottweiler,,Herding; Working,
-Dog,Chihuahua Longhair/Queensland Heeler,,Herding; Toy,
-Dog,Treeing Walker Coonhound Mix,,Hound,
-Dog,Shih Tzu/Havanese,,Toy,
-Dog,Pembroke Welsh Corgi/Golden Retriever,,Herding; Sporting,
-Dog,Chihuahua Shorthair/Pit Bull,,Toy; Terrier,
-Dog,Shih Tzu Mix,,Toy,
-Dog,Boxer/Doberman Pinsch,,Working,
-Dog,Toy Poodle,,Non-Sporting; Toy,
-Dog,Greyhound/Dalmatian,,Non-Sporting; Hound,
-Dog,Blue Lacy/Weimaraner,,Herding; Sporting,
-Dog,Border Terrier/West Highland,,Terrier,
-Dog,Dachshund Mix,,Hound,
-Dog,Leonberger,,Working,
-Dog,Labrador Retriever/Jack Russell Terrier,,Sporting; Terrier,
-Dog,Pekingese/Miniature Poodle,,Toy,
-Dog,Shetland Sheepdog/Italian Greyhound,,Herding; Toy,
-Dog,Saluki,,Hound,
-Dog,Pit Bull/St. Bernard Smooth Coat,,Terrier; Working,
-Dog,Dachshund Wirehair/Miniature Poodle,,Toy; Hound,
-Dog,Collie Smooth/Beagle,,Herding; Hound,
-Dog,Queensland Heeler/Pointer,,Herding; Sporting,
-Dog,Akita/Chow Chow,,Non-Sporting; Working,
-Dog,Australian Kelpie/Labrador Retriever,,Sporting; Terrier,
-Dog,Papillon/Pomeranian,,Toy,
-Dog,Australian Cattle Dog/Great Pyrenees,,Herding; Working,
-Dog,Snowshoe/Ragdoll,,Non-Sporting; Herding,
-Dog,American Eskimo,,Non-Sporting,
-Dog,Italian Greyhound,,Toy,
-Dog,Cymric Mix,,Terrier,
-Dog,Chartreux Mix,,Hound,
-Dog,Anatol Shepherd/Siberian Husky,,Working,
-Dog,Catahoula,,Toy,
-Dog,Old English Bulldog Mix,,Non-Sporting,
-Dog,Labrador Retriever/Boston Terrier,,Non-Sporting; Sporting,
-Dog,French Bulldog/English Bulldog,,Non-Sporting,
-Dog,Labrador Retriever/Pit Bull,,Sporting; Terrier,
-Dog,Bernese Mountain Dog Mix,,Working,
-Dog,Golden Retriever/Akita,,Sporting; Working,
-Dog,Shih Tzu/Maltese,,Toy,
-Dog,British Shorthair,,Sporting,
-Dog,Akita Mix,,Working,
-Dog,Devon Rex,,Working,
-Dog,Dachshund/Dachshund,,Hound,
-Dog,Chihuahua Longhair,,Toy,
-Dog,Shiba Inu/Siberian Husky,,Non-Sporting; Working,
-Dog,Beagle/Pointer,,Sporting; Hound,
-Dog,Rat Terrier/Jack Russell Terrier,,Terrier,
-Dog,Australian Shepherd/Cocker Spaniel,,Herding; Sporting,
-Dog,Turkish Angora Mix,,Toy,
-Dog,Golden Retriever/Collie Rough,,Sporting; Herding,
-Dog,Norfolk Terrier/Dachshund Wirehair,,Hound; Terrier,
-Dog,Miniature Schnauzer/Maltese,,Toy; Terrier,
-Dog,Whippet/Beagle,,Hound,
-Dog,Miniature Poodle/Havanese,,Toy,
-Dog,Chinese Crested Mix,,Toy,
-Dog,Chihuahua Shorthair/Yorkshire Terrier,,Toy,
-Dog,Domestic Medium Hair Mix,,Terrier,
-Dog,Domestic Longhair/Russian Blue,,Hound; Working,
-Dog,Pharaoh Hound/Australian Cattle Dog,,Herding; Hound,
-Dog,Miniature Poodle/Golden Retriever,,Sporting; Toy,
-Dog,American Eskimo/Border Collie,,Non-Sporting; Herding,
-Dog,German Shepherd/Greyhound,,Herding; Hound,
-Dog,Siberian Husky/Anatol Shepherd,,Working,
-Dog,Bernese Mountain Dog,,Working,
-Dog,Cardigan Welsh Corgi/Jack Russell Terrier,,Herding; Terrier,
-Dog,English Coonhound Mix,,Hound,
-Dog,Boykin Span,,Sporting,
-Dog,Unknown Mix,,Herding,
-Dog,Chinese Sharpei/Basset Hound,,Hound; Toy,
-Dog,Staffordshire/English Bulldog,,Non-Sporting; Terrier,
-Dog,Australian Cattle Dog/Alaskan Husky,,Herding; Working,
-Dog,Lhasa Apso/Shih Tzu,,Non-Sporting; Toy,
-Dog,Australian Shepherd/Greyhound,,Herding; Hound,
-Dog,Saluki/Doberman Pinsch,,Hound; Working,
-Dog,Dachshund/Rat Terrier,,Hound; Terrier,
-Dog,Yorkshire Terrier/Cairn Terrier,,Toy; Terrier,
-Dog,Cane Corso,,Working,
-Dog,Belgian Malinois Mix,,Herding,
-Dog,Rhod Ridgeback,,Hound,
-Dog,Labrador Retriever/Beauceron,,Sporting; Herding,
-Dog,Boxer/Labrador Retriever,,Sporting; Working,
-Dog,Miniature Poodle/Beagle,,Hound; Toy,
-Dog,Labrador Retriever/English Springer Spaniel,,Sporting,
-Dog,Miniature Poodle/Border Terrier,,Toy; Terrier,
-Dog,Border Collie/Canaan Dog,,Herding; Working,
-Dog,Chihuahua Shorthair/Boxer,,Toy; Working,
-Dog,Dachshund/English Bulldog,,Non-Sporting; Hound,
-Dog,Redbone Hound/Australian Cattle Dog,,Herding; Hound,
-Dog,Pembroke Welsh Corgi/Chihuahua Shorthair,,Herding; Toy,
-Dog,Chihuahua Longhair/Chihuahua Shorthair,,Toy,
-Dog,German Shepherd/Black/Tan Hound,,Herding; Hound,
-Dog,Boxer/Harrier,,Hound; Working,
-Dog,Anatol Shepherd/Australian Shepherd,,Herding; Working,
-Dog,Pointer/Australian Cattle Dog,,Sporting; Herding,
-Dog,Dogo Argentino,,Working,
-Dog,Border Terrier/Chihuahua Longhair,,Toy; Terrier,
-Dog,Collie Smooth/Labrador Retriever,,Herding; Sporting,
-Dog,Shih Tzu/Cardigan Welsh Corgi,,Herding; Toy,
-Dog,Irish Terrier/Labrador Retriever,,Sporting; Terrier,
-Dog,English Coonhound/Border Collie,,Herding; Hound,
-Dog,Dogue De Bordeaux Mix,,Working,
-Dog,Pit Bull/Siberian Husky,,Terrier; Working,
-Dog,Pit Bull/Anatol Shepherd,,Terrier; Working,
-Dog,Harrier/Labrador Retriever,,Sporting; Hound,
-Dog,Collie Rough,,Herding,
-Dog,Rat Terrier/Pug,,Toy; Terrier,
-Dog,Balinese Mix,,Toy,
-Dog,Cocker Spaniel/Shetland Sheepdog,,Sporting; Herding,
-Dog,Beagle Mix,,Hound,
-Dog,Brittany/Collie Rough,,Sporting; Herding,
-Dog,Beagle/German Shepherd,,Herding; Hound,
-Dog,Rhod Ridgeback/Harrier,,Hound,
-Dog,Labrador Retriever/Black/Tan Hound,,Sporting; Hound; Herding,
-Dog,Dachshund Wirehair/Rat Terrier,,Hound; Terrier,
-Dog,Basset Hound Mix,,Hound,
-Dog,Beagle/Cocker Spaniel,,Sporting; Hound,
-Dog,Akita/Siberian Husky,,Working,
-Dog,American Bulldog Mix,,Hound,
-Dog,Pit Bull/English Bulldog,,Non-Sporting; Terrier,
-Dog,Rat Terrier/Pit Bull,,Terrier,
-Dog,American Bulldog/Pit Bull,,Hound; Terrier,
-Dog,English Pointer Mix,,Sporting,
-Dog,Bulldog,,Non-Sporting,
-Dog,Miniature Poodle/Lhasa Apso,,Non-Sporting; Toy,
-Dog,German Shepherd/Labrador Retriever,,Herding; Sporting,
-Dog,German Shepherd/Alaskan Malamute,,Herding; Working,
-Dog,Chihuahua Shorthair/Miniature Pinscher,,Toy,
-Dog,Pointer/Jack Russell Terrier,,Sporting; Terrier,
-Dog,Jack Russell Terrier/Cavalier Span,,Sporting; Terrier,
-Dog,Soft Coated Wheaten Terrier/Border Terrier,,Terrier,
-Dog,Miniature Poodle/Shih Tzu,,Toy,
-Dog,Labrador Retriever/Plott Hound,,Sporting; Hound,
-Dog,Domestic Longhair/Persian,,Toy; Hound,
-Dog,Australian Cattle Dog/Boxer,,Herding; Working,
-Dog,Pointer/Pit Bull,,Sporting; Terrier,
-Dog,Miniature Poodle/Maltese,,Toy,
-Dog,Yorkshire Terrier Mix,,Toy,
-Dog,Pug/Italian Greyhound,,Toy,
-Dog,Dachshund/English Foxhound,,Hound,
-Dog,Labrador Retriever/Standard Schnauzer,,Sporting; Working,
-Dog,Chinese Sharpei/Labrador Retriever,,Sporting; Toy,
-Dog,Persian Mix,,Toy,
-Dog,Ibizan Hound Mix,,Hound,
-Dog,Pit Bull/American Foxhound,,Hound; Terrier,
-Dog,Rat Terrier/Queensland Heeler,,Herding; Terrier,
-Dog,Bullmastiff,,Working,
-Dog,Belgian Sheepdog,,Herding,
-Dog,Australian Shepherd,,Herding,
-Dog,Tonkinese Mix,,Toy,
-Dog,Labrador Retriever/Whippet,,Sporting; Hound,
-Dog,American Pit Bull Terrier/Chinese Sharpei,,Toy; Terrier,
-Dog,Bruss Griffon/Chihuahua Longhair,,Toy,
-Dog,Labrador Retriever/Brittany,,Sporting,
-Dog,Manx,,Non-Sporting,
-Dog,Bearded Collie,,Herding,
-Dog,Yorkshire Terrier/Parson Russell Terrier,,Toy; Terrier,
-Dog,Norfolk Terrier/Cairn Terrier,,Terrier,
-Dog,Doberman Pinsch/Labrador Retriever,,Sporting; Working,
-Dog,Tibetan Spaniel Mix,,Non-Sporting,
-Dog,Labrador Retriever/Siberian Husky,,Sporting; Working,
-Dog,Cocker Spaniel/Chihuahua Longhair,,Sporting; Toy,
-Dog,Manchester Terrier/Dachshund,,Toy; Hound; Terrier,
-Dog,Boxer/Bulldog,,Non-Sporting; Working,
-Dog,Pekingese/Cavalier Span,,Sporting; Toy,
-Dog,Australian Shepherd/English Springer Spaniel,,Herding; Sporting,
-Dog,Chihuahua Longhair/Rat Terrier,,Toy; Terrier,
-Dog,Rhod Ridgeback/Bullmastiff,,Hound; Working,
-Dog,Rottweiler/Beagle,,Hound; Working,
-Dog,Labrador Retriever/Pointer,,Sporting,
-Dog,Australian Cattle Dog/German Shorthair Pointer,,Herding; Sporting,
-Dog,Cocker Spaniel/Dachshund Longhair,,Sporting; Hound,
-Dog,Dachshund Longhair/Pomeranian,,Toy; Hound,
-Dog,Pit Bull/Black Mouth Cur,,Hound; Terrier,
-Dog,German Shepherd/Siberian Husky,,Herding; Working,
-Dog,Chihuahua Shorthair/Manchester Terrier,,Toy; Terrier,
-Dog,Bulldog/Boston Terrier,,Non-Sporting,
-Dog,Great Dane/Staffordshire,,Terrier; Working,
-Dog,Cocker Spaniel/Chihuahua Shorthair,,Sporting; Toy,
-Dog,Italian Greyhound/Cavalier Span,,Sporting; Toy,
-Dog,Great Pyrenees/Rottweiler,,Working,
-Dog,Akita/Australian Cattle Dog,,Herding; Working,
-Dog,Cocker Spaniel/Toy Poodle,,Non-Sporting; Sporting; Toy,
-Dog,Boston Terrier/Beagle,,Non-Sporting; Hound,
-Dog,Lhasa Apso/Pbgv,,Non-Sporting; Toy,
-Dog,Shih Tzu/Yorkshire Terrier,,Toy,
-Dog,Chihuahua Shorthair/Pekingese,,Toy,
-Dog,Samoyed Mix,,Working,
-Dog,Pekingese,,Toy,
-Dog,Gordon Setter Mix,,Sporting,
-Dog,Beagle/Cavalier Span,,Sporting; Hound,
-Dog,Great Pyrenees/Standard Poodle,,Working,
-Dog,St. Bernard Smooth Coat/Anatol Shepherd,,Working,
-Dog,Australian Cattle Dog/American Foxhound,,Herding; Hound,
-Dog,Australian Terrier Mix,,Terrier,
-Dog,Australian Cattle Dog/Akita,,Herding; Working,
-Dog,Pit Bull/Pit Bull,,Terrier,
-Dog,Welsh Springer Spaniel,,Sporting,
-Dog,St. Bernard Rough Coat/Labrador Retriever,,Sporting; Working,
-Dog,Boston Terrier/Pembroke Welsh Corgi,,Non-Sporting; Herding,
-Dog,Rat Terrier/Basenji,,Hound; Terrier,
-Dog,Welsh Terrier/Wire Hair Fox Terrier,,Terrier,
-Dog,Australian Cattle Dog/Cairn Terrier,,Herding; Terrier,
-Dog,Bruss Griffon/Cairn Terrier,,Toy; Terrier,
-Dog,Shetland Sheepdog/Keeshond,,Non-Sporting; Herding,
-Dog,Labrador Retriever/Dachshund,,Sporting; Hound,
-Dog,Chinese Crested/Papillon,,Toy,
-Dog,Miniature Schnauzer Mix,,Terrier,
-Dog,Neapolitan Mastiff Mix,,Working,
-Dog,Cairn Terrier/West Highland,,Terrier,
-Dog,Afghan Hound Mix,,Hound,
-Dog,Shih Tzu/Cavalier Span,,Sporting; Toy,
-Dog,Brittany Mix,,Sporting,
-Dog,Chow Chow/Cardigan Welsh Corgi,,Non-Sporting; Herding,
-Dog,Beagle/Labrador Retriever,,Sporting; Hound,
-Dog,Mastiff/Cane Corso,,Working,
-Dog,Pit Bull/American Bulldog,,Hound; Terrier,
-Dog,Labrador Retriever/Chinese Sharpei,,Sporting; Toy,
-Dog,German Wirehaired Pointer Mix,,Sporting,
-Dog,Golden Retriever Mix,,Sporting,
-Dog,Dachshund Stan Mix,,Hound,
-Dog,Australian Shepherd/Australian Cattle Dog,,Herding,
-Dog,Lhasa Apso/Border Terrier,,Non-Sporting; Terrier,
-Dog,Whippet/Labrador Retriever,,Sporting; Hound,
-Dog,Greater Swiss Mountain Dog,,Working,
-Dog,Bull Terrier/Australian Kelpie,,Terrier,
-Dog,Pembroke Welsh Corgi/Anatol Shepherd,,Herding; Working,
-Dog,Chesa Bay Retr Mix,,Sporting,
-Dog,Labrador Retriever/Collie Smooth,,Sporting; Herding,
-Dog,Pit Bull/Rhod Ridgeback,,Hound; Terrier,
-Dog,Pharaoh Hound Mix,,Hound,
-Dog,Standard Schnauzer/Border Terrier,,Terrier; Working,
-Dog,Jack Russell Terrier/Chihuahua Longhair,,Toy; Terrier,
-Dog,Pekingese/Chihuahua Shorthair,,Toy,
-Dog,Labrador Retriever/Cocker Spaniel,,Sporting,
-Dog,Dachshund/Yorkshire Terrier,,Toy; Hound,
-Dog,Finnish Spitz Mix,,Non-Sporting,
-Dog,English Springer Spaniel,,Sporting,
-Dog,Papillon,,Toy,
-Dog,Bulldog Mix,,Non-Sporting,
-Dog,Bull Terrier/Border Collie,,Herding; Terrier,
-Dog,American Staffordshire Terrier/American Bulldog,,Hound; Terrier,
-Dog,Rat Terrier Mix,,Terrier,
-Dog,West Highland/Cairn Terrier,,Terrier,
-Dog,Plott Hound/Labrador Retriever,,Sporting; Hound,
-Dog,Pointer/Brittany,,Sporting,
-Dog,Catahoula/Pit Bull,,Toy; Terrier,
-Dog,Chinese Crested/Chihuahua Longhair,,Toy,
-Dog,American Eskimo/Australian Shepherd,,Non-Sporting; Herding,
-Dog,Staffordshire/Bulldog,,Non-Sporting; Terrier,
-Dog,Blue Lacy/Collie Smooth,,Herding,
-Dog,Cocker Spaniel/Golden Retriever,,Sporting,
-Dog,Standard Poodle Mix,,Working,
-Dog,German Shepherd/Mastiff,,Herding; Working,
-Dog,Jindo Mix,,Working,
-Dog,Toy Poodle Mix,,Non-Sporting; Toy,
-Dog,Australian Shepherd/Alaskan Malamute,,Herding; Working,
-Dog,St. Bernard Smooth Coat,,Working,
-Dog,Labrador Retriever/Pug,,Sporting; Toy,
-Dog,Chesa Bay Retr,,Sporting,
-Dog,Alaskan Malamute/Akita,,Working,
-Dog,Jack Russell Terrier/Papillon,,Toy; Terrier,
-Dog,Dachshund/Cavalier Span,,Sporting; Hound,
-Dog,Rat Terrier/Cairn Terrier,,Terrier,
-Dog,Siberian Husky/Border Collie,,Herding; Working,
-Dog,Whippet/Rat Terrier,,Hound; Terrier,
-Dog,Australian Cattle Dog/Pug,,Herding; Toy,
-Dog,Bengal,,Hound,
-Dog,Catahoula/Chinese Sharpei,,Toy,
-Dog,Jack Russell Terrier/Cardigan Welsh Corgi,,Herding; Terrier,
-Dog,Australian Cattle Dog/Chow Chow,,Non-Sporting; Herding,
-Dog,Black Mouth Cur/Boxer,,Hound; Working,
-Dog,Standard Poodle/Labrador Retriever,,Sporting; Working,
-Dog,Pit Bull/German Shepherd,,Herding; Terrier,
-Dog,Welsh Terrier,,Terrier,
-Dog,Picardy Sheepdog Mix,,Herding,
-Dog,Cardigan Welsh Corgi/Cardigan Welsh Corgi,,Herding,
-Dog,Pointer/Queensland Heeler,,Sporting; Herding,
-Dog,Siberian Husky/Cardigan Welsh Corgi,,Herding; Working,
-Dog,Black/Tan Hound,,Herding; Hound,
-Dog,Catahoula/Mastiff,,Toy; Working,
-Dog,Blue Lacy/Australian Cattle Dog,,Herding,
-Dog,Pug/Labrador Retriever,,Sporting; Toy,
-Dog,Bruss Griffon/Yorkshire Terrier,,Toy,
-Dog,Border Terrier/Pug,,Toy; Terrier,
-Dog,Labrador Retriever Mix,,Sporting,
-Dog,Boxer/American Bulldog,,Hound; Working,
-Dog,Pomeranian/Shetland Sheepdog,,Herding; Toy,
-Dog,Yorkshire Terrier/Chihuahua Longhair,,Toy,
-Dog,Catahoula/Plott Hound,,Hound; Toy,
-Dog,Cairn Terrier/Miniature Poodle,,Toy; Terrier,
-Dog,Schipperke Mix,,Non-Sporting,
-Dog,Miniature Pinscher/Chihuahua Shorthair,,Toy,
-Dog,German Shepherd/Australian Kelpie,,Herding; Terrier,
-Dog,Pit Bull/Boston Terrier,,Non-Sporting; Terrier,
-Dog,Australian Cattle Dog/Collie Rough,,Herding,
-Dog,Australian Cattle Dog/Chinese Sharpei,,Herding; Toy,
-Dog,Boston Terrier/Rat Terrier,,Non-Sporting; Terrier,
-Dog,Pit Bull/Dalmatian,,Non-Sporting; Terrier,
-Dog,Border Collie/English Pointer,,Herding; Sporting,
-Dog,Rottweiler/Pit Bull,,Terrier; Working,
-Dog,Dachshund/Chihuahua Shorthair,,Toy; Hound,
-Dog,Weimaraner,,Sporting,
-Dog,German Shepherd/German Shepherd,,Herding,
-Dog,Chihuahua Shorthair/Parson Russell Terrier,,Toy; Terrier,
-Dog,Vizsla/Boxer,,Sporting; Working,
-Dog,Chihuahua Shorthair/Shetland Sheepdog,,Herding; Toy,
-Dog,Golden Retriever/Whippet,,Sporting; Hound,
-Dog,Norfolk Terrier/Dachshund,,Hound; Terrier,
-Dog,Australian Shepherd/Collie Rough,,Herding,
-Dog,Rhod Ridgeback/Mastiff,,Hound; Working,
-Dog,Labrador Retriever/American Pit Bull Terrier,,Sporting; Terrier,
-Dog,Chihuahua Shorthair/Swedish Vallhund,,Herding; Toy,
-Dog,Rat Terrier/Miniature Poodle,,Toy; Terrier,
-Dog,Greyhound/Labrador Retriever,,Sporting; Hound,
-Dog,Maine Coon Mix,,Hound,
-Dog,German Shepherd/Great Dane,,Herding; Working,
-Dog,Border Collie/American Staffordshire Terrier,,Herding; Terrier,
-Dog,Boston Terrier/Pit Bull,,Non-Sporting; Terrier,
-Dog,Rat Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Miniature Poodle/Yorkshire Terrier,,Toy,
-Dog,Chihuahua Shorthair/Finnish Spitz,,Non-Sporting; Toy,
-Dog,Russian Blue,,Working,
-Dog,Australian Cattle Dog/Cardigan Welsh Corgi,,Herding,
-Dog,Cardigan Welsh Corgi/English Setter,,Herding; Sporting,
-Dog,French Bulldog Mix,,Non-Sporting,
-Dog,Beagle/Boston Terrier,,Non-Sporting; Hound,
-Dog,Australian Cattle Dog/German Shepherd,,Herding,
-Dog,Beagle/Jack Russell Terrier,,Hound; Terrier,
-Dog,Black Mouth Cur/Rhod Ridgeback,,Hound,
-Dog,Chow Chow/Irish Setter,,Non-Sporting; Sporting,
-Dog,Jack Russell Terrier/Maltese,,Toy; Terrier,
-Dog,Catahoula/Pointer,,Sporting; Toy,
-Dog,American Bulldog/Pointer,,Sporting; Hound,
-Dog,Redbone Hound Mix,,Hound,
-Dog,Parson Russell Terrier/Beagle,,Hound; Terrier,
-Dog,Brittany/Labrador Retriever,,Sporting,
-Dog,Shetland Sheepdog/Dachshund Longhair,,Herding; Hound,
-Dog,Blue Lacy/Pointer,,Herding; Sporting,
-Dog,Bichon Frise,,Non-Sporting,
-Dog,Dachshund/Shih Tzu,,Toy; Hound,
-Dog,Harrier/German Shepherd,,Herding; Hound,
-Dog,Bruss Griffon/Dachshund,,Hound; Toy,
-Dog,Dachshund Wirehair,,Hound,
-Dog,Great Dane/Labrador Retriever,,Sporting; Working,
-Dog,Tibetan Terrier Mix,,Non-Sporting,
-Dog,Australian Cattle Dog/Plott Hound,,Herding; Hound,
-Dog,Australian Shepherd/Pit Bull,,Herding; Terrier,
-Dog,Manchester Terrier/Chihuahua Longhair,,Toy; Terrier,
-Dog,German Shepherd/Border Collie,,Herding,
-Dog,Australian Kelpie/Beagle,,Hound; Terrier,
-Dog,Pug/Border Terrier,,Toy; Terrier,
-Dog,Dachshund/Bull Terrier,,Hound; Terrier,
-Dog,German Shepherd/Akita,,Herding; Working,
-Dog,Miniature Poodle/English Cocker Spaniel,,Sporting; Toy,
-Dog,Saluki Mix,,Hound,
-Dog,Bullmastiff Mix,,Working,
-Dog,Rat Terrier/Pembroke Welsh Corgi,,Herding; Terrier,
-Dog,Australian Cattle Dog/Boston Terrier,,Non-Sporting; Herding,
-Dog,Cocker Spaniel/Labrador Retriever,,Sporting,
-Dog,Chinese Sharpei/Australian Cattle Dog,,Herding; Toy,
-Dog,Australian Cattle Dog/Pointer,,Herding; Sporting,
-Dog,Beagle/Boxer,,Hound; Working,
-Dog,Whippet/Shetland Sheepdog,,Herding; Hound,
-Dog,Cavalier Span,,Sporting,
-Dog,Harrier Mix,,Hound,
-Dog,Labrador Retriever/Beagle,,Sporting; Hound,
-Dog,Cardigan Welsh Corgi/German Shepherd,,Herding,
-Dog,Beagle,,Hound,
-Dog,Border Collie/Australian Cattle Dog,,Herding,
-Dog,Schipperke/Chihuahua Shorthair,,Non-Sporting; Toy,
-Dog,Standard Poodle/Whippet,,Hound; Working,
-Dog,Dalmatian Mix,,Non-Sporting,
-Dog,St. Bernard Smooth Coat Mix,,Working,
-Dog,Chihuahua Shorthair/Schipperke,,Non-Sporting; Toy,
-Dog,Cardigan Welsh Corgi/Pointer,,Herding; Sporting,
-Dog,Border Collie/Akita,,Herding; Working,
-Dog,Golden Retriever/Standard Poodle,,Sporting; Working,
-Dog,Standard Schnauzer/Standard Poodle,,Working,
-Dog,Havana Brown Mix,,Toy,
-Dog,Chihuahua Shorthair/Cirneco,,Toy; Working,
-Dog,German Shorthair Pointer,,Sporting,
-Dog,Bedlington Terr Mix,,Terrier,
-Dog,Dachshund Longhair/Miniature Schnauzer,,Hound; Terrier,
-Dog,German Shepherd/Nova Scotia Duck Tolling Retriever,,Herding; Sporting,
-Dog,Yorkshire Terrier/Miniature Poodle,,Toy,
-Dog,Boston Terrier/Miniature Schnauzer,,Non-Sporting; Terrier,
-Dog,Labrador Retriever/Labrador Retriever,,Sporting,
-Dog,Dogo Argentino/Chinese Sharpei,,Toy; Working,
-Dog,Cavalier Span/Papillon,,Sporting; Toy,
-Dog,Soft Coated Wheaten Terrier Mix,,Terrier,
-Dog,Jack Russell Terrier/Miniature Schnauzer,,Terrier,
-Dog,Border Collie/Great Pyrenees,,Herding; Working,
-Dog,Coton De Tulear Mix,,Non-Sporting,
-Dog,Anatol Shepherd/German Shepherd,,Herding; Working,
-Dog,Catahoula/Border Collie,,Herding; Toy,
-Dog,Miniature Poodle/West Highland,,Toy; Terrier,
-Dog,Doberman Pinsch/Australian Cattle Dog,,Herding; Working,
-Dog,Redbone Hound,,Hound,
-Dog,Chihuahua Shorthair/Rat Terrier,,Toy; Terrier,
-Dog,Basenji/Chihuahua Shorthair,,Toy; Hound,
-Dog,Weimaraner Mix,,Sporting,
-Dog,Australian Cattle Dog/Black Mouth Cur,,Herding; Hound,
-Dog,Dachshund/German Pinscher,,Hound; Working,
-Dog,Dutch Shepherd/Boxer,,Herding; Working,
-Dog,Havanese,,Toy,
-Dog,Siberian Husky/Australian Shepherd,,Herding; Working,
-Dog,Black Mouth Cur/Dachshund,,Hound,
-Dog,Rhod Ridgeback/Plott Hound,,Hound,
-Dog,Australian Cattle Dog,,Herding,
-Dog,Plott Hound/Black/Tan Hound,,Herding; Hound,
-Dog,Whippet/Treeing Cur,,Hound,
-Dog,Norfolk Terrier/Chihuahua Shorthair,,Toy; Terrier,
-Dog,Miniature Schnauzer/Miniature Poodle,,Toy; Terrier,
-Dog,Shiba Inu Mix,,Non-Sporting,
-Dog,Basenji/Chihuahua Longhair,,Toy; Hound,
-Dog,Manx/Domestic Shorthair,,Non-Sporting; Sporting,
-Dog,Miniature Poodle/Australian Cattle Dog,,Herding; Toy,
-Dog,Dachshund/Basset Hound,,Hound,
-Dog,Collie Rough/Golden Retriever,,Herding; Sporting,
-Dog,Jack Russell Terrier/Rat Terrier,,Terrier,
-Dog,Carolina Dog/Chihuahua Shorthair,,Toy; Working,
-Dog,Dandie Dinmont,,Terrier,
-Dog,Collie Rough/German Shepherd,,Herding,
-Dog,Flat Coat Retriever,,Sporting,
-Dog,Pit Bull/Pug,,Toy; Terrier,
-Dog,Collie Rough/Australian Cattle Dog,,Herding,
-Dog,Bull Terrier Miniature Mix,,Terrier,
-Dog,Akita/Pit Bull,,Terrier; Working,
-Dog,Canaan Dog/Redbone Hound,,Hound; Working,
-Dog,Siberian Husky/Great Pyrenees,,Working,
-Dog,Boxer Mix,,Working,
-Dog,Chihuahua Shorthair/Cocker Spaniel,,Sporting; Toy,
-Dog,Treeing Cur Mix,,Hound,
-Dog,Shih Tzu/Norfolk Terrier,,Toy; Terrier,
-Dog,Labrador Retriever/Border Collie,,Sporting; Herding,
-Dog,Pug/Pit Bull,,Toy; Terrier,
-Dog,Australian Cattle Dog/Australian Kelpie,,Herding; Terrier,
-Dog,Queensland Heeler/Parson Russell Terrier,,Herding; Terrier,
-Dog,Great Pyrenees/Australian Cattle Dog,,Herding; Working,
-Dog,Manchester Terrier/Jack Russell Terrier,,Toy; Terrier,
-Dog,Doberman Pinsch,,Working,
-Dog,Oriental Sh Mix,,Herding,
-Dog,Toy Fox Terrier Mix,,Toy,
-Dog,Border Collie Mix,,Herding,
-Dog,Nova Scotia Duck Tolling Retriever/Golden Retriever,,Sporting,
-Dog,Catahoula/Great Dane,,Toy; Working,
-Dog,Siamese Mix,,Working,
-Dog,Queensland Heeler/Shetland Sheepdog,,Herding,
-Dog,Airedale Terrier/Labrador Retriever,,Sporting; Terrier,
-Dog,Domestic Longhair Mix,,Hound,
-Dog,Dachshund/Greyhound,,Hound,
-Dog,Shih Tzu/Pekingese,,Toy,
-Dog,Yorkshire Terrier/Miniature Schnauzer,,Toy; Terrier,
-Dog,Miniature Poodle/Italian Greyhound,,Toy,
-Dog,Australian Cattle Dog/Treeing Walker Coonhound,,Herding; Hound,
-Dog,Pit Bull/Mastiff,,Terrier; Working,
-Dog,Japanese Bobtail Mix,,Toy,
-Dog,Dachshund/Catahoula,,Toy; Hound,
-Dog,Jindo/Labrador Retriever,,Sporting; Working,
-Dog,Maltese/Shih Tzu,,Toy,
-Dog,Chihuahua Shorthair/Dachshund Wirehair,,Hound; Toy,
-Dog,Domestic Shorthair/Domestic Medium Hair,,Sporting; Terrier,
-Dog,Carolina Dog/Labrador Retriever,,Sporting; Working,
-Dog,Staffordshire/Labrador Retriever,,Sporting; Terrier,
-Dog,Chinese Sharpei,,Toy,
-Dog,Pug/Staffordshire,,Toy; Terrier,
-Dog,Border Collie/Doberman Pinsch,,Herding; Working,
-Dog,Newfoundland Mix,,Working,
-Dog,Basset Hound/Beauceron,,Herding; Hound,
-Dog,American Shorthair Mix,,Terrier,
-Dog,Collie Smooth/German Shepherd,,Herding,
-Dog,Old English Sheepdog Mix,,Herding,
-Dog,Border Collie/Greyhound,,Herding; Hound,
-Dog,Pomeranian/Jack Russell Terrier,,Toy; Terrier,
-Dog,Australian Cattle Dog/Belgian Malinois,,Herding,
-Dog,Border Collie/Shetland Sheepdog,,Herding,
-Dog,Doberman Pinsch/Vizsla,,Sporting; Working,
-Dog,Norfolk Terrier/Border Terrier,,Terrier,
-Dog,Black Mouth Cur/Staffordshire,,Hound; Terrier,
-Dog,Black Mouth Cur Mix,,Hound,
-Dog,Border Terrier/Miniature Poodle,,Toy; Terrier,
-Dog,Pit Bull/Plott Hound,,Hound; Terrier,
-Dog,Pit Bull/Australian Cattle Dog,,Herding; Terrier,
-Dog,Mastiff,,Working,
-Dog,Japanese Chin Mix,,Toy,
-Dog,Papillon/Yorkshire Terrier,,Toy,
-Dog,Chow Chow Mix,,Non-Sporting,
-Dog,Boston Terrier/Australian Kelpie,,Non-Sporting; Terrier,
-Dog,Golden Retriever/Brittany,,Sporting,
-Dog,Akita/Labrador Retriever,,Sporting; Working,
-Dog,Scottish Terrier Mix,,Terrier,
-Dog,Shih Tzu/Miniature Poodle,,Toy,
-Dog,Beagle/Australian Cattle Dog,,Herding; Hound,
-Dog,Collie Rough/Australian Shepherd,,Herding,
-Dog,Plott Hound/Pit Bull,,Hound; Terrier,
-Dog,Beagle/Dachshund,,Hound,
-Dog,American Bulldog/American Staffordshire Terrier,,Hound; Terrier,
-Dog,Pbgv Mix,,Toy,
-Dog,Miniature Schnauzer/Whippet,,Hound; Terrier,
-Dog,Border Collie/English Springer Spaniel,,Herding; Sporting,
-Dog,Belgian Malinois/German Shepherd,,Herding,
-Dog,Boxer/Border Collie,,Herding; Working,
-Dog,Border Collie/Jack Russell Terrier,,Herding; Terrier,
-Dog,Carolina Dog/Pit Bull,,Terrier; Working,
-Dog,Collie Smooth Mix,,Herding,
-Dog,Boxer/Mastiff,,Working,
-Dog,Border Collie/Anatol Shepherd,,Herding; Working,
-Dog,Miniature Schnauzer/Border Collie,,Herding; Terrier,
-Dog,Pug/Chihuahua Shorthair,,Toy,
-Dog,Australian Shepherd/Plott Hound,,Herding; Hound,
-Dog,Australian Shepherd/Border Collie,,Herding,
-Dog,Brittany,,Sporting,
-Dog,Tibetan Terrier/Lhasa Apso,,Non-Sporting,
-Dog,Entlebucher Mix,,Herding,
-Dog,Miniature Schnauzer/Border Terrier,,Terrier,
-Dog,Australian Cattle Dog/Border Collie,,Herding,
-Dog,Anatol Shepherd/Collie Rough,,Herding; Working,
-Dog,Chihuahua Longhair/Dachshund,,Hound; Toy,
-Dog,Jack Russell Terrier/Miniature Poodle,,Toy; Terrier,
-Dog,Basset Hound/Labrador Retriever,,Sporting; Hound,
-Dog,Vizsla/Labrador Retriever,,Sporting,
-Dog,Exotic Shorthair Mix,,Sporting,
-Dog,Vizsla/Golden Retriever,,Sporting,
-Dog,Bullmastiff/Boxer,,Working,
-Dog,Cocker Spaniel/Miniature Poodle,,Sporting; Toy,
-Dog,Border Terrier/Affenpinscher,,Toy; Terrier,
-Dog,Boxer/Boston Terrier,,Non-Sporting; Working,
-Dog,Miniature Schnauzer/Yorkshire Terrier,,Toy; Terrier,
-Dog,Labrador Retriever/German Shorthair Pointer,,Sporting,
-Dog,Chow Chow/American Eskimo,,Non-Sporting,
-Dog,Soft Coated Wheaten Terrier/Labrador Retriever,,Sporting; Terrier,
-Dog,Munchkin Shorthair Mix,,Sporting,
-Dog,German Shepherd/English Coonhound,,Herding; Hound,
-Dog,Labrador Retriever/Staffordshire,,Sporting; Terrier,
-Dog,American Pit Bull Terrier/Catahoula,,Toy; Terrier,
-Dog,German Shepherd/Smooth Fox Terrier,,Herding; Terrier,
-Dog,Plott Hound/Carolina Dog,,Hound; Working,
-Dog,Border Collie/Great Dane,,Herding; Working,
-Dog,Pointer/Anatol Shepherd,,Sporting; Working,
-Dog,Great Pyrenees/Catahoula,,Toy; Working,
-Dog,Australian Kelpie/German Shepherd,,Herding; Terrier,
-Dog,Chow Chow/Basset Hound,,Non-Sporting; Hound,
-Dog,German Shepherd/Australian Shepherd,,Herding,
-Dog,Boston Terrier/Pug,,Non-Sporting; Toy,
-Dog,Airedale Terrier/Miniature Schnauzer,,Terrier,
-Dog,American Staffordshire Terrier/Jack Russell Terrier,,Terrier,
-Dog,Shetland Sheepdog/Chihuahua Longhair,,Herding; Toy,
-Dog,Golden Retriever/Beagle,,Sporting; Hound,
-Dog,Field Spaniel Mix,,Sporting,
-Dog,Beagle/Manchester Terrier,,Toy; Hound; Terrier,
-Dog,Dachshund Wirehair/Chihuahua Shorthair,,Toy; Hound,
-Dog,Cardigan Welsh Corgi/Rat Terrier,,Herding; Terrier,
-Dog,Alaskan Malamute Mix,,Working,
-Dog,Beagle/Harrier,,Hound,
-Dog,Cairn Terrier,,Terrier,
-Dog,Queensland Heeler/Pit Bull,,Herding; Terrier,
-Dog,Pembroke Welsh Corgi/Brittany,,Herding; Sporting,
-Dog,Cocker Spaniel/Australian Shepherd,,Sporting; Herding,
-Dog,Australian Cattle Dog/Basenji,,Herding; Hound,
-Dog,Catahoula/Anatol Shepherd,,Toy; Working,
-Dog,Pointer/Harrier,,Sporting; Hound,
-Dog,Redbone Hound/Labrador Retriever,,Sporting; Hound,
-Dog,Pomeranian,,Toy,
-Dog,Bloodhound,,Hound,
-Dog,Boxer/Neapolitan Mastiff,,Working,
-Dog,Boxer/Queensland Heeler,,Herding; Working,
-Dog,Great Pyrenees/Anatol Shepherd,,Working,
-Dog,English Springer Spaniel/Beagle,,Sporting; Hound,
-Dog,Pointer/Collie Smooth,,Sporting; Herding,
-Dog,Chihuahua Longhair/Jack Russell Terrier,,Toy; Terrier,
-Dog,Dachshund Longhair/Pembroke Welsh Corgi,,Herding; Hound,
-Dog,Plott Hound/Boxer,,Hound; Working,
-Dog,Australian Kelpie/Alaskan Husky,,Terrier; Working,
-Dog,Alaskan Malamute/Labrador Retriever,,Sporting; Working,
-Dog,Irish Terrier Mix,,Terrier,
-Dog,Eng Toy Spaniel Mix,,Sporting,
-Dog,Maine Coon,,Hound,
-Dog,Boxer/Black Mouth Cur,,Hound; Working,
-Dog,Pembroke Welsh Corgi Mix,,Herding,
-Dog,Snowshoe,,Non-Sporting,
-Dog,Dachshund/Chihuahua Longhair,,Toy; Hound,
-Dog,Great Pyrenees/Queensland Heeler,,Herding; Working,
-Dog,Dachshund Wirehair/Standard Poodle,,Hound; Working,
-Dog,Dachshund/Shetland Sheepdog,,Herding; Hound,
-Dog,Labrador Retriever/Collie Rough,,Sporting; Herding,
-Dog,Pit Bull/Catahoula,,Toy; Terrier,
-Dog,Golden Retriever/Pembroke Welsh Corgi,,Sporting; Herding,
-Dog,Alaskan Husky/Border Collie,,Herding; Working,
-Dog,Cavalier Span/Jack Russell Terrier,,Sporting; Terrier,
-Dog,Mexican Hairless Mix,,Toy,
-Dog,Miniature Poodle/Cocker Spaniel,,Sporting; Toy,
-Dog,Treeing Walker Coonhound,,Hound,
-Dog,American Pit Bull Terrier/Pointer,,Sporting; Terrier,
-Dog,English Pointer,,Sporting,
-Dog,Queensland Heeler/Dachshund,,Herding; Hound,
-Dog,Chihuahua Shorthair/Lhasa Apso,,Non-Sporting; Toy,
-Dog,Mastiff/Rottweiler,,Working,
-Dog,Catahoula/Alaskan Husky,,Toy; Working,
-Dog,Chow Chow/German Shepherd,,Non-Sporting; Herding,
-Dog,Vizsla/Catahoula,,Sporting; Toy,
-Dog,Australian Cattle Dog/English Coonhound,,Herding; Hound,
-Dog,Pit Bull/Beagle,,Hound; Terrier,
-Dog,Collie Smooth/Golden Retriever,,Herding; Sporting,
-Dog,Dachshund/Australian Kelpie,,Hound; Terrier,
-Dog,Bull Terrier/Boxer,,Terrier; Working,
-Dog,Chihuahua Shorthair/Australian Cattle Dog,,Herding; Toy,
-Dog,Great Dane/Australian Cattle Dog,,Herding; Working,
-Dog,Bruss Griffon,,Toy,
-Dog,Miniature Poodle/Labrador Retriever,,Sporting; Toy,
-Dog,Pit Bull/Rottweiler,,Terrier; Working,
-Dog,Cocker Spaniel/Beagle,,Sporting; Hound,
-Dog,Irish Wolfhound/Great Pyrenees,,Hound; Working,
-Dog,Pembroke Welsh Corgi/Australian Shepherd,,Herding,
-Dog,Catahoula/Chow Chow,,Non-Sporting; Toy,
-Dog,Pharaoh Hound/Border Collie,,Herding; Hound,
-Dog,Chow Chow/Siberian Husky,,Non-Sporting; Working,
-Dog,Golden Retriever/German Shepherd,,Sporting; Herding,
-Dog,Pointer/American Pit Bull Terrier,,Sporting; Terrier,
-Dog,Lhasa Apso/Havanese,,Non-Sporting; Toy,
-Dog,Akita/Great Pyrenees,,Working,
-Dog,Welsh Terrier Mix,,Terrier,
-Dog,Saluki/Labrador Retriever,,Sporting; Hound,
-Dog,Bull Terrier Miniature,,Terrier,
-Dog,Great Pyrenees/Pit Bull,,Terrier; Working,
-Dog,Rottweiler/German Shepherd,,Herding; Working,
-Dog,Australian Shepherd/Parson Russell Terrier,,Herding; Terrier,
-Dog,Pembroke Welsh Corgi/Basset Hound,,Herding; Hound,
-Dog,American Bulldog/Boxer,,Hound; Working,
-Dog,Labrador Retriever/Australian Kelpie,,Sporting; Terrier,
-Dog,Golden Retriever/Australian Cattle Dog,,Sporting; Herding,
-Dog,Australian Shepherd/Dachshund,,Herding; Hound,
-Dog,Siamese/Domestic Shorthair,,Sporting; Working,
-Dog,Rat Terrier,,Terrier,
-Dog,American Pit Bull Terrier/Labrador Retriever,,Sporting; Terrier,
-Dog,Catahoula/Staffordshire,,Toy; Terrier,
-Dog,Staffordshire/Blue Lacy,,Herding; Terrier,
-Dog,Pointer,,Sporting,
-Dog,Labrador Retriever/Black Mouth Cur,,Sporting; Hound,
-Dog,Siberian Husky/Australian Cattle Dog,,Herding; Working,
-Dog,Chihuahua Longhair/Pekingese,,Toy,
-Dog,German Shepherd/Basenji,,Herding; Hound,
-Dog,Bruss Griffon Mix,,Toy,
-Dog,Yorkshire Terrier/Bruss Griffon,,Toy,
-Dog,Cairn Terrier/Scottish Terrier,,Terrier,
-Dog,Basset Hound/English Pointer,,Sporting; Hound,
-Dog,Cairn Terrier/Border Collie,,Herding; Terrier,
-Dog,Beagle/Standard Poodle,,Hound; Working,
-Dog,Flat Coat Retriever/Golden Retriever,,Sporting,
-Dog,Dachshund Wirehair/Chihuahua Longhair,,Toy; Hound,
-Dog,Golden Retriever,,Sporting,
-Dog,Cornish Rex Mix,,Terrier,
-Dog,Samoyed,,Working,
-Dog,Whippet/Dachshund,,Hound,
-Dog,Chow Chow,,Non-Sporting,
-Dog,Chihuahua Longhair/Maltese,,Toy,
-Dog,Great Pyrenees/Siberian Husky,,Working,
-Dog,Landseer Mix,,Terrier,
-Dog,Irish Setter/Pit Bull,,Sporting; Terrier,
-Dog,Collie Rough/Labrador Retriever,,Herding; Sporting,
-Dog,American Bulldog/Mastiff,,Hound; Working,
-Dog,Labrador Retriever/Golden Retriever,,Sporting,
-Dog,Border Collie/Brittany,,Herding; Sporting,
-Dog,Norwich Terrier/Yorkshire Terrier,,Toy; Terrier,
-Dog,Flat Coat Retriever Mix,,Sporting,
-Dog,French Bulldog,,Non-Sporting,
-Dog,Silky Terrier/Yorkshire Terrier,,Toy,
-Dog,Chihuahua Longhair Mix,,Toy,
-Dog,Yorkshire Terrier/Norfolk Terrier,,Toy; Terrier,
-Dog,Beagle/Chihuahua Longhair,,Toy; Hound,
-Dog,Bloodhound Mix,,Hound,
-Dog,Cardigan Welsh Corgi/Labrador Retriever,,Herding; Sporting,
-Dog,Mastiff/Chinese Sharpei,,Toy; Working,
-Dog,Boerboel Mix,,Working,
-Dog,Australian Cattle Dog/Rat Terrier,,Herding; Terrier,
-Dog,Siberian Husky/German Shepherd,,Herding; Working,
-Dog,Pembroke Welsh Corgi/Australian Cattle Dog,,Herding,
-Dog,Jack Russell Terrier/Pit Bull,,Terrier,
-Dog,Catahoula/German Shepherd,,Herding; Toy,
-Dog,Catahoula/Rottweiler,,Toy; Working,
+species,name,group
+Dog,German Shepherd/Australian Cattle Dog,Herding
+Dog,English Cocker Spaniel Mix,Sporting
+Dog,Dachshund/Pug,Toy; Hound
+Dog,Miniature Schnauzer/Shih Tzu,Toy; Terrier
+Dog,Harrier,Hound
+Dog,Pointer/Staffordshire,Sporting; Terrier
+Dog,Australian Shepherd/Dalmatian,Non-Sporting; Herding
+Dog,Labrador Retriever/Australian Shepherd,Sporting; Herding
+Dog,Chihuahua Longhair/Cairn Terrier,Toy; Terrier
+Dog,Cairn Terrier/Dachshund,Hound; Terrier
+Dog,Belgian Tervuren/German Shepherd,Herding
+Dog,Pug Mix,Toy
+Dog,Chihuahua Longhair/Dachshund Longhair,Hound; Toy
+Dog,Anatol Shepherd/Catahoula,Toy; Working
+Dog,Yorkshire Terrier/Maltese,Toy
+Dog,Great Dane/German Shepherd,Herding; Working
+Dog,Australian Kelpie/Pit Bull,Terrier
+Dog,Golden Retriever/Pit Bull,Sporting; Terrier
+Dog,Basenji/Jack Russell Terrier,Hound; Terrier
+Dog,Australian Kelpie Mix,Terrier
+Dog,Black/Tan Hound Mix,Herding; Hound
+Dog,Dachshund/Miniature Pinscher,Toy; Hound
+Dog,Border Collie/Basenji,Herding; Hound
+Dog,Toy Fox Terrier/Dachshund,Hound; Toy
+Dog,Pointer/Border Collie,Sporting; Herding
+Dog,Chihuahua Shorthair,Toy
+Dog,Rat Terrier/Australian Cattle Dog,Herding; Terrier
+Dog,Shetland Sheepdog,Herding
+Dog,Belgian Malinois,Herding
+Dog,British Shorthair Mix,Sporting
+Dog,Boxer/Chow Chow,Non-Sporting; Working
+Dog,Basset Hound/Beagle,Hound
+Dog,Great Pyrenees/Boxer,Working
+Dog,American Pit Bull Terrier/American Bulldog,Hound; Terrier
+Dog,Yorkshire Terrier/Border Terrier,Toy; Terrier
+Dog,Anatol Shepherd/Border Collie,Herding; Working
+Dog,Bluetick Hound,Hound
+Dog,Swiss Hound/Pit Bull,Hound; Terrier
+Dog,Anatol Shepherd Mix,Working
+Dog,Harrier/Pit Bull,Hound; Terrier
+Dog,Norwich Terrier/Border Terrier,Terrier
+Dog,Swedish Vallhund/Miniature Poodle,Herding; Toy
+Dog,German Shorthair Pointer/Brittany,Sporting
+Dog,American Staffordshire Terrier/Australian Cattle Dog,Herding; Terrier
+Dog,Dalmatian/Pointer,Non-Sporting; Sporting
+Dog,German Pinscher/Whippet,Hound; Working
+Dog,Basset Hound/Dachshund,Hound
+Dog,Boxer/Staffordshire,Terrier; Working
+Dog,Boxer/Great Dane,Working
+Dog,German Shepherd,Herding
+Dog,Cardigan Welsh Corgi/Miniature Pinscher,Herding; Toy
+Dog,Labrador Retriever/Blue Lacy,Sporting; Herding
+Dog,Beauceron Mix,Herding
+Dog,Siberian Husky/Rottweiler,Working
+Dog,Great Pyrenees/St. Bernard Rough Coat,Working
+Dog,American Bulldog/Blue Lacy,Herding; Hound
+Dog,Ocicat Mix,Sporting
+Dog,Dachshund/American Staffordshire Terrier,Hound; Terrier
+Dog,Jack Russell Terrier Mix,Terrier
+Dog,English Springer Spaniel/Cardigan Welsh Corgi,Sporting; Herding
+Dog,Basset Hound/Pointer,Sporting; Hound
+Dog,Dachshund/Pit Bull,Hound; Terrier
+Dog,Miniature Poodle/Dachshund,Hound; Toy
+Dog,Skye Terrier Mix,Terrier
+Dog,Jack Russell Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Basenji/Australian Cattle Dog,Herding; Hound
+Dog,Chinese Sharpei/Boxer,Toy; Working
+Dog,Silky Terrier Mix,Toy
+Dog,English Coonhound/Australian Cattle Dog,Herding; Hound
+Dog,Pointer/Boxer,Sporting; Working
+Dog,Pixiebob Shorthair Mix,Sporting
+Dog,Pit Bull/Bulldog,Non-Sporting; Terrier
+Dog,Miniature Poodle,Toy
+Dog,Chihuahua Shorthair/Pembroke Welsh Corgi,Herding; Toy
+Dog,Great Pyrenees/Pointer,Sporting; Working
+Dog,Chihuahua Shorthair/Cavalier Span,Sporting; Toy
+Dog,Treeing Walker Coonhound/Labrador Retriever,Sporting; Hound
+Dog,Labrador Retriever/Flat Coat Retriever,Sporting
+Dog,Tibetan Spaniel,Non-Sporting
+Dog,Belgian Tervuren Mix,Herding
+Dog,Papillon/Chihuahua Shorthair,Toy
+Dog,Cardigan Welsh Corgi/Chihuahua Shorthair,Herding; Toy
+Dog,Labrador Retriever/American Staffordshire Terrier,Sporting; Terrier
+Dog,Miniature Pinscher Mix,Toy
+Dog,German Shepherd/Rottweiler,Herding; Working
+Dog,Basset Hound/French Bulldog,Non-Sporting; Hound
+Dog,German Shepherd/Pit Bull,Herding; Terrier
+Dog,Alaskan Malamute,Working
+Dog,Anatol Shepherd/Great Pyrenees,Working
+Dog,Siamese/Japanese Bobtail,Toy; Working
+Dog,Whippet/Chihuahua Shorthair,Toy; Hound
+Dog,Chow Chow/Golden Retriever,Non-Sporting; Sporting
+Dog,Wire Hair Fox Terrier Mix,Terrier
+Dog,Labrador Retriever/Irish Setter,Sporting
+Dog,Rat Terrier/Cardigan Welsh Corgi,Herding; Terrier
+Dog,Great Dane,Working
+Dog,Dachshund Longhair/Cardigan Welsh Corgi,Herding; Hound
+Dog,St. Bernard Rough Coat/Border Collie,Herding; Working
+Dog,German Shepherd Mix,Herding
+Dog,St. Bernard Rough Coat/Standard Schnauzer,Working
+Dog,Papillon/Miniature Poodle,Toy
+Dog,Italian Greyhound Mix,Toy
+Dog,Greyhound/Great Dane,Hound; Working
+Dog,Jack Russell Terrier/American Staffordshire Terrier,Terrier
+Dog,Siberian Husky/Labrador Retriever,Sporting; Working
+Dog,Chihuahua Longhair/Papillon,Toy
+Dog,Pekingese Mix,Toy
+Dog,Australian Shepherd/Australian Kelpie,Herding; Terrier
+Dog,Shih Tzu/Australian Shepherd,Herding; Toy
+Dog,English Bulldog/Dachshund,Non-Sporting; Hound
+Dog,Belgian Sheepdog Mix,Herding
+Dog,Border Terrier Mix,Terrier
+Dog,Papillon/Border Collie,Herding; Toy
+Dog,German Shepherd/Weimaraner,Herding; Sporting
+Dog,Chow Chow/Border Collie,Non-Sporting; Herding
+Dog,Labrador Retriever/Redbone Hound,Sporting; Hound
+Dog,Queensland Heeler,Herding
+Dog,Chihuahua Shorthair/Boston Terrier,Non-Sporting; Toy
+Dog,Miniature Schnauzer,Terrier
+Dog,Boxer/Jack Russell Terrier,Terrier; Working
+Dog,Miniature Schnauzer/Soft Coated Wheaten Terrier,Terrier
+Dog,Yorkshire Terrier,Toy
+Dog,Catahoula/American Bulldog,Hound; Toy
+Dog,German Shepherd/Black Mouth Cur,Herding; Hound
+Dog,Miniature Schnauzer/Australian Cattle Dog,Herding; Terrier
+Dog,Siberian Husky/Catahoula,Toy; Working
+Dog,Border Terrier/Cardigan Welsh Corgi,Herding; Terrier
+Dog,Black Mouth Cur/Catahoula,Toy; Hound
+Dog,Basenji/Rhod Ridgeback,Hound
+Dog,Cardigan Welsh Corgi/Australian Kelpie,Herding; Terrier
+Dog,Alaskan Malamute/Australian Kelpie,Terrier; Working
+Dog,Australian Cattle Dog/Dachshund,Herding; Hound
+Dog,Irish Terrier/Border Terrier,Terrier
+Dog,Boxer/English Bulldog,Non-Sporting; Working
+Dog,Siberian Husky/Pit Bull,Terrier; Working
+Dog,Labrador Retriever/Catahoula,Sporting; Toy
+Dog,Labrador Retriever/Basset Hound,Sporting; Hound
+Dog,Shetland Sheepdog/Brittany,Herding; Sporting
+Dog,Chihuahua Shorthair/Italian Greyhound,Toy
+Dog,Cairn Terrier/Border Terrier,Terrier
+Dog,Cocker Spaniel Mix,Sporting
+Dog,Pit Bull/Weimaraner,Sporting; Terrier
+Dog,Manchester Terrier,Toy; Terrier
+Dog,French Bulldog/Pug,Non-Sporting; Toy
+Dog,German Shorthair Pointer Mix,Sporting
+Dog,Miniature Schnauzer/Jack Russell Terrier,Terrier
+Dog,Catahoula/Boxer,Toy; Working
+Dog,Toy Poodle/Cocker Spaniel,Non-Sporting; Sporting; Toy
+Dog,Shetland Sheepdog/Pomeranian,Herding; Toy
+Dog,Great Pyrenees Mix,Working
+Dog,Australian Cattle Dog/Jack Russell Terrier,Herding; Terrier
+Dog,Rottweiler/Labrador Retriever,Sporting; Working
+Dog,Australian Shepherd/Feist,Non-Sporting; Herding
+Dog,Shetland Sheepdog/Basenji,Herding; Hound
+Dog,Labrador Retriever/Boxer,Sporting; Working
+Dog,Chihuahua Longhair/Italian Greyhound,Toy
+Dog,Pekingese/Jack Russell Terrier,Toy; Terrier
+Dog,Chihuahua Shorthair/Queensland Heeler,Herding; Toy
+Dog,Australian Cattle Dog/Pit Bull,Herding; Terrier
+Dog,Havanese Mix,Toy
+Dog,Maltese/Yorkshire Terrier,Toy
+Dog,Jack Russell Terrier/Yorkshire Terrier,Toy; Terrier
+Dog,Jack Russell Terrier/Dachshund Wirehair,Hound; Terrier
+Dog,Black/Tan Hound/German Shepherd,Herding; Hound
+Dog,Beagle/Black Mouth Cur,Hound
+Dog,Dutch Shepherd/Mastiff,Herding; Working
+Dog,Cardigan Welsh Corgi/Beagle,Herding; Hound
+Dog,Dachshund/Whippet,Hound
+Dog,Beagle/Queensland Heeler,Herding; Hound
+Dog,Dachshund/Miniature Poodle,Toy; Hound
+Dog,English Foxhound,Hound
+Dog,Golden Retriever/Border Collie,Sporting; Herding
+Dog,Rat Terrier/Pointer,Sporting; Terrier
+Dog,Kuvasz/Labrador Retriever,Sporting; Working
+Dog,Blue Lacy/American Bulldog,Herding; Hound
+Dog,Maltese/Dalmatian,Non-Sporting; Toy
+Dog,English Bulldog/American Bulldog,Non-Sporting; Hound
+Dog,Toy Poodle/Miniature Schnauzer,Non-Sporting; Toy; Terrier
+Dog,Australian Cattle Dog/Bull Terrier,Herding; Terrier
+Dog,Rottweiler,Working
+Dog,Weimaraner/Pit Bull,Sporting; Terrier
+Dog,Yorkshire Terrier/Chihuahua Shorthair,Toy
+Dog,Kuvasz Mix,Working
+Dog,Golden Retriever/Cocker Spaniel,Sporting
+Dog,Old English Bulldog,Non-Sporting
+Dog,Akita,Working
+Dog,Lhasa Apso/Cairn Terrier,Non-Sporting; Terrier
+Dog,Akita/German Shepherd,Herding; Working
+Dog,Beagle/Chinese Sharpei,Toy; Hound
+Dog,Brittany/Chihuahua Shorthair,Sporting; Toy
+Dog,Plott Hound/Australian Cattle Dog,Herding; Hound
+Dog,Lhasa Apso/West Highland,Non-Sporting; Terrier
+Dog,Manchester Terrier/Beagle,Toy; Hound; Terrier
+Dog,Vizsla/German Shepherd,Sporting; Herding
+Dog,Rottweiler/Rhod Ridgeback,Hound; Working
+Dog,Munchkin Longhair Mix,Herding
+Dog,Pbgv/Jack Russell Terrier,Toy; Terrier
+Dog,Miniature Schnauzer/Chihuahua Shorthair,Toy; Terrier
+Dog,Miniature Pinscher/Maltese,Toy
+Dog,Pit Bull/Jack Russell Terrier,Terrier
+Dog,Whippet/Miniature Pinscher,Toy; Hound
+Dog,Nova Scotia Duck Tolling Retriever,Sporting
+Dog,Labrador Retriever/Alaskan Husky,Sporting; Working
+Dog,Chinese Sharpei/Bull Terrier,Toy; Terrier
+Dog,Keeshond Mix,Non-Sporting
+Dog,Bull Terrier,Terrier
+Dog,Pit Bull/Boxer,Terrier; Working
+Dog,Carolina Dog/Australian Cattle Dog,Herding; Working
+Dog,Skye Terrier/Miniature Poodle,Toy; Terrier
+Dog,Bengal Mix,Hound
+Dog,Doberman Pinsch/Rottweiler,Working
+Dog,Basset Hound/Australian Cattle Dog,Herding; Hound
+Dog,Miniature Pinscher/Australian Cattle Dog,Herding; Toy
+Dog,Australian Shepherd/Anatol Shepherd,Herding; Working
+Dog,Catahoula/Bulldog,Non-Sporting; Toy
+Dog,Cardigan Welsh Corgi/Pit Bull,Herding; Terrier
+Dog,Pit Bull/Dogue De Bordeaux,Terrier; Working
+Dog,Boston Terrier/Dachshund,Non-Sporting; Hound
+Dog,Pug,Toy
+Dog,Labrador Retriever/Great Dane,Sporting; Working
+Dog,Flat Coat Retriever/Chow Chow,Non-Sporting; Sporting
+Dog,Miniature Poodle Mix,Toy
+Dog,Border Collie,Herding
+Dog,Akita/Border Collie,Herding; Working
+Dog,Yorkshire Terrier/Rat Terrier,Toy; Terrier
+Dog,Great Dane/Boerboel,Working
+Dog,Chihuahua Shorthair/Papillon,Toy
+Dog,Collie Smooth/Chow Chow,Non-Sporting; Herding
+Dog,Bulldog/Australian Cattle Dog,Non-Sporting; Herding
+Dog,Chihuahua Shorthair/Toy Fox Terrier,Toy
+Dog,Cocker Spaniel,Sporting
+Dog,Pembroke Welsh Corgi/German Shepherd,Herding
+Dog,Coton De Tulear,Non-Sporting
+Dog,Snowshoe/Domestic Shorthair,Non-Sporting; Sporting
+Dog,Staffordshire/French Bulldog,Non-Sporting; Terrier
+Dog,Pointer/Ibizan Hound,Sporting; Hound
+Dog,Pharaoh Hound,Hound
+Dog,Cairn Terrier/Dachshund Wirehair,Hound; Terrier
+Dog,Anatol Shepherd/Australian Cattle Dog,Herding; Working
+Dog,Dachshund/Swedish Vallhund,Herding; Hound
+Dog,Parson Russell Terrier,Terrier
+Dog,Beagle/Basset Hound,Hound
+Dog,Cocker Spaniel/Standard Poodle,Sporting; Working
+Dog,Carolina Dog Mix,Working
+Dog,Nova Scotia Duck Tolling Retriever/Border Collie,Sporting; Herding
+Dog,Great Pyrenees/Alaskan Husky,Working
+Dog,West Highland Mix,Terrier
+Dog,Boykin Span/Dachshund,Sporting; Hound
+Dog,Labrador Retriever/Standard Poodle,Sporting; Working
+Dog,Domestic Shorthair/British Shorthair,Sporting
+Dog,Border Collie/Pointer,Herding; Sporting
+Dog,Siberian Husky/Alaskan Malamute,Working
+Dog,Jack Russell Terrier,Terrier
+Dog,Chihuahua Longhair/Cardigan Welsh Corgi,Herding; Toy
+Dog,Catahoula/Beagle,Hound; Toy
+Dog,Dachshund Wirehair/Cairn Terrier,Hound; Terrier
+Dog,Border Terrier/Miniature Schnauzer,Terrier
+Dog,Dachshund/Jack Russell Terrier,Hound; Terrier
+Dog,Norwich Terrier/Pug,Toy; Terrier
+Dog,Finnish Spitz/Chow Chow,Non-Sporting
+Dog,Rhod Ridgeback/German Shepherd,Herding; Hound
+Dog,Staffordshire,Terrier
+Dog,Redbone Hound/Dachshund,Hound
+Dog,Border Terrier/Soft Coated Wheaten Terrier,Terrier
+Dog,Standard Schnauzer Mix,Working
+Dog,Chihuahua Longhair/West Highland,Toy; Terrier
+Dog,Beagle/Treeing Walker Coonhound,Hound
+Dog,Cane Corso/Mastiff,Working
+Dog,American Bulldog/Labrador Retriever,Sporting; Hound
+Dog,Pointer/Australian Kelpie,Sporting; Terrier
+Dog,Siamese/Angora,Working
+Dog,Black Mouth Cur/Basset Hound,Hound
+Dog,Cardigan Welsh Corgi/Cairn Terrier,Herding; Terrier
+Dog,Beagle/Border Terrier,Hound; Terrier
+Dog,Blue Lacy/Labrador Retriever,Herding; Sporting
+Dog,Pointer/Bull Terrier,Sporting; Terrier
+Dog,Bull Terrier/Pit Bull,Terrier
+Dog,Picardy Sheepdog,Herding
+Dog,Australian Cattle Dog/Parson Russell Terrier,Herding; Terrier
+Dog,Border Terrier/Border Collie,Herding; Terrier
+Dog,Border Collie/Beagle,Herding; Hound
+Dog,Black Mouth Cur/American Staffordshire Terrier,Hound; Terrier
+Dog,Australian Kelpie/Finnish Spitz,Non-Sporting; Terrier
+Dog,Staffordshire/Beagle,Hound; Terrier
+Dog,Labrador Retriever/Rottweiler,Sporting; Working
+Dog,Labrador Retriever/English Pointer,Sporting
+Dog,Boxer,Working
+Dog,Queensland Heeler/German Shepherd,Herding
+Dog,Norwegian Forest Cat Mix,Hound
+Dog,Domestic Longhair,Hound
+Dog,Australian Kelpie/Chihuahua Shorthair,Toy; Terrier
+Dog,Domestic Shorthair Mix,Sporting
+Dog,Whippet Mix,Hound
+Dog,Vizsla/Beagle,Sporting; Hound
+Dog,German Shepherd/Great Pyrenees,Herding; Working
+Dog,Border Terrier/Shih Tzu,Toy; Terrier
+Dog,Persian,Toy
+Dog,Doberman Pinsch/Border Collie,Herding; Working
+Dog,Miniature Pinscher/Smooth Fox Terrier,Toy; Terrier
+Dog,Beagle/Chihuahua Shorthair,Toy; Hound
+Dog,Border Collie/Boxer,Herding; Working
+Dog,Staffordshire/Boston Terrier,Non-Sporting; Terrier
+Dog,St. Bernard Rough Coat Mix,Working
+Dog,Pekingese/Lhasa Apso,Non-Sporting; Toy
+Dog,Dachshund Longhair/Toy Poodle,Non-Sporting; Hound; Toy
+Dog,Miniature Poodle/Pomeranian,Toy
+Dog,Pit Bull/Cardigan Welsh Corgi,Herding; Terrier
+Dog,Anatol Shepherd,Working
+Dog,Whippet/Jack Russell Terrier,Hound; Terrier
+Dog,Australian Shepherd/Jack Russell Terrier,Herding; Terrier
+Dog,Pekingese/Pug,Toy
+Dog,Border Collie/Catahoula,Herding; Toy
+Dog,Shetland Sheepdog/Cavalier Span,Herding; Sporting
+Dog,Manx/Siamese,Non-Sporting; Working
+Dog,Collie Smooth/Saluki,Herding; Hound
+Dog,Doberman Pinsch/German Shepherd,Herding; Working
+Dog,Ragdoll,Herding
+Dog,American Bulldog/English Bulldog,Non-Sporting; Hound
+Dog,Shiba Inu/German Shepherd,Non-Sporting; Herding
+Dog,Border Terrier,Terrier
+Dog,Golden Retriever/Australian Shepherd,Sporting; Herding
+Dog,Black Mouth Cur/Siberian Husky,Hound; Working
+Dog,Yorkshire Terrier/Shih Tzu,Toy
+Dog,Border Collie/Alaskan Husky,Herding; Working
+Dog,Beagle/Vizsla,Sporting; Hound
+Dog,Catahoula/Australian Shepherd,Herding; Toy
+Dog,Beagle/Australian Kelpie,Hound; Terrier
+Dog,Cardigan Welsh Corgi,Herding
+Dog,Australian Cattle Dog/Catahoula,Herding; Toy
+Dog,Bruss Griffon/Pug,Toy
+Dog,Border Collie/Queensland Heeler,Herding
+Dog,Manchester Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Pomeranian/American Eskimo,Non-Sporting; Toy
+Dog,Australian Shepherd/Brittany,Herding; Sporting
+Dog,Irish Wolfhound/Great Dane,Hound; Working
+Dog,German Shepherd/Anatol Shepherd,Herding; Working
+Dog,Cardigan Welsh Corgi/Chihuahua Longhair,Herding; Toy
+Dog,Scottish Fold Mix,Hound
+Dog,Great Dane/Australian Shepherd,Herding; Working
+Dog,Siberian Husky/Beagle,Hound; Working
+Dog,Maltese/Miniature Poodle,Toy
+Dog,Chihuahua Shorthair/Pug,Toy
+Dog,Labrador Retriever/American Bulldog,Sporting; Hound
+Dog,Queensland Heeler/Great Dane,Herding; Working
+Dog,Dachshund Wirehair/Yorkshire Terrier,Toy; Hound
+Dog,Great Pyrenees/German Shepherd,Herding; Working
+Dog,Irish Wolfhound/Australian Shepherd,Herding; Hound
+Dog,Manchester Terrier/Labrador Retriever,Sporting; Toy; Terrier
+Dog,Pit Bull Mix,Terrier
+Dog,Pit Bull/Chihuahua Shorthair,Toy; Terrier
+Dog,Bluetick Hound/Treeing Walker Coonhound,Hound
+Dog,Border Collie/Australian Shepherd,Herding
+Dog,Dutch Shepherd Mix,Herding
+Dog,Blue Lacy/Beagle,Herding; Hound
+Dog,Dalmatian/Labrador Retriever,Non-Sporting; Sporting
+Dog,Alaskan Husky,Working
+Dog,Catahoula/Australian Cattle Dog,Herding; Toy
+Dog,Cairn Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Standard Schnauzer/Toy Poodle,Non-Sporting; Toy; Working
+Dog,Dachshund/Labrador Retriever,Sporting; Hound
+Dog,English Bulldog/Staffordshire,Non-Sporting; Terrier
+Dog,Shih Tzu,Toy
+Dog,Golden Retriever/Dachshund,Sporting; Hound
+Dog,Boston Terrier/Labrador Retriever,Non-Sporting; Sporting
+Dog,Jack Russell Terrier/Whippet,Hound; Terrier
+Dog,Boston Terrier/Chihuahua Shorthair,Non-Sporting; Toy
+Dog,Otterhound Mix,Hound
+Dog,Beagle/Whippet,Hound
+Dog,Australian Shepherd/German Shepherd,Herding
+Dog,Domestic Shorthair/Manx,Non-Sporting; Sporting
+Dog,Dalmatian/Basset Hound,Non-Sporting; Hound
+Dog,Flat Coat Retriever/Pit Bull,Sporting; Terrier
+Dog,Redbone Hound/Redbone Hound,Hound
+Dog,Vizsla/Rhod Ridgeback,Sporting; Hound
+Dog,Australian Cattle Dog/Golden Retriever,Herding; Sporting
+Dog,Great Pyrenees,Working
+Dog,Lhasa Apso/Miniature Schnauzer,Non-Sporting; Terrier
+Dog,Domestic Shorthair/Siamese,Sporting; Working
+Dog,Bearded Collie Mix,Herding
+Dog,Toy Fox Terrier/Yorkshire Terrier,Toy
+Dog,Australian Cattle Dog/Australian Shepherd,Herding
+Dog,German Pinscher Mix,Working
+Dog,Papillon Mix,Toy
+Dog,Staffordshire/Bull Terrier,Terrier
+Dog,Rat Terrier/Dachshund,Hound; Terrier
+Dog,Labrador Retriever/Border Terrier,Sporting; Terrier
+Dog,Glen Of Imaal/Ibizan Hound,Hound; Terrier
+Dog,Dachshund Wirehair/Norfolk Terrier,Hound; Terrier
+Dog,West Highland,Terrier
+Dog,Boxer/Rhod Ridgeback,Hound; Working
+Dog,Labrador Retriever/Anatol Shepherd,Sporting; Working
+Dog,Rottweiler/Australian Cattle Dog,Herding; Working
+Dog,English Bulldog/Pit Bull,Non-Sporting; Terrier
+Dog,Australian Shepherd/Rottweiler,Herding; Working
+Dog,Pointer/Blue Lacy,Sporting; Herding
+Dog,Collie Smooth/Jack Russell Terrier,Herding; Terrier
+Dog,Border Terrier/Bruss Griffon,Toy; Terrier
+Dog,Jack Russell Terrier/Basenji,Hound; Terrier
+Dog,Pomeranian/Chihuahua Longhair,Toy
+Dog,Patterdale Terr Mix,Terrier
+Dog,Australian Cattle Dog/Anatol Shepherd,Herding; Working
+Dog,Basset Hound/Pit Bull,Hound; Terrier
+Dog,Sphynx,Non-Sporting
+Dog,Boxer/Redbone Hound,Hound; Working
+Dog,Chinese Sharpei/Border Collie,Herding; Toy
+Dog,Pekingese/Dachshund,Hound; Toy
+Dog,Plott Hound/Blue Lacy,Herding; Hound
+Dog,Wire Hair Fox Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Miniature Schnauzer/Lhasa Apso,Non-Sporting; Terrier
+Dog,Staffordshire Mix,Terrier
+Dog,Golden Retriever/Great Pyrenees,Sporting; Working
+Dog,Pomeranian Mix,Toy
+Dog,Miniature Schnauzer/Labrador Retriever,Sporting; Terrier
+Dog,Shih Tzu/Miniature Schnauzer,Toy; Terrier
+Dog,Beagle/Parson Russell Terrier,Hound; Terrier
+Dog,Maltese Mix,Toy
+Dog,Dalmatian/Boxer,Non-Sporting; Working
+Dog,Airedale Terrier/Irish Terrier,Terrier
+Dog,Border Terrier/Yorkshire Terrier,Toy; Terrier
+Dog,Golden Retriever/Labrador Retriever,Sporting
+Dog,Dachshund Longhair/Australian Shepherd,Herding; Hound
+Dog,Australian Kelpie/Rat Terrier,Terrier
+Dog,Chinese Sharpei/American Staffordshire Terrier,Toy; Terrier
+Dog,Dachshund Longhair/Chihuahua Longhair,Toy; Hound
+Dog,Ibizan Hound/Pit Bull,Hound; Terrier
+Dog,Collie Rough/Pembroke Welsh Corgi,Herding
+Dog,Boerboel,Working
+Dog,Dachshund/Manchester Terrier,Toy; Hound; Terrier
+Dog,Japanese Chin,Toy
+Dog,Alaskan Husky/German Shepherd,Herding; Working
+Dog,Boxer/Cardigan Welsh Corgi,Herding; Working
+Dog,Black Mouth Cur/Labrador Retriever,Sporting; Hound
+Dog,Whippet/Australian Cattle Dog,Herding; Hound
+Dog,Rottweiler/Doberman Pinsch,Working
+Dog,Miniature Poodle/Chihuahua Shorthair,Toy
+Dog,Spanish Mastiff Mix,Working
+Dog,Scottish Terrier,Terrier
+Dog,Jack Russell Terrier/Boston Terrier,Non-Sporting; Terrier
+Dog,Lhasa Apso/Yorkshire Terrier,Non-Sporting; Toy
+Dog,Mastiff/German Shepherd,Herding; Working
+Dog,Maltese/Cocker Spaniel,Sporting; Toy
+Dog,Shetland Sheepdog/Border Collie,Herding
+Dog,Greyhound/Airedale Terrier,Hound; Terrier
+Dog,Australian Shepherd/Nova Scotia Duck Tolling Retriever,Herding; Sporting
+Dog,Australian Cattle Dog/Dalmatian,Non-Sporting; Herding
+Dog,Newfoundland/Border Collie,Herding; Working
+Dog,Blue Lacy,Herding
+Dog,Norfolk Terrier/Yorkshire Terrier,Toy; Terrier
+Dog,Port Water Dog Mix,Working
+Dog,Pit Bull,Terrier
+Dog,Dogue De Bordeaux/Labrador Retriever,Sporting; Working
+Dog,Catahoula/Treeing Walker Coonhound,Hound; Toy
+Dog,American Bulldog/Basset Hound,Hound
+Dog,Patterdale Terr/Chihuahua Shorthair,Toy; Terrier
+Dog,Australian Kelpie/Dachshund,Hound; Terrier
+Dog,Welsh Springer Spaniel Mix,Sporting
+Dog,Lowchen/Miniature Poodle,Non-Sporting; Toy
+Dog,Australian Cattle Dog/Bloodhound,Herding; Hound
+Dog,Whippet/Australian Kelpie,Hound; Terrier
+Dog,Australian Kelpie/Miniature Pinscher,Toy; Terrier
+Dog,Wire Hair Fox Terrier/Beagle,Hound; Terrier
+Dog,Bichon Frise/Miniature Poodle,Non-Sporting; Toy
+Dog,American Pit Bull Terrier,Terrier
+Dog,English Pointer/Labrador Retriever,Sporting
+Dog,Pit Bull/Doberman Pinsch,Terrier; Working
+Dog,Plott Hound/Rhod Ridgeback,Hound
+Dog,Jack Russell Terrier/Dachshund,Hound; Terrier
+Dog,Smooth Fox Terrier/Rat Terrier,Terrier
+Dog,Great Pyrenees/Golden Retriever,Sporting; Working
+Dog,Boxer/Australian Cattle Dog,Herding; Working
+Dog,Shiba Inu/Dachshund,Non-Sporting; Hound
+Dog,Mastiff/Labrador Retriever,Sporting; Working
+Dog,Queensland Heeler/Basset Hound,Herding; Hound
+Dog,Blue Lacy/Pit Bull,Herding; Terrier
+Dog,Presa Canario,Working
+Dog,Pug/Beagle,Hound; Toy
+Dog,Bulldog/Pit Bull,Non-Sporting; Terrier
+Dog,Border Collie/Dalmatian,Non-Sporting; Herding
+Dog,Labrador Retriever/German Shepherd,Sporting; Herding
+Dog,Dachshund Wirehair/Toy Poodle,Non-Sporting; Hound; Toy
+Dog,English Springer Spaniel Mix,Sporting
+Dog,Border Collie/German Shepherd,Herding
+Dog,Newfoundland/Labrador Retriever,Sporting; Working
+Dog,Plott Hound/Mastiff,Hound; Working
+Dog,Labrador Retriever/St. Bernard Rough Coat,Sporting; Working
+Dog,Border Collie/Parson Russell Terrier,Herding; Terrier
+Dog,Pointer/Catahoula,Sporting; Toy
+Dog,Dogue De Bordeaux/American Bulldog,Hound; Working
+Dog,Collie Smooth/Siberian Husky,Herding; Working
+Dog,Jack Russell Terrier/Pug,Toy; Terrier
+Dog,Chihuahua Shorthair/Border Terrier,Toy; Terrier
+Dog,Catahoula Mix,Toy
+Dog,Spinone Italiano Mix,Sporting
+Dog,Border Terrier/Dachshund Wirehair,Hound; Terrier
+Dog,Australian Kelpie/Australian Shepherd,Herding; Terrier
+Dog,German Shepherd/Cardigan Welsh Corgi,Herding
+Dog,Dachshund Longhair/Cocker Spaniel,Sporting; Hound
+Dog,Dalmatian,Non-Sporting
+Dog,Scottish Terrier/Miniature Poodle,Toy; Terrier
+Dog,St. Bernard Rough Coat,Working
+Dog,Glen Of Imaal Mix,Terrier
+Dog,Maltese/Border Terrier,Toy; Terrier
+Dog,Australian Cattle Dog/Queensland Heeler,Herding
+Dog,Anatol Shepherd/Labrador Retriever,Sporting; Working
+Dog,Keeshond,Non-Sporting
+Dog,Catahoula/Irish Wolfhound,Hound; Toy
+Dog,Labrador Retriever,Sporting
+Dog,Border Collie/Chow Chow,Non-Sporting; Herding
+Dog,Chihuahua Shorthair/Jack Russell Terrier,Toy; Terrier
+Dog,Dalmatian/Australian Cattle Dog,Non-Sporting; Herding
+Dog,Bull Terrier/Jack Russell Terrier,Terrier
+Dog,Chihuahua Shorthair/Beagle,Hound; Toy
+Dog,American Staffordshire Terrier/Rhod Ridgeback,Hound; Terrier
+Dog,Siberian Husky/Chinese Sharpei,Toy; Working
+Dog,Pit Bull/Queensland Heeler,Herding; Terrier
+Dog,Chihuahua Shorthair/Wire Hair Fox Terrier,Toy; Terrier
+Dog,Cane Corso Mix,Working
+Dog,Miniature Schnauzer/Queensland Heeler,Herding; Terrier
+Dog,German Shepherd/Boxer,Herding; Working
+Dog,Maltese/Chihuahua Shorthair,Toy
+Dog,Border Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Labrador Retriever/Miniature Poodle,Sporting; Toy
+Dog,Lhasa Apso/Miniature Poodle,Non-Sporting; Toy
+Dog,Airedale Terrier Mix,Terrier
+Dog,Rhod Ridgeback/Labrador Retriever,Sporting; Hound
+Dog,Dachshund/Cardigan Welsh Corgi,Herding; Hound
+Dog,Dachshund/Chinese Sharpei,Toy; Hound
+Dog,Great Pyrenees/English Setter,Sporting; Working
+Dog,Labrador Retriever/Bloodhound,Sporting; Hound
+Dog,Miniature Schnauzer/Scottish Terrier,Terrier
+Dog,Great Dane/Pit Bull,Terrier; Working
+Dog,American Bulldog/Chinese Sharpei,Toy; Hound
+Dog,Shiba Inu/Chinese Sharpei,Non-Sporting; Toy
+Dog,Black Mouth Cur/Blue Lacy,Herding; Hound
+Dog,German Shepherd/Chinese Sharpei,Herding; Toy
+Dog,Newfoundland/Queensland Heeler,Herding; Working
+Dog,Standard Schnauzer/Soft Coated Wheaten Terrier,Terrier; Working
+Dog,Border Collie/Plott Hound,Herding; Hound
+Dog,Pug/French Bulldog,Non-Sporting; Toy
+Dog,Boxer/American Staffordshire Terrier,Terrier; Working
+Dog,Shih Tzu/Dachshund,Hound; Toy
+Dog,Norfolk Terrier/Bruss Griffon,Toy; Terrier
+Dog,Miniature Poodle/Cairn Terrier,Toy; Terrier
+Dog,Schnauzer Giant Mix,Working
+Dog,Dachshund Longhair/Cairn Terrier,Hound; Terrier
+Dog,Chow Chow/Labrador Retriever,Non-Sporting; Sporting
+Dog,Greater Swiss Mountain Dog Mix,Working
+Dog,Jack Russell Terrier/Unknown,Herding; Terrier
+Dog,Pit Bull/Dachshund,Hound; Terrier
+Dog,Catahoula/Black Mouth Cur,Hound; Toy
+Dog,Chow Chow/Chinese Sharpei,Non-Sporting; Toy
+Dog,Maltese/Yorkshire,Toy
+Dog,American Wirehair Mix,Terrier
+Dog,Finnish Spitz/Dachshund,Non-Sporting; Hound
+Dog,Basset Hound/Golden Retriever,Sporting; Hound
+Dog,Pit Bull/Border Collie,Herding; Terrier
+Dog,Cairn Terrier/Affenpinscher,Toy; Terrier
+Dog,Chow Chow/Australian Kelpie,Non-Sporting; Terrier
+Dog,Beagle/American Staffordshire Terrier,Hound; Terrier
+Dog,Siberian Husky,Working
+Dog,Border Terrier/Dachshund,Hound; Terrier
+Dog,Boxer/Chinese Sharpei,Toy; Working
+Dog,English Bulldog,Non-Sporting
+Dog,Labrador Retriever/Rhod Ridgeback,Sporting; Hound
+Dog,Shih Tzu/Affenpinscher,Toy
+Dog,American Pit Bull Terrier/Pit Bull,Terrier
+Dog,German Shepherd/Chow Chow,Non-Sporting; Herding
+Dog,Beagle/Cardigan Welsh Corgi,Herding; Hound
+Dog,Irish Wolfhound Mix,Hound
+Dog,Pit Bull/Flat Coat Retriever,Sporting; Terrier
+Dog,West Highland/Chihuahua Shorthair,Toy; Terrier
+Dog,Australian Shepherd/Chihuahua Shorthair,Herding; Toy
+Dog,Yorkshire Terrier/Chinese Crested,Toy
+Dog,Boston Terrier Mix,Non-Sporting
+Dog,Alaskan Malamute/German Shepherd,Herding; Working
+Dog,Australian Shepherd/Rhod Ridgeback,Herding; Hound
+Dog,Miniature Schnauzer/West Highland,Terrier
+Dog,Miniature Poodle/Miniature Schnauzer,Toy; Terrier
+Dog,Cairn Terrier/Shih Tzu,Toy; Terrier
+Dog,Alaskan Husky Mix,Working
+Dog,Jack Russell Terrier/Italian Greyhound,Toy; Terrier
+Dog,Siberian Husky Mix,Working
+Dog,Norfolk Terrier Mix,Terrier
+Dog,Boxer/Beagle,Hound; Working
+Dog,Cardigan Welsh Corgi/Dachshund,Herding; Hound
+Dog,Vizsla,Sporting
+Dog,Boxer/Akita,Working
+Dog,Beagle/Pembroke Welsh Corgi,Herding; Hound
+Dog,Dachshund/Beagle,Hound
+Dog,Chihuahua Shorthair/Pomeranian,Toy
+Dog,Boston Terrier,Non-Sporting
+Dog,Boxer/Miniature Poodle,Toy; Working
+Dog,Bluetick Hound Mix,Hound
+Dog,Siamese,Working
+Dog,Cocker Spaniel/Pembroke Welsh Corgi,Sporting; Herding
+Dog,American Bulldog/Schnauzer Giant,Hound; Working
+Dog,Rhod Ridgeback/Pit Bull,Hound; Terrier
+Dog,Pit Bull/Carolina Dog,Terrier; Working
+Dog,Boxer/American Pit Bull Terrier,Terrier; Working
+Dog,American Foxhound,Hound
+Dog,Bombay Mix,Sporting
+Dog,Russian Blue Mix,Working
+Dog,Newfoundland/Australian Cattle Dog,Herding; Working
+Dog,Doberman Pinsch Mix,Working
+Dog,Boxer/Pointer,Sporting; Working
+Dog,Angora/Persian,Toy; Working
+Dog,Manchester Terrier/Norfolk Terrier,Toy; Terrier
+Dog,Dachshund/German Shepherd,Herding; Hound
+Dog,Boston Terrier/Pointer,Non-Sporting; Sporting
+Dog,Australian Cattle Dog/Staffordshire,Herding; Terrier
+Dog,Pit Bull/Blue Lacy,Herding; Terrier
+Dog,Dachshund,Hound
+Dog,German Shepherd/Collie Rough,Herding
+Dog,Plott Hound Mix,Hound
+Dog,Rat Terrier/Boston Terrier,Non-Sporting; Terrier
+Dog,Border Collie/Dachshund,Herding; Hound
+Dog,German Shepherd/Redbone Hound,Herding; Hound
+Dog,Border Collie/Standard Schnauzer,Herding; Working
+Dog,Bichon Frise/Toy Poodle,Non-Sporting; Toy
+Dog,Labrador Retriever/Shiba Inu,Non-Sporting; Sporting
+Dog,Labrador Retriever/Pembroke Welsh Corgi,Sporting; Herding
+Dog,Pomeranian/Border Terrier,Toy; Terrier
+Dog,Australian Shepherd Mix,Herding
+Dog,Border Collie/Pembroke Welsh Corgi,Herding
+Dog,Basset Hound/English Cocker Spaniel,Sporting; Hound
+Dog,Chihuahua Shorthair/Basset Hound,Hound; Toy
+Dog,Cairn Terrier Mix,Terrier
+Dog,Dachshund Wirehair/Miniature Schnauzer,Hound; Terrier
+Dog,Rottweiler/Basset Hound,Hound; Working
+Dog,Miniature Poodle/Bichon Frise,Non-Sporting; Toy
+Dog,Chihuahua Shorthair/Cardigan Welsh Corgi,Herding; Toy
+Dog,Pit Bull/Pointer,Sporting; Terrier
+Dog,Australian Cattle Dog/Vizsla,Herding; Sporting
+Dog,Beagle/Pit Bull,Hound; Terrier
+Dog,Australian Kelpie/Shiba Inu,Non-Sporting; Terrier
+Dog,Chinese Sharpei/Airedale Terrier,Toy; Terrier
+Dog,Great Pyrenees/Collie Rough,Herding; Working
+Dog,Cavalier Span/Toy Poodle,Non-Sporting; Sporting; Toy
+Dog,Black Mouth Cur/German Shepherd,Herding; Hound
+Dog,American Foxhound/Labrador Retriever,Sporting; Hound
+Dog,Maltese,Toy
+Dog,Pointer/Labrador Retriever,Sporting
+Dog,Plott Hound/Bull Terrier,Hound; Terrier
+Dog,Pug/Schipperke,Non-Sporting; Toy
+Dog,Norwich Terrier Mix,Terrier
+Dog,Shetland Sheepdog Mix,Herding
+Dog,French Bulldog/Miniature Schnauzer,Non-Sporting; Terrier
+Dog,Silky Terrier/Maltese,Toy
+Dog,Australian Kelpie/Blue Lacy,Herding; Terrier
+Dog,Labrador Retriever/Dalmatian,Non-Sporting; Sporting
+Dog,Boykin Span Mix,Sporting
+Dog,Feist/Chihuahua Shorthair,Non-Sporting; Toy
+Dog,Belgian Malinois/Australian Shepherd,Herding
+Dog,Redbone Hound/Anatol Shepherd,Hound; Working
+Dog,Rat Terrier/Chihuahua Longhair,Toy; Terrier
+Dog,Yorkshire Terrier/Pomeranian,Toy
+Dog,Chihuahua Shorthair/Whippet,Hound; Toy
+Dog,Maltese/Dachshund,Hound; Toy
+Dog,Jack Russell Terrier/Border Collie,Herding; Terrier
+Dog,American Bulldog,Hound
+Dog,Miniature Schnauzer/Cairn Terrier,Terrier
+Dog,Miniature Pinscher/Whippet,Hound; Toy
+Dog,German Shepherd/Catahoula,Herding; Toy
+Dog,Border Terrier/Standard Schnauzer,Terrier; Working
+Dog,Catahoula/Jack Russell Terrier,Toy; Terrier
+Dog,Chihuahua Shorthair/Smooth Fox Terrier,Toy; Terrier
+Dog,Australian Shepherd/English Setter,Herding; Sporting
+Dog,Golden Retriever/Chow Chow,Non-Sporting; Sporting
+Dog,English Foxhound Mix,Hound
+Dog,Blue Lacy Mix,Herding
+Dog,Jack Russell Terrier/Beagle,Hound; Terrier
+Dog,Basenji Mix,Hound
+Dog,Dachshund/Belgian Malinois,Herding; Hound
+Dog,American Staffordshire Terrier/Plott Hound,Hound; Terrier
+Dog,Shiba Inu,Non-Sporting
+Dog,Domestic Shorthair,Sporting
+Dog,Pit Bull/Chow Chow,Non-Sporting; Terrier
+Dog,Standard Poodle,Working
+Dog,Carolina Dog,Working
+Dog,Lhasa Apso/Cocker Spaniel,Non-Sporting; Sporting
+Dog,Doberman Pinsch/Pit Bull,Terrier; Working
+Dog,Staffordshire/Australian Cattle Dog,Herding; Terrier
+Dog,Toy Poodle/Yorkshire Terrier,Non-Sporting; Toy
+Dog,Treeing Tennesse Brindle,Toy
+Dog,German Shepherd/Golden Retriever,Herding; Sporting
+Dog,Harrier/Catahoula,Toy; Hound
+Dog,Miniature Pinscher/Pomeranian,Toy
+Dog,Chinese Sharpei/American Bulldog,Hound; Toy
+Dog,Border Collie/Siberian Husky,Herding; Working
+Dog,Great Pyrenees/Border Collie,Herding; Working
+Dog,Mastiff/Dutch Shepherd,Herding; Working
+Dog,German Wirehaired Pointer/Labrador Retriever,Sporting
+Dog,Collie Rough/Chinese Sharpei,Herding; Toy
+Dog,Boxer/Greyhound,Hound; Working
+Dog,Whippet/Whippet,Hound
+Dog,Cardigan Welsh Corgi/Australian Cattle Dog,Herding
+Dog,Himalayan,Non-Sporting
+Dog,Border Collie/Pit Bull,Herding; Terrier
+Dog,Maltese/Jack Russell Terrier,Toy; Terrier
+Dog,German Shepherd/Swedish Vallhund,Herding
+Dog,Burmese,Toy
+Dog,Chihuahua Shorthair/Shih Tzu,Toy
+Dog,Basset Hound,Hound
+Dog,American Pit Bull Terrier/American Pit Bull Terrier,Terrier
+Dog,Domestic Medium Hair,Terrier
+Dog,Pointer/Chinese Sharpei,Sporting; Toy
+Dog,Jack Russell Terrier/Manchester Terrier,Toy; Terrier
+Dog,Vizsla/Staffordshire,Sporting; Terrier
+Dog,Great Pyrenees/Australian Shepherd,Herding; Working
+Dog,Javanese Mix,Toy
+Dog,Chihuahua Shorthair/Miniature Schnauzer,Toy; Terrier
+Dog,Chow Chow/Australian Cattle Dog,Non-Sporting; Herding
+Dog,Chihuahua Longhair/Cocker Spaniel,Sporting; Toy
+Dog,Border Collie/Labrador Retriever,Herding; Sporting
+Dog,American Foxhound Mix,Hound
+Dog,English Shepherd,Sporting
+Dog,Australian Shepherd/Boxer,Herding; Working
+Dog,Australian Kelpie,Terrier
+Dog,Chihuahua Shorthair/French Bulldog,Non-Sporting; Toy
+Dog,Smooth Fox Terrier/Jack Russell Terrier,Terrier
+Dog,Pembroke Welsh Corgi,Herding
+Dog,Pembroke Welsh Corgi/Dachshund,Herding; Hound
+Dog,English Bulldog Mix,Non-Sporting
+Dog,Norfolk Terrier/Standard Poodle,Terrier; Working
+Dog,Chow Chow/Pit Bull,Non-Sporting; Terrier
+Dog,German Shepherd/Alaskan Husky,Herding; Working
+Dog,Dachshund Longhair/Chihuahua Shorthair,Toy; Hound
+Dog,Canaan Dog/Pit Bull,Terrier; Working
+Dog,Pit Bull/Border Terrier,Terrier
+Dog,Lhasa Apso,Non-Sporting
+Dog,Bull Terrier Mix,Terrier
+Dog,Maltese/Papillon,Toy
+Dog,Anatol Shepherd/Redbone Hound,Hound; Working
+Dog,Chihuahua Shorthair/German Shepherd,Herding; Toy
+Dog,Soft Coated Wheaten Terrier/Yorkshire Terrier,Toy; Terrier
+Dog,Chihuahua Shorthair/Basenji,Hound; Toy
+Dog,Pug/Pekingese,Toy
+Dog,Jack Russell Terrier/Pointer,Sporting; Terrier
+Dog,American Eskimo Mix,Non-Sporting
+Dog,Domestic Longhair/Rex,Hound
+Dog,Boxer/Pit Bull,Terrier; Working
+Dog,Wire Hair Fox Terrier/German Shepherd,Herding; Terrier
+Dog,Labrador Retriever/Newfoundland,Sporting; Working
+Dog,Chow Chow/English Cocker Spaniel,Non-Sporting; Sporting
+Dog,Cocker Spaniel/Dachshund,Sporting; Hound
+Dog,Pomeranian/Chihuahua Shorthair,Toy
+Dog,Dutch Shepherd/Anatol Shepherd,Herding; Working
+Dog,Flat Coat Retriever/Labrador Retriever,Sporting
+Dog,Toy Poodle/Maltese,Non-Sporting; Toy
+Dog,Labrador Retriever/Chesa Bay Retr,Sporting
+Dog,Cavalier Span Mix,Sporting
+Dog,Rat Terrier/English Pointer,Sporting; Terrier
+Dog,Manchester Terrier/Australian Kelpie,Toy; Terrier
+Dog,Great Dane/Mastiff,Working
+Dog,Australian Cattle Dog/American Staffordshire Terrier,Herding; Terrier
+Dog,Great Pyrenees/Labrador Retriever,Sporting; Working
+Dog,Pekingese/Catahoula,Toy
+Dog,Old English Sheepdog,Herding
+Dog,Catahoula/Whippet,Hound; Toy
+Dog,Norwegian Elkhound Mix,Hound
+Dog,Boxer/Catahoula,Toy; Working
+Dog,Australian Cattle Dog/Pembroke Welsh Corgi,Herding
+Dog,Wire Hair Fox Terrier/Golden Retriever,Sporting; Terrier
+Dog,Manchester Terrier/Toy Fox Terrier,Toy; Terrier
+Dog,German Shepherd/Pembroke Welsh Corgi,Herding
+Dog,American Pit Bull Terrier/Boxer,Terrier; Working
+Dog,American Staffordshire Terrier,Terrier
+Dog,Pit Bull/Pharaoh Hound,Hound; Terrier
+Dog,Flat Coat Retriever/Papillon,Sporting; Toy
+Dog,Bernese Mountain Dog/Rottweiler,Working
+Dog,Newfoundland/Great Pyrenees,Working
+Dog,Dachshund/Parson Russell Terrier,Hound; Terrier
+Dog,Mastiff Mix,Working
+Dog,Catahoula/Labrador Retriever,Sporting; Toy
+Dog,Catahoula/American Pit Bull Terrier,Toy; Terrier
+Dog,Dachshund Longhair/Miniature Poodle,Toy; Hound
+Dog,Anatol Shepherd/Mastiff,Working
+Dog,Black Mouth Cur/Mastiff,Hound; Working
+Dog,Beagle/Rat Terrier,Hound; Terrier
+Dog,Rottweiler/Chow Chow,Non-Sporting; Working
+Dog,Labrador Retriever/Australian Cattle Dog,Sporting; Herding
+Dog,Pointer Mix,Sporting
+Dog,Wirehaired Pointing Griffon Mix,Sporting
+Dog,Chihuahua Shorthair/Chinese Sharpei,Toy
+Dog,Podengo Pequeno Mix,Non-Sporting; Toy
+Dog,English Bulldog/Cairn Terrier,Non-Sporting; Terrier
+Dog,Pointer/Rhod Ridgeback,Sporting; Hound
+Dog,Greyhound,Hound
+Dog,Border Terrier/Labrador Retriever,Sporting; Terrier
+Dog,Rat Terrier/Beagle,Hound; Terrier
+Dog,American Staffordshire Terrier/Labrador Retriever,Sporting; Terrier
+Dog,Chihuahua Shorthair/Mexican Hairless,Toy
+Dog,Australian Kelpie/Whippet,Hound; Terrier
+Dog,Alaskan Malamute/Border Collie,Herding; Working
+Dog,Pug/Pomeranian,Toy
+Dog,Manx Mix,Non-Sporting
+Dog,Cardigan Welsh Corgi/Cocker Spaniel,Herding; Sporting
+Dog,Australian Cattle Dog/Labrador Retriever,Herding; Sporting
+Dog,Soft Coated Wheaten Terrier,Terrier
+Dog,Scottish Terrier/Basset Hound,Hound; Terrier
+Dog,Norwich Terrier/Cairn Terrier,Terrier
+Dog,Rottweiler/Boxer,Working
+Dog,Dachshund/Pembroke Welsh Corgi,Herding; Hound
+Dog,Collie Smooth,Herding
+Dog,Great Dane/Anatol Shepherd,Working
+Dog,Chinese Sharpei Mix,Toy
+Dog,Ragdoll Mix,Herding
+Dog,Labrador Retriever/Harrier,Sporting; Hound
+Dog,Bruss Griffon/Chihuahua Shorthair,Toy
+Dog,Norfolk Terrier,Terrier
+Dog,Border Collie/Whippet,Herding; Hound
+Dog,Leonberger Mix,Working
+Dog,Soft Coated Wheaten Terrier/Standard Poodle,Terrier; Working
+Dog,Alaskan Husky/Australian Shepherd,Herding; Working
+Dog,Chesa Bay Retr/Labrador Retriever,Sporting
+Dog,Beagle/Pug,Toy; Hound
+Dog,Lhasa Apso/Dachshund,Non-Sporting; Hound
+Dog,Labrador Retriever/Great Pyrenees,Sporting; Working
+Dog,Shetland Sheepdog/Cardigan Welsh Corgi,Herding
+Dog,Border Terrier/Rat Terrier,Terrier
+Dog,Wire Hair Fox Terrier,Terrier
+Dog,Basenji/Chow Chow,Non-Sporting; Hound
+Dog,Mastiff/Boxer,Working
+Dog,Queensland Heeler/Border Collie,Herding
+Dog,Chihuahua Shorthair Mix,Toy
+Dog,American Foxhound/Pointer,Sporting; Hound
+Dog,Harrier/Pointer,Sporting; Hound
+Dog,Schnauzer Giant/Labrador Retriever,Sporting; Working
+Dog,Boxer/Anatol Shepherd,Working
+Dog,Miniature Schnauzer/Pug,Toy; Terrier
+Dog,Labrador Retriever/Weimaraner,Sporting
+Dog,Labrador Retriever/Mastiff,Sporting; Working
+Dog,Collie Rough/Pointer,Herding; Sporting
+Dog,Yorkshire Terrier/Toy Poodle,Non-Sporting; Toy
+Dog,French Bulldog/Chihuahua Shorthair,Non-Sporting; Toy
+Dog,Australian Cattle Dog/Collie Smooth,Herding
+Dog,Dogo Argentino Mix,Working
+Dog,Scottish Terrier/Cairn Terrier,Terrier
+Dog,Soft Coated Wheaten Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Chihuahua Shorthair/Welsh Terrier,Toy; Terrier
+Dog,Flat Coat Retriever/Australian Cattle Dog,Sporting; Herding
+Dog,Plott Hound,Hound
+Dog,Pit Bull/Chinese Sharpei,Toy; Terrier
+Dog,Feist Mix,Non-Sporting
+Dog,Dachshund Wirehair/Border Terrier,Hound; Terrier
+Dog,Angora Mix,Working
+Dog,Chihuahua Longhair/Pomeranian,Toy
+Dog,American Bulldog/Great Pyrenees,Hound; Working
+Dog,English Bulldog/Beagle,Non-Sporting; Hound
+Dog,Labrador Retriever/Spanish Water Dog,Sporting; Herding
+Dog,Weimaraner/Labrador Retriever,Sporting
+Dog,Blue Lacy/Australian Kelpie,Herding; Terrier
+Dog,Canaan Dog Mix,Working
+Dog,Himalayan Mix,Non-Sporting
+Dog,Australian Shepherd/Chow Chow,Non-Sporting; Herding
+Dog,Italian Greyhound/Beagle,Hound; Toy
+Dog,Jack Russell Terrier/Welsh Terrier,Terrier
+Dog,Black/Tan Hound/Black Mouth Cur,Herding; Hound
+Dog,English Bulldog/American Staffordshire Terrier,Non-Sporting; Terrier
+Dog,Cairn Terrier/Miniature Schnauzer,Terrier
+Dog,Dachshund/Havanese,Toy; Hound
+Dog,Australian Kelpie/Chinese Sharpei,Toy; Terrier
+Dog,English Bulldog/Boxer,Non-Sporting; Working
+Dog,Bruss Griffon/Maltese,Toy
+Dog,Dachshund Longhair,Hound
+Dog,Jack Russell Terrier/Brittany,Sporting; Terrier
+Dog,Jack Russell Terrier/Cairn Terrier,Terrier
+Dog,Dachshund Wirehair Mix,Hound
+Dog,Pit Bull/Bull Terrier,Terrier
+Dog,Australian Shepherd/Labrador Retriever,Herding; Sporting
+Dog,American Staffordshire Terrier/Pit Bull,Terrier
+Dog,Black Mouth Cur,Hound
+Dog,Nova Scotia Duck Tolling Retriever Mix,Sporting
+Dog,Beauceron,Herding
+Dog,Blue Lacy/Great Dane,Herding; Working
+Dog,Black Mouth Cur/Australian Cattle Dog,Herding; Hound
+Dog,Papillon/Australian Cattle Dog,Herding; Toy
+Dog,Plott Hound/Whippet,Hound
+Dog,Staffordshire/Boxer,Terrier; Working
+Dog,Pug/Boston Terrier,Non-Sporting; Toy
+Dog,Chihuahua Shorthair/Affenpinscher,Toy
+Dog,Silky Terrier,Toy
+Dog,Affenpinscher Mix,Toy
+Dog,Cardigan Welsh Corgi Mix,Herding
+Dog,Hovawart Mix,Sporting
+Dog,English Coonhound/Italian Greyhound,Toy; Hound
+Dog,Rottweiler Mix,Working
+Dog,Manchester Terrier/Pembroke Welsh Corgi,Herding; Toy; Terrier
+Dog,Doberman Pinsch/Catahoula,Toy; Working
+Dog,Labrador Retriever/Vizsla,Sporting
+Dog,Dachshund/Bloodhound,Hound
+Dog,Airedale Terrier,Terrier
+Dog,Irish Terrier/Irish Wolfhound,Hound; Terrier
+Dog,Chihuahua Longhair/Pug,Toy
+Dog,Australian Shepherd/Siberian Husky,Herding; Working
+Dog,Jack Russell Terrier/Shih Tzu,Toy; Terrier
+Dog,Labrador Retriever/Doberman Pinsch,Sporting; Working
+Dog,Dogo Argentino/Labrador Retriever,Sporting; Working
+Dog,Bichon Frise Mix,Non-Sporting
+Dog,Jack Russell Terrier/Labrador Retriever,Sporting; Terrier
+Dog,St. Bernard Rough Coat/German Shepherd,Herding; Working
+Dog,Whippet/Borzoi,Hound
+Dog,Finnish Spitz,Non-Sporting
+Dog,Dachshund Wirehair/Pbgv,Toy; Hound
+Dog,Dachshund/Harrier,Hound
+Dog,Pomeranian/Schipperke,Non-Sporting; Toy
+Dog,Miniature Poodle/American Eskimo,Non-Sporting; Toy
+Dog,Boxer/Dogue De Bordeaux,Working
+Dog,Parson Russell Terrier Mix,Terrier
+Dog,Great Dane/Boxer,Working
+Dog,German Shepherd/Doberman Pinsch,Herding; Working
+Dog,Pit Bull/Labrador Retriever,Sporting; Terrier
+Dog,Australian Cattle Dog/Rhod Ridgeback,Herding; Hound
+Dog,Greyhound Mix,Hound
+Dog,Australian Kelpie/American Pit Bull Terrier,Terrier
+Dog,Pembroke Welsh Corgi/Pit Bull,Herding; Terrier
+Dog,Chinese Sharpei/Great Dane,Toy; Working
+Dog,Chihuahua Shorthair/Dachshund,Hound; Toy
+Dog,Treeing Walker Coonhound/Australian Cattle Dog,Herding; Hound
+Dog,Italian Greyhound/Chihuahua Shorthair,Toy
+Dog,German Shepherd/Collie Smooth,Herding
+Dog,Flat Coat Retriever/German Shepherd,Sporting; Herding
+Dog,Swedish Vallhund Mix,Herding
+Dog,Chihuahua Shorthair/Cairn Terrier,Toy; Terrier
+Dog,Golden Retriever/Finnish Spitz,Non-Sporting; Sporting
+Dog,Labrador Retriever/Chow Chow,Non-Sporting; Sporting
+Dog,Border Collie/Mastiff,Herding; Working
+Dog,Queensland Heeler/Chihuahua Shorthair,Herding; Toy
+Dog,Pbgv,Toy
+Dog,German Shorthair Pointer/Australian Cattle Dog,Sporting; Herding
+Dog,Miniature Pinscher/Dachshund,Hound; Toy
+Dog,Miniature Pinscher,Toy
+Dog,Pit Bull/Alaskan Husky,Terrier; Working
+Dog,Devon Rex Mix,Working
+Dog,Cairn Terrier/Yorkshire Terrier,Toy; Terrier
+Dog,American Staffordshire Terrier/French Bulldog,Non-Sporting; Terrier
+Dog,American Pit Bull Terrier Mix,Terrier
+Dog,English Shepherd Mix,Sporting
+Dog,Australian Cattle Dog/Beagle,Herding; Hound
+Dog,Beagle/Staffordshire,Hound; Terrier
+Dog,Alaskan Malamute/Alaskan Husky,Working
+Dog,Catahoula/Cardigan Welsh Corgi,Herding; Toy
+Dog,Black/Tan Hound/Siberian Husky,Herding; Hound; Working
+Dog,German Wirehaired Pointer,Sporting
+Dog,German Shepherd/Bull Terrier,Herding; Terrier
+Dog,Labrador Retriever/American Foxhound,Sporting; Hound
+Dog,Great Dane Mix,Working
+Dog,Jack Russell Terrier/Australian Cattle Dog,Herding; Terrier
+Dog,Smooth Fox Terrier Mix,Terrier
+Dog,Lowchen Mix,Non-Sporting
+Dog,Basset Hound/Australian Shepherd,Herding; Hound
+Dog,American Staffordshire Terrier Mix,Terrier
+Dog,Maltese/Lhasa Apso,Non-Sporting; Toy
+Dog,Dachshund Longhair Mix,Hound
+Dog,Bluetick Hound/Australian Kelpie,Hound; Terrier
+Dog,Labrador Retriever/Alaskan Malamute,Sporting; Working
+Dog,Dachshund/Australian Cattle Dog,Herding; Hound
+Dog,Yorkshire Terrier/Dachshund Wirehair,Hound; Toy
+Dog,Dutch Shepherd,Herding
+Dog,Cairn Terrier/Chihuahua Longhair,Toy; Terrier
+Dog,Papillon/Skye Terrier,Toy; Terrier
+Dog,Mastiff/Pit Bull,Terrier; Working
+Dog,Queensland Heeler Mix,Herding
+Dog,Labrador Retriever/Greyhound,Sporting; Hound
+Dog,Boxer/German Shepherd,Herding; Working
+Dog,Snowshoe Mix,Non-Sporting
+Dog,Labrador Retriever/Queensland Heeler,Sporting; Herding
+Dog,Domestic Medium Hair/Siamese,Terrier; Working
+Dog,Cardigan Welsh Corgi/Australian Shepherd,Herding
+Dog,Beagle/Australian Shepherd,Herding; Hound
+Dog,Sealyham Terr Mix,Terrier
+Dog,Redbone Hound/Boxer,Hound; Working
+Dog,Presa Canario Mix,Working
+Dog,Manx/Domestic Longhair,Non-Sporting; Hound
+Dog,Australian Cattle Dog Mix,Herding
+Dog,Chihuahua Shorthair/Border Collie,Herding; Toy
+Dog,Plott Hound/German Shepherd,Herding; Hound
+Dog,Miniature Pinscher/Pug,Toy
+Dog,Vizsla/Dachshund,Sporting; Hound
+Dog,Collie Smooth/Boxer,Herding; Working
+Dog,Pit Bull/Basset Hound,Hound; Terrier
+Dog,Black/Tan Hound/Labrador Retriever,Herding; Hound; Sporting
+Dog,Maltese/Toy Poodle,Non-Sporting; Toy
+Dog,Standard Schnauzer,Working
+Dog,Dutch Shepherd/Labrador Retriever,Herding; Sporting
+Dog,Abyssinian Mix,Working
+Dog,Vizsla Mix,Sporting
+Dog,Australian Shepherd/Beagle,Herding; Hound
+Dog,Shih Tzu/Cocker Spaniel,Sporting; Toy
+Dog,Turkish Van Mix,Herding
+Dog,Collie Rough Mix,Herding
+Dog,Lhasa Apso Mix,Non-Sporting
+Dog,Chinese Sharpei/Pit Bull,Toy; Terrier
+Dog,Rhod Ridgeback Mix,Hound
+Dog,Manchester Terrier Mix,Toy; Terrier
+Dog,Jack Russell Terrier/Basset Hound,Hound; Terrier
+Dog,English Setter Mix,Sporting
+Dog,Parson Russell Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Border Collie/Rottweiler,Herding; Working
+Dog,Chihuahua Longhair/Queensland Heeler,Herding; Toy
+Dog,Treeing Walker Coonhound Mix,Hound
+Dog,Shih Tzu/Havanese,Toy
+Dog,Pembroke Welsh Corgi/Golden Retriever,Herding; Sporting
+Dog,Chihuahua Shorthair/Pit Bull,Toy; Terrier
+Dog,Shih Tzu Mix,Toy
+Dog,Boxer/Doberman Pinsch,Working
+Dog,Toy Poodle,Non-Sporting; Toy
+Dog,Greyhound/Dalmatian,Non-Sporting; Hound
+Dog,Blue Lacy/Weimaraner,Herding; Sporting
+Dog,Border Terrier/West Highland,Terrier
+Dog,Dachshund Mix,Hound
+Dog,Leonberger,Working
+Dog,Labrador Retriever/Jack Russell Terrier,Sporting; Terrier
+Dog,Pekingese/Miniature Poodle,Toy
+Dog,Shetland Sheepdog/Italian Greyhound,Herding; Toy
+Dog,Saluki,Hound
+Dog,Pit Bull/St. Bernard Smooth Coat,Terrier; Working
+Dog,Dachshund Wirehair/Miniature Poodle,Toy; Hound
+Dog,Collie Smooth/Beagle,Herding; Hound
+Dog,Queensland Heeler/Pointer,Herding; Sporting
+Dog,Akita/Chow Chow,Non-Sporting; Working
+Dog,Australian Kelpie/Labrador Retriever,Sporting; Terrier
+Dog,Papillon/Pomeranian,Toy
+Dog,Australian Cattle Dog/Great Pyrenees,Herding; Working
+Dog,Snowshoe/Ragdoll,Non-Sporting; Herding
+Dog,American Eskimo,Non-Sporting
+Dog,Italian Greyhound,Toy
+Dog,Cymric Mix,Terrier
+Dog,Chartreux Mix,Hound
+Dog,Anatol Shepherd/Siberian Husky,Working
+Dog,Catahoula,Toy
+Dog,Old English Bulldog Mix,Non-Sporting
+Dog,Labrador Retriever/Boston Terrier,Non-Sporting; Sporting
+Dog,French Bulldog/English Bulldog,Non-Sporting
+Dog,Labrador Retriever/Pit Bull,Sporting; Terrier
+Dog,Bernese Mountain Dog Mix,Working
+Dog,Golden Retriever/Akita,Sporting; Working
+Dog,Shih Tzu/Maltese,Toy
+Dog,British Shorthair,Sporting
+Dog,Akita Mix,Working
+Dog,Devon Rex,Working
+Dog,Dachshund/Dachshund,Hound
+Dog,Chihuahua Longhair,Toy
+Dog,Shiba Inu/Siberian Husky,Non-Sporting; Working
+Dog,Beagle/Pointer,Sporting; Hound
+Dog,Rat Terrier/Jack Russell Terrier,Terrier
+Dog,Australian Shepherd/Cocker Spaniel,Herding; Sporting
+Dog,Turkish Angora Mix,Toy
+Dog,Golden Retriever/Collie Rough,Sporting; Herding
+Dog,Norfolk Terrier/Dachshund Wirehair,Hound; Terrier
+Dog,Miniature Schnauzer/Maltese,Toy; Terrier
+Dog,Whippet/Beagle,Hound
+Dog,Miniature Poodle/Havanese,Toy
+Dog,Chinese Crested Mix,Toy
+Dog,Chihuahua Shorthair/Yorkshire Terrier,Toy
+Dog,Domestic Medium Hair Mix,Terrier
+Dog,Domestic Longhair/Russian Blue,Hound; Working
+Dog,Pharaoh Hound/Australian Cattle Dog,Herding; Hound
+Dog,Miniature Poodle/Golden Retriever,Sporting; Toy
+Dog,American Eskimo/Border Collie,Non-Sporting; Herding
+Dog,German Shepherd/Greyhound,Herding; Hound
+Dog,Siberian Husky/Anatol Shepherd,Working
+Dog,Bernese Mountain Dog,Working
+Dog,Cardigan Welsh Corgi/Jack Russell Terrier,Herding; Terrier
+Dog,English Coonhound Mix,Hound
+Dog,Boykin Span,Sporting
+Dog,Unknown Mix,Herding
+Dog,Chinese Sharpei/Basset Hound,Hound; Toy
+Dog,Staffordshire/English Bulldog,Non-Sporting; Terrier
+Dog,Australian Cattle Dog/Alaskan Husky,Herding; Working
+Dog,Lhasa Apso/Shih Tzu,Non-Sporting; Toy
+Dog,Australian Shepherd/Greyhound,Herding; Hound
+Dog,Saluki/Doberman Pinsch,Hound; Working
+Dog,Dachshund/Rat Terrier,Hound; Terrier
+Dog,Yorkshire Terrier/Cairn Terrier,Toy; Terrier
+Dog,Cane Corso,Working
+Dog,Belgian Malinois Mix,Herding
+Dog,Rhod Ridgeback,Hound
+Dog,Labrador Retriever/Beauceron,Sporting; Herding
+Dog,Boxer/Labrador Retriever,Sporting; Working
+Dog,Miniature Poodle/Beagle,Hound; Toy
+Dog,Labrador Retriever/English Springer Spaniel,Sporting
+Dog,Miniature Poodle/Border Terrier,Toy; Terrier
+Dog,Border Collie/Canaan Dog,Herding; Working
+Dog,Chihuahua Shorthair/Boxer,Toy; Working
+Dog,Dachshund/English Bulldog,Non-Sporting; Hound
+Dog,Redbone Hound/Australian Cattle Dog,Herding; Hound
+Dog,Pembroke Welsh Corgi/Chihuahua Shorthair,Herding; Toy
+Dog,Chihuahua Longhair/Chihuahua Shorthair,Toy
+Dog,German Shepherd/Black/Tan Hound,Herding; Hound
+Dog,Boxer/Harrier,Hound; Working
+Dog,Anatol Shepherd/Australian Shepherd,Herding; Working
+Dog,Pointer/Australian Cattle Dog,Sporting; Herding
+Dog,Dogo Argentino,Working
+Dog,Border Terrier/Chihuahua Longhair,Toy; Terrier
+Dog,Collie Smooth/Labrador Retriever,Herding; Sporting
+Dog,Shih Tzu/Cardigan Welsh Corgi,Herding; Toy
+Dog,Irish Terrier/Labrador Retriever,Sporting; Terrier
+Dog,English Coonhound/Border Collie,Herding; Hound
+Dog,Dogue De Bordeaux Mix,Working
+Dog,Pit Bull/Siberian Husky,Terrier; Working
+Dog,Pit Bull/Anatol Shepherd,Terrier; Working
+Dog,Harrier/Labrador Retriever,Sporting; Hound
+Dog,Collie Rough,Herding
+Dog,Rat Terrier/Pug,Toy; Terrier
+Dog,Balinese Mix,Toy
+Dog,Cocker Spaniel/Shetland Sheepdog,Sporting; Herding
+Dog,Beagle Mix,Hound
+Dog,Brittany/Collie Rough,Sporting; Herding
+Dog,Beagle/German Shepherd,Herding; Hound
+Dog,Rhod Ridgeback/Harrier,Hound
+Dog,Labrador Retriever/Black/Tan Hound,Sporting; Hound; Herding
+Dog,Dachshund Wirehair/Rat Terrier,Hound; Terrier
+Dog,Basset Hound Mix,Hound
+Dog,Beagle/Cocker Spaniel,Sporting; Hound
+Dog,Akita/Siberian Husky,Working
+Dog,American Bulldog Mix,Hound
+Dog,Pit Bull/English Bulldog,Non-Sporting; Terrier
+Dog,Rat Terrier/Pit Bull,Terrier
+Dog,American Bulldog/Pit Bull,Hound; Terrier
+Dog,English Pointer Mix,Sporting
+Dog,Bulldog,Non-Sporting
+Dog,Miniature Poodle/Lhasa Apso,Non-Sporting; Toy
+Dog,German Shepherd/Labrador Retriever,Herding; Sporting
+Dog,German Shepherd/Alaskan Malamute,Herding; Working
+Dog,Chihuahua Shorthair/Miniature Pinscher,Toy
+Dog,Pointer/Jack Russell Terrier,Sporting; Terrier
+Dog,Jack Russell Terrier/Cavalier Span,Sporting; Terrier
+Dog,Soft Coated Wheaten Terrier/Border Terrier,Terrier
+Dog,Miniature Poodle/Shih Tzu,Toy
+Dog,Labrador Retriever/Plott Hound,Sporting; Hound
+Dog,Domestic Longhair/Persian,Toy; Hound
+Dog,Australian Cattle Dog/Boxer,Herding; Working
+Dog,Pointer/Pit Bull,Sporting; Terrier
+Dog,Miniature Poodle/Maltese,Toy
+Dog,Yorkshire Terrier Mix,Toy
+Dog,Pug/Italian Greyhound,Toy
+Dog,Dachshund/English Foxhound,Hound
+Dog,Labrador Retriever/Standard Schnauzer,Sporting; Working
+Dog,Chinese Sharpei/Labrador Retriever,Sporting; Toy
+Dog,Persian Mix,Toy
+Dog,Ibizan Hound Mix,Hound
+Dog,Pit Bull/American Foxhound,Hound; Terrier
+Dog,Rat Terrier/Queensland Heeler,Herding; Terrier
+Dog,Bullmastiff,Working
+Dog,Belgian Sheepdog,Herding
+Dog,Australian Shepherd,Herding
+Dog,Tonkinese Mix,Toy
+Dog,Labrador Retriever/Whippet,Sporting; Hound
+Dog,American Pit Bull Terrier/Chinese Sharpei,Toy; Terrier
+Dog,Bruss Griffon/Chihuahua Longhair,Toy
+Dog,Labrador Retriever/Brittany,Sporting
+Dog,Manx,Non-Sporting
+Dog,Bearded Collie,Herding
+Dog,Yorkshire Terrier/Parson Russell Terrier,Toy; Terrier
+Dog,Norfolk Terrier/Cairn Terrier,Terrier
+Dog,Doberman Pinsch/Labrador Retriever,Sporting; Working
+Dog,Tibetan Spaniel Mix,Non-Sporting
+Dog,Labrador Retriever/Siberian Husky,Sporting; Working
+Dog,Cocker Spaniel/Chihuahua Longhair,Sporting; Toy
+Dog,Manchester Terrier/Dachshund,Toy; Hound; Terrier
+Dog,Boxer/Bulldog,Non-Sporting; Working
+Dog,Pekingese/Cavalier Span,Sporting; Toy
+Dog,Australian Shepherd/English Springer Spaniel,Herding; Sporting
+Dog,Chihuahua Longhair/Rat Terrier,Toy; Terrier
+Dog,Rhod Ridgeback/Bullmastiff,Hound; Working
+Dog,Rottweiler/Beagle,Hound; Working
+Dog,Labrador Retriever/Pointer,Sporting
+Dog,Australian Cattle Dog/German Shorthair Pointer,Herding; Sporting
+Dog,Cocker Spaniel/Dachshund Longhair,Sporting; Hound
+Dog,Dachshund Longhair/Pomeranian,Toy; Hound
+Dog,Pit Bull/Black Mouth Cur,Hound; Terrier
+Dog,German Shepherd/Siberian Husky,Herding; Working
+Dog,Chihuahua Shorthair/Manchester Terrier,Toy; Terrier
+Dog,Bulldog/Boston Terrier,Non-Sporting
+Dog,Great Dane/Staffordshire,Terrier; Working
+Dog,Cocker Spaniel/Chihuahua Shorthair,Sporting; Toy
+Dog,Italian Greyhound/Cavalier Span,Sporting; Toy
+Dog,Great Pyrenees/Rottweiler,Working
+Dog,Akita/Australian Cattle Dog,Herding; Working
+Dog,Cocker Spaniel/Toy Poodle,Non-Sporting; Sporting; Toy
+Dog,Boston Terrier/Beagle,Non-Sporting; Hound
+Dog,Lhasa Apso/Pbgv,Non-Sporting; Toy
+Dog,Shih Tzu/Yorkshire Terrier,Toy
+Dog,Chihuahua Shorthair/Pekingese,Toy
+Dog,Samoyed Mix,Working
+Dog,Pekingese,Toy
+Dog,Gordon Setter Mix,Sporting
+Dog,Beagle/Cavalier Span,Sporting; Hound
+Dog,Great Pyrenees/Standard Poodle,Working
+Dog,St. Bernard Smooth Coat/Anatol Shepherd,Working
+Dog,Australian Cattle Dog/American Foxhound,Herding; Hound
+Dog,Australian Terrier Mix,Terrier
+Dog,Australian Cattle Dog/Akita,Herding; Working
+Dog,Pit Bull/Pit Bull,Terrier
+Dog,Welsh Springer Spaniel,Sporting
+Dog,St. Bernard Rough Coat/Labrador Retriever,Sporting; Working
+Dog,Boston Terrier/Pembroke Welsh Corgi,Non-Sporting; Herding
+Dog,Rat Terrier/Basenji,Hound; Terrier
+Dog,Welsh Terrier/Wire Hair Fox Terrier,Terrier
+Dog,Australian Cattle Dog/Cairn Terrier,Herding; Terrier
+Dog,Bruss Griffon/Cairn Terrier,Toy; Terrier
+Dog,Shetland Sheepdog/Keeshond,Non-Sporting; Herding
+Dog,Labrador Retriever/Dachshund,Sporting; Hound
+Dog,Chinese Crested/Papillon,Toy
+Dog,Miniature Schnauzer Mix,Terrier
+Dog,Neapolitan Mastiff Mix,Working
+Dog,Cairn Terrier/West Highland,Terrier
+Dog,Afghan Hound Mix,Hound
+Dog,Shih Tzu/Cavalier Span,Sporting; Toy
+Dog,Brittany Mix,Sporting
+Dog,Chow Chow/Cardigan Welsh Corgi,Non-Sporting; Herding
+Dog,Beagle/Labrador Retriever,Sporting; Hound
+Dog,Mastiff/Cane Corso,Working
+Dog,Pit Bull/American Bulldog,Hound; Terrier
+Dog,Labrador Retriever/Chinese Sharpei,Sporting; Toy
+Dog,German Wirehaired Pointer Mix,Sporting
+Dog,Golden Retriever Mix,Sporting
+Dog,Dachshund Stan Mix,Hound
+Dog,Australian Shepherd/Australian Cattle Dog,Herding
+Dog,Lhasa Apso/Border Terrier,Non-Sporting; Terrier
+Dog,Whippet/Labrador Retriever,Sporting; Hound
+Dog,Greater Swiss Mountain Dog,Working
+Dog,Bull Terrier/Australian Kelpie,Terrier
+Dog,Pembroke Welsh Corgi/Anatol Shepherd,Herding; Working
+Dog,Chesa Bay Retr Mix,Sporting
+Dog,Labrador Retriever/Collie Smooth,Sporting; Herding
+Dog,Pit Bull/Rhod Ridgeback,Hound; Terrier
+Dog,Pharaoh Hound Mix,Hound
+Dog,Standard Schnauzer/Border Terrier,Terrier; Working
+Dog,Jack Russell Terrier/Chihuahua Longhair,Toy; Terrier
+Dog,Pekingese/Chihuahua Shorthair,Toy
+Dog,Labrador Retriever/Cocker Spaniel,Sporting
+Dog,Dachshund/Yorkshire Terrier,Toy; Hound
+Dog,Finnish Spitz Mix,Non-Sporting
+Dog,English Springer Spaniel,Sporting
+Dog,Papillon,Toy
+Dog,Bulldog Mix,Non-Sporting
+Dog,Bull Terrier/Border Collie,Herding; Terrier
+Dog,American Staffordshire Terrier/American Bulldog,Hound; Terrier
+Dog,Rat Terrier Mix,Terrier
+Dog,West Highland/Cairn Terrier,Terrier
+Dog,Plott Hound/Labrador Retriever,Sporting; Hound
+Dog,Pointer/Brittany,Sporting
+Dog,Catahoula/Pit Bull,Toy; Terrier
+Dog,Chinese Crested/Chihuahua Longhair,Toy
+Dog,American Eskimo/Australian Shepherd,Non-Sporting; Herding
+Dog,Staffordshire/Bulldog,Non-Sporting; Terrier
+Dog,Blue Lacy/Collie Smooth,Herding
+Dog,Cocker Spaniel/Golden Retriever,Sporting
+Dog,Standard Poodle Mix,Working
+Dog,German Shepherd/Mastiff,Herding; Working
+Dog,Jindo Mix,Working
+Dog,Toy Poodle Mix,Non-Sporting; Toy
+Dog,Australian Shepherd/Alaskan Malamute,Herding; Working
+Dog,St. Bernard Smooth Coat,Working
+Dog,Labrador Retriever/Pug,Sporting; Toy
+Dog,Chesa Bay Retr,Sporting
+Dog,Alaskan Malamute/Akita,Working
+Dog,Jack Russell Terrier/Papillon,Toy; Terrier
+Dog,Dachshund/Cavalier Span,Sporting; Hound
+Dog,Rat Terrier/Cairn Terrier,Terrier
+Dog,Siberian Husky/Border Collie,Herding; Working
+Dog,Whippet/Rat Terrier,Hound; Terrier
+Dog,Australian Cattle Dog/Pug,Herding; Toy
+Dog,Bengal,Hound
+Dog,Catahoula/Chinese Sharpei,Toy
+Dog,Jack Russell Terrier/Cardigan Welsh Corgi,Herding; Terrier
+Dog,Australian Cattle Dog/Chow Chow,Non-Sporting; Herding
+Dog,Black Mouth Cur/Boxer,Hound; Working
+Dog,Standard Poodle/Labrador Retriever,Sporting; Working
+Dog,Pit Bull/German Shepherd,Herding; Terrier
+Dog,Welsh Terrier,Terrier
+Dog,Picardy Sheepdog Mix,Herding
+Dog,Cardigan Welsh Corgi/Cardigan Welsh Corgi,Herding
+Dog,Pointer/Queensland Heeler,Sporting; Herding
+Dog,Siberian Husky/Cardigan Welsh Corgi,Herding; Working
+Dog,Black/Tan Hound,Herding; Hound
+Dog,Catahoula/Mastiff,Toy; Working
+Dog,Blue Lacy/Australian Cattle Dog,Herding
+Dog,Pug/Labrador Retriever,Sporting; Toy
+Dog,Bruss Griffon/Yorkshire Terrier,Toy
+Dog,Border Terrier/Pug,Toy; Terrier
+Dog,Labrador Retriever Mix,Sporting
+Dog,Boxer/American Bulldog,Hound; Working
+Dog,Pomeranian/Shetland Sheepdog,Herding; Toy
+Dog,Yorkshire Terrier/Chihuahua Longhair,Toy
+Dog,Catahoula/Plott Hound,Hound; Toy
+Dog,Cairn Terrier/Miniature Poodle,Toy; Terrier
+Dog,Schipperke Mix,Non-Sporting
+Dog,Miniature Pinscher/Chihuahua Shorthair,Toy
+Dog,German Shepherd/Australian Kelpie,Herding; Terrier
+Dog,Pit Bull/Boston Terrier,Non-Sporting; Terrier
+Dog,Australian Cattle Dog/Collie Rough,Herding
+Dog,Australian Cattle Dog/Chinese Sharpei,Herding; Toy
+Dog,Boston Terrier/Rat Terrier,Non-Sporting; Terrier
+Dog,Pit Bull/Dalmatian,Non-Sporting; Terrier
+Dog,Border Collie/English Pointer,Herding; Sporting
+Dog,Rottweiler/Pit Bull,Terrier; Working
+Dog,Dachshund/Chihuahua Shorthair,Toy; Hound
+Dog,Weimaraner,Sporting
+Dog,German Shepherd/German Shepherd,Herding
+Dog,Chihuahua Shorthair/Parson Russell Terrier,Toy; Terrier
+Dog,Vizsla/Boxer,Sporting; Working
+Dog,Chihuahua Shorthair/Shetland Sheepdog,Herding; Toy
+Dog,Golden Retriever/Whippet,Sporting; Hound
+Dog,Norfolk Terrier/Dachshund,Hound; Terrier
+Dog,Australian Shepherd/Collie Rough,Herding
+Dog,Rhod Ridgeback/Mastiff,Hound; Working
+Dog,Labrador Retriever/American Pit Bull Terrier,Sporting; Terrier
+Dog,Chihuahua Shorthair/Swedish Vallhund,Herding; Toy
+Dog,Rat Terrier/Miniature Poodle,Toy; Terrier
+Dog,Greyhound/Labrador Retriever,Sporting; Hound
+Dog,Maine Coon Mix,Hound
+Dog,German Shepherd/Great Dane,Herding; Working
+Dog,Border Collie/American Staffordshire Terrier,Herding; Terrier
+Dog,Boston Terrier/Pit Bull,Non-Sporting; Terrier
+Dog,Rat Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Miniature Poodle/Yorkshire Terrier,Toy
+Dog,Chihuahua Shorthair/Finnish Spitz,Non-Sporting; Toy
+Dog,Russian Blue,Working
+Dog,Australian Cattle Dog/Cardigan Welsh Corgi,Herding
+Dog,Cardigan Welsh Corgi/English Setter,Herding; Sporting
+Dog,French Bulldog Mix,Non-Sporting
+Dog,Beagle/Boston Terrier,Non-Sporting; Hound
+Dog,Australian Cattle Dog/German Shepherd,Herding
+Dog,Beagle/Jack Russell Terrier,Hound; Terrier
+Dog,Black Mouth Cur/Rhod Ridgeback,Hound
+Dog,Chow Chow/Irish Setter,Non-Sporting; Sporting
+Dog,Jack Russell Terrier/Maltese,Toy; Terrier
+Dog,Catahoula/Pointer,Sporting; Toy
+Dog,American Bulldog/Pointer,Sporting; Hound
+Dog,Redbone Hound Mix,Hound
+Dog,Parson Russell Terrier/Beagle,Hound; Terrier
+Dog,Brittany/Labrador Retriever,Sporting
+Dog,Shetland Sheepdog/Dachshund Longhair,Herding; Hound
+Dog,Blue Lacy/Pointer,Herding; Sporting
+Dog,Bichon Frise,Non-Sporting
+Dog,Dachshund/Shih Tzu,Toy; Hound
+Dog,Harrier/German Shepherd,Herding; Hound
+Dog,Bruss Griffon/Dachshund,Hound; Toy
+Dog,Dachshund Wirehair,Hound
+Dog,Great Dane/Labrador Retriever,Sporting; Working
+Dog,Tibetan Terrier Mix,Non-Sporting
+Dog,Australian Cattle Dog/Plott Hound,Herding; Hound
+Dog,Australian Shepherd/Pit Bull,Herding; Terrier
+Dog,Manchester Terrier/Chihuahua Longhair,Toy; Terrier
+Dog,German Shepherd/Border Collie,Herding
+Dog,Australian Kelpie/Beagle,Hound; Terrier
+Dog,Pug/Border Terrier,Toy; Terrier
+Dog,Dachshund/Bull Terrier,Hound; Terrier
+Dog,German Shepherd/Akita,Herding; Working
+Dog,Miniature Poodle/English Cocker Spaniel,Sporting; Toy
+Dog,Saluki Mix,Hound
+Dog,Bullmastiff Mix,Working
+Dog,Rat Terrier/Pembroke Welsh Corgi,Herding; Terrier
+Dog,Australian Cattle Dog/Boston Terrier,Non-Sporting; Herding
+Dog,Cocker Spaniel/Labrador Retriever,Sporting
+Dog,Chinese Sharpei/Australian Cattle Dog,Herding; Toy
+Dog,Australian Cattle Dog/Pointer,Herding; Sporting
+Dog,Beagle/Boxer,Hound; Working
+Dog,Whippet/Shetland Sheepdog,Herding; Hound
+Dog,Cavalier Span,Sporting
+Dog,Harrier Mix,Hound
+Dog,Labrador Retriever/Beagle,Sporting; Hound
+Dog,Cardigan Welsh Corgi/German Shepherd,Herding
+Dog,Beagle,Hound
+Dog,Border Collie/Australian Cattle Dog,Herding
+Dog,Schipperke/Chihuahua Shorthair,Non-Sporting; Toy
+Dog,Standard Poodle/Whippet,Hound; Working
+Dog,Dalmatian Mix,Non-Sporting
+Dog,St. Bernard Smooth Coat Mix,Working
+Dog,Chihuahua Shorthair/Schipperke,Non-Sporting; Toy
+Dog,Cardigan Welsh Corgi/Pointer,Herding; Sporting
+Dog,Border Collie/Akita,Herding; Working
+Dog,Golden Retriever/Standard Poodle,Sporting; Working
+Dog,Standard Schnauzer/Standard Poodle,Working
+Dog,Havana Brown Mix,Toy
+Dog,Chihuahua Shorthair/Cirneco,Toy; Working
+Dog,German Shorthair Pointer,Sporting
+Dog,Bedlington Terr Mix,Terrier
+Dog,Dachshund Longhair/Miniature Schnauzer,Hound; Terrier
+Dog,German Shepherd/Nova Scotia Duck Tolling Retriever,Herding; Sporting
+Dog,Yorkshire Terrier/Miniature Poodle,Toy
+Dog,Boston Terrier/Miniature Schnauzer,Non-Sporting; Terrier
+Dog,Labrador Retriever/Labrador Retriever,Sporting
+Dog,Dogo Argentino/Chinese Sharpei,Toy; Working
+Dog,Cavalier Span/Papillon,Sporting; Toy
+Dog,Soft Coated Wheaten Terrier Mix,Terrier
+Dog,Jack Russell Terrier/Miniature Schnauzer,Terrier
+Dog,Border Collie/Great Pyrenees,Herding; Working
+Dog,Coton De Tulear Mix,Non-Sporting
+Dog,Anatol Shepherd/German Shepherd,Herding; Working
+Dog,Catahoula/Border Collie,Herding; Toy
+Dog,Miniature Poodle/West Highland,Toy; Terrier
+Dog,Doberman Pinsch/Australian Cattle Dog,Herding; Working
+Dog,Redbone Hound,Hound
+Dog,Chihuahua Shorthair/Rat Terrier,Toy; Terrier
+Dog,Basenji/Chihuahua Shorthair,Toy; Hound
+Dog,Weimaraner Mix,Sporting
+Dog,Australian Cattle Dog/Black Mouth Cur,Herding; Hound
+Dog,Dachshund/German Pinscher,Hound; Working
+Dog,Dutch Shepherd/Boxer,Herding; Working
+Dog,Havanese,Toy
+Dog,Siberian Husky/Australian Shepherd,Herding; Working
+Dog,Black Mouth Cur/Dachshund,Hound
+Dog,Rhod Ridgeback/Plott Hound,Hound
+Dog,Australian Cattle Dog,Herding
+Dog,Plott Hound/Black/Tan Hound,Herding; Hound
+Dog,Whippet/Treeing Cur,Hound
+Dog,Norfolk Terrier/Chihuahua Shorthair,Toy; Terrier
+Dog,Miniature Schnauzer/Miniature Poodle,Toy; Terrier
+Dog,Shiba Inu Mix,Non-Sporting
+Dog,Basenji/Chihuahua Longhair,Toy; Hound
+Dog,Manx/Domestic Shorthair,Non-Sporting; Sporting
+Dog,Miniature Poodle/Australian Cattle Dog,Herding; Toy
+Dog,Dachshund/Basset Hound,Hound
+Dog,Collie Rough/Golden Retriever,Herding; Sporting
+Dog,Jack Russell Terrier/Rat Terrier,Terrier
+Dog,Carolina Dog/Chihuahua Shorthair,Toy; Working
+Dog,Dandie Dinmont,Terrier
+Dog,Collie Rough/German Shepherd,Herding
+Dog,Flat Coat Retriever,Sporting
+Dog,Pit Bull/Pug,Toy; Terrier
+Dog,Collie Rough/Australian Cattle Dog,Herding
+Dog,Bull Terrier Miniature Mix,Terrier
+Dog,Akita/Pit Bull,Terrier; Working
+Dog,Canaan Dog/Redbone Hound,Hound; Working
+Dog,Siberian Husky/Great Pyrenees,Working
+Dog,Boxer Mix,Working
+Dog,Chihuahua Shorthair/Cocker Spaniel,Sporting; Toy
+Dog,Treeing Cur Mix,Hound
+Dog,Shih Tzu/Norfolk Terrier,Toy; Terrier
+Dog,Labrador Retriever/Border Collie,Sporting; Herding
+Dog,Pug/Pit Bull,Toy; Terrier
+Dog,Australian Cattle Dog/Australian Kelpie,Herding; Terrier
+Dog,Queensland Heeler/Parson Russell Terrier,Herding; Terrier
+Dog,Great Pyrenees/Australian Cattle Dog,Herding; Working
+Dog,Manchester Terrier/Jack Russell Terrier,Toy; Terrier
+Dog,Doberman Pinsch,Working
+Dog,Oriental Sh Mix,Herding
+Dog,Toy Fox Terrier Mix,Toy
+Dog,Border Collie Mix,Herding
+Dog,Nova Scotia Duck Tolling Retriever/Golden Retriever,Sporting
+Dog,Catahoula/Great Dane,Toy; Working
+Dog,Siamese Mix,Working
+Dog,Queensland Heeler/Shetland Sheepdog,Herding
+Dog,Airedale Terrier/Labrador Retriever,Sporting; Terrier
+Dog,Domestic Longhair Mix,Hound
+Dog,Dachshund/Greyhound,Hound
+Dog,Shih Tzu/Pekingese,Toy
+Dog,Yorkshire Terrier/Miniature Schnauzer,Toy; Terrier
+Dog,Miniature Poodle/Italian Greyhound,Toy
+Dog,Australian Cattle Dog/Treeing Walker Coonhound,Herding; Hound
+Dog,Pit Bull/Mastiff,Terrier; Working
+Dog,Japanese Bobtail Mix,Toy
+Dog,Dachshund/Catahoula,Toy; Hound
+Dog,Jindo/Labrador Retriever,Sporting; Working
+Dog,Maltese/Shih Tzu,Toy
+Dog,Chihuahua Shorthair/Dachshund Wirehair,Hound; Toy
+Dog,Domestic Shorthair/Domestic Medium Hair,Sporting; Terrier
+Dog,Carolina Dog/Labrador Retriever,Sporting; Working
+Dog,Staffordshire/Labrador Retriever,Sporting; Terrier
+Dog,Chinese Sharpei,Toy
+Dog,Pug/Staffordshire,Toy; Terrier
+Dog,Border Collie/Doberman Pinsch,Herding; Working
+Dog,Newfoundland Mix,Working
+Dog,Basset Hound/Beauceron,Herding; Hound
+Dog,American Shorthair Mix,Terrier
+Dog,Collie Smooth/German Shepherd,Herding
+Dog,Old English Sheepdog Mix,Herding
+Dog,Border Collie/Greyhound,Herding; Hound
+Dog,Pomeranian/Jack Russell Terrier,Toy; Terrier
+Dog,Australian Cattle Dog/Belgian Malinois,Herding
+Dog,Border Collie/Shetland Sheepdog,Herding
+Dog,Doberman Pinsch/Vizsla,Sporting; Working
+Dog,Norfolk Terrier/Border Terrier,Terrier
+Dog,Black Mouth Cur/Staffordshire,Hound; Terrier
+Dog,Black Mouth Cur Mix,Hound
+Dog,Border Terrier/Miniature Poodle,Toy; Terrier
+Dog,Pit Bull/Plott Hound,Hound; Terrier
+Dog,Pit Bull/Australian Cattle Dog,Herding; Terrier
+Dog,Mastiff,Working
+Dog,Japanese Chin Mix,Toy
+Dog,Papillon/Yorkshire Terrier,Toy
+Dog,Chow Chow Mix,Non-Sporting
+Dog,Boston Terrier/Australian Kelpie,Non-Sporting; Terrier
+Dog,Golden Retriever/Brittany,Sporting
+Dog,Akita/Labrador Retriever,Sporting; Working
+Dog,Scottish Terrier Mix,Terrier
+Dog,Shih Tzu/Miniature Poodle,Toy
+Dog,Beagle/Australian Cattle Dog,Herding; Hound
+Dog,Collie Rough/Australian Shepherd,Herding
+Dog,Plott Hound/Pit Bull,Hound; Terrier
+Dog,Beagle/Dachshund,Hound
+Dog,American Bulldog/American Staffordshire Terrier,Hound; Terrier
+Dog,Pbgv Mix,Toy
+Dog,Miniature Schnauzer/Whippet,Hound; Terrier
+Dog,Border Collie/English Springer Spaniel,Herding; Sporting
+Dog,Belgian Malinois/German Shepherd,Herding
+Dog,Boxer/Border Collie,Herding; Working
+Dog,Border Collie/Jack Russell Terrier,Herding; Terrier
+Dog,Carolina Dog/Pit Bull,Terrier; Working
+Dog,Collie Smooth Mix,Herding
+Dog,Boxer/Mastiff,Working
+Dog,Border Collie/Anatol Shepherd,Herding; Working
+Dog,Miniature Schnauzer/Border Collie,Herding; Terrier
+Dog,Pug/Chihuahua Shorthair,Toy
+Dog,Australian Shepherd/Plott Hound,Herding; Hound
+Dog,Australian Shepherd/Border Collie,Herding
+Dog,Brittany,Sporting
+Dog,Tibetan Terrier/Lhasa Apso,Non-Sporting
+Dog,Entlebucher Mix,Herding
+Dog,Miniature Schnauzer/Border Terrier,Terrier
+Dog,Australian Cattle Dog/Border Collie,Herding
+Dog,Anatol Shepherd/Collie Rough,Herding; Working
+Dog,Chihuahua Longhair/Dachshund,Hound; Toy
+Dog,Jack Russell Terrier/Miniature Poodle,Toy; Terrier
+Dog,Basset Hound/Labrador Retriever,Sporting; Hound
+Dog,Vizsla/Labrador Retriever,Sporting
+Dog,Exotic Shorthair Mix,Sporting
+Dog,Vizsla/Golden Retriever,Sporting
+Dog,Bullmastiff/Boxer,Working
+Dog,Cocker Spaniel/Miniature Poodle,Sporting; Toy
+Dog,Border Terrier/Affenpinscher,Toy; Terrier
+Dog,Boxer/Boston Terrier,Non-Sporting; Working
+Dog,Miniature Schnauzer/Yorkshire Terrier,Toy; Terrier
+Dog,Labrador Retriever/German Shorthair Pointer,Sporting
+Dog,Chow Chow/American Eskimo,Non-Sporting
+Dog,Soft Coated Wheaten Terrier/Labrador Retriever,Sporting; Terrier
+Dog,Munchkin Shorthair Mix,Sporting
+Dog,German Shepherd/English Coonhound,Herding; Hound
+Dog,Labrador Retriever/Staffordshire,Sporting; Terrier
+Dog,American Pit Bull Terrier/Catahoula,Toy; Terrier
+Dog,German Shepherd/Smooth Fox Terrier,Herding; Terrier
+Dog,Plott Hound/Carolina Dog,Hound; Working
+Dog,Border Collie/Great Dane,Herding; Working
+Dog,Pointer/Anatol Shepherd,Sporting; Working
+Dog,Great Pyrenees/Catahoula,Toy; Working
+Dog,Australian Kelpie/German Shepherd,Herding; Terrier
+Dog,Chow Chow/Basset Hound,Non-Sporting; Hound
+Dog,German Shepherd/Australian Shepherd,Herding
+Dog,Boston Terrier/Pug,Non-Sporting; Toy
+Dog,Airedale Terrier/Miniature Schnauzer,Terrier
+Dog,American Staffordshire Terrier/Jack Russell Terrier,Terrier
+Dog,Shetland Sheepdog/Chihuahua Longhair,Herding; Toy
+Dog,Golden Retriever/Beagle,Sporting; Hound
+Dog,Field Spaniel Mix,Sporting
+Dog,Beagle/Manchester Terrier,Toy; Hound; Terrier
+Dog,Dachshund Wirehair/Chihuahua Shorthair,Toy; Hound
+Dog,Cardigan Welsh Corgi/Rat Terrier,Herding; Terrier
+Dog,Alaskan Malamute Mix,Working
+Dog,Beagle/Harrier,Hound
+Dog,Cairn Terrier,Terrier
+Dog,Queensland Heeler/Pit Bull,Herding; Terrier
+Dog,Pembroke Welsh Corgi/Brittany,Herding; Sporting
+Dog,Cocker Spaniel/Australian Shepherd,Sporting; Herding
+Dog,Australian Cattle Dog/Basenji,Herding; Hound
+Dog,Catahoula/Anatol Shepherd,Toy; Working
+Dog,Pointer/Harrier,Sporting; Hound
+Dog,Redbone Hound/Labrador Retriever,Sporting; Hound
+Dog,Pomeranian,Toy
+Dog,Bloodhound,Hound
+Dog,Boxer/Neapolitan Mastiff,Working
+Dog,Boxer/Queensland Heeler,Herding; Working
+Dog,Great Pyrenees/Anatol Shepherd,Working
+Dog,English Springer Spaniel/Beagle,Sporting; Hound
+Dog,Pointer/Collie Smooth,Sporting; Herding
+Dog,Chihuahua Longhair/Jack Russell Terrier,Toy; Terrier
+Dog,Dachshund Longhair/Pembroke Welsh Corgi,Herding; Hound
+Dog,Plott Hound/Boxer,Hound; Working
+Dog,Australian Kelpie/Alaskan Husky,Terrier; Working
+Dog,Alaskan Malamute/Labrador Retriever,Sporting; Working
+Dog,Irish Terrier Mix,Terrier
+Dog,Eng Toy Spaniel Mix,Sporting
+Dog,Maine Coon,Hound
+Dog,Boxer/Black Mouth Cur,Hound; Working
+Dog,Pembroke Welsh Corgi Mix,Herding
+Dog,Snowshoe,Non-Sporting
+Dog,Dachshund/Chihuahua Longhair,Toy; Hound
+Dog,Great Pyrenees/Queensland Heeler,Herding; Working
+Dog,Dachshund Wirehair/Standard Poodle,Hound; Working
+Dog,Dachshund/Shetland Sheepdog,Herding; Hound
+Dog,Labrador Retriever/Collie Rough,Sporting; Herding
+Dog,Pit Bull/Catahoula,Toy; Terrier
+Dog,Golden Retriever/Pembroke Welsh Corgi,Sporting; Herding
+Dog,Alaskan Husky/Border Collie,Herding; Working
+Dog,Cavalier Span/Jack Russell Terrier,Sporting; Terrier
+Dog,Mexican Hairless Mix,Toy
+Dog,Miniature Poodle/Cocker Spaniel,Sporting; Toy
+Dog,Treeing Walker Coonhound,Hound
+Dog,American Pit Bull Terrier/Pointer,Sporting; Terrier
+Dog,English Pointer,Sporting
+Dog,Queensland Heeler/Dachshund,Herding; Hound
+Dog,Chihuahua Shorthair/Lhasa Apso,Non-Sporting; Toy
+Dog,Mastiff/Rottweiler,Working
+Dog,Catahoula/Alaskan Husky,Toy; Working
+Dog,Chow Chow/German Shepherd,Non-Sporting; Herding
+Dog,Vizsla/Catahoula,Sporting; Toy
+Dog,Australian Cattle Dog/English Coonhound,Herding; Hound
+Dog,Pit Bull/Beagle,Hound; Terrier
+Dog,Collie Smooth/Golden Retriever,Herding; Sporting
+Dog,Dachshund/Australian Kelpie,Hound; Terrier
+Dog,Bull Terrier/Boxer,Terrier; Working
+Dog,Chihuahua Shorthair/Australian Cattle Dog,Herding; Toy
+Dog,Great Dane/Australian Cattle Dog,Herding; Working
+Dog,Bruss Griffon,Toy
+Dog,Miniature Poodle/Labrador Retriever,Sporting; Toy
+Dog,Pit Bull/Rottweiler,Terrier; Working
+Dog,Cocker Spaniel/Beagle,Sporting; Hound
+Dog,Irish Wolfhound/Great Pyrenees,Hound; Working
+Dog,Pembroke Welsh Corgi/Australian Shepherd,Herding
+Dog,Catahoula/Chow Chow,Non-Sporting; Toy
+Dog,Pharaoh Hound/Border Collie,Herding; Hound
+Dog,Chow Chow/Siberian Husky,Non-Sporting; Working
+Dog,Golden Retriever/German Shepherd,Sporting; Herding
+Dog,Pointer/American Pit Bull Terrier,Sporting; Terrier
+Dog,Lhasa Apso/Havanese,Non-Sporting; Toy
+Dog,Akita/Great Pyrenees,Working
+Dog,Welsh Terrier Mix,Terrier
+Dog,Saluki/Labrador Retriever,Sporting; Hound
+Dog,Bull Terrier Miniature,Terrier
+Dog,Great Pyrenees/Pit Bull,Terrier; Working
+Dog,Rottweiler/German Shepherd,Herding; Working
+Dog,Australian Shepherd/Parson Russell Terrier,Herding; Terrier
+Dog,Pembroke Welsh Corgi/Basset Hound,Herding; Hound
+Dog,American Bulldog/Boxer,Hound; Working
+Dog,Labrador Retriever/Australian Kelpie,Sporting; Terrier
+Dog,Golden Retriever/Australian Cattle Dog,Sporting; Herding
+Dog,Australian Shepherd/Dachshund,Herding; Hound
+Dog,Siamese/Domestic Shorthair,Sporting; Working
+Dog,Rat Terrier,Terrier
+Dog,American Pit Bull Terrier/Labrador Retriever,Sporting; Terrier
+Dog,Catahoula/Staffordshire,Toy; Terrier
+Dog,Staffordshire/Blue Lacy,Herding; Terrier
+Dog,Pointer,Sporting
+Dog,Labrador Retriever/Black Mouth Cur,Sporting; Hound
+Dog,Siberian Husky/Australian Cattle Dog,Herding; Working
+Dog,Chihuahua Longhair/Pekingese,Toy
+Dog,German Shepherd/Basenji,Herding; Hound
+Dog,Bruss Griffon Mix,Toy
+Dog,Yorkshire Terrier/Bruss Griffon,Toy
+Dog,Cairn Terrier/Scottish Terrier,Terrier
+Dog,Basset Hound/English Pointer,Sporting; Hound
+Dog,Cairn Terrier/Border Collie,Herding; Terrier
+Dog,Beagle/Standard Poodle,Hound; Working
+Dog,Flat Coat Retriever/Golden Retriever,Sporting
+Dog,Dachshund Wirehair/Chihuahua Longhair,Toy; Hound
+Dog,Golden Retriever,Sporting
+Dog,Cornish Rex Mix,Terrier
+Dog,Samoyed,Working
+Dog,Whippet/Dachshund,Hound
+Dog,Chow Chow,Non-Sporting
+Dog,Chihuahua Longhair/Maltese,Toy
+Dog,Great Pyrenees/Siberian Husky,Working
+Dog,Landseer Mix,Terrier
+Dog,Irish Setter/Pit Bull,Sporting; Terrier
+Dog,Collie Rough/Labrador Retriever,Herding; Sporting
+Dog,American Bulldog/Mastiff,Hound; Working
+Dog,Labrador Retriever/Golden Retriever,Sporting
+Dog,Border Collie/Brittany,Herding; Sporting
+Dog,Norwich Terrier/Yorkshire Terrier,Toy; Terrier
+Dog,Flat Coat Retriever Mix,Sporting
+Dog,French Bulldog,Non-Sporting
+Dog,Silky Terrier/Yorkshire Terrier,Toy
+Dog,Chihuahua Longhair Mix,Toy
+Dog,Yorkshire Terrier/Norfolk Terrier,Toy; Terrier
+Dog,Beagle/Chihuahua Longhair,Toy; Hound
+Dog,Bloodhound Mix,Hound
+Dog,Cardigan Welsh Corgi/Labrador Retriever,Herding; Sporting
+Dog,Mastiff/Chinese Sharpei,Toy; Working
+Dog,Boerboel Mix,Working
+Dog,Australian Cattle Dog/Rat Terrier,Herding; Terrier
+Dog,Siberian Husky/German Shepherd,Herding; Working
+Dog,Pembroke Welsh Corgi/Australian Cattle Dog,Herding
+Dog,Jack Russell Terrier/Pit Bull,Terrier
+Dog,Catahoula/German Shepherd,Herding; Toy
+Dog,Catahoula/Rottweiler,Toy; Working

@@ -23,6 +23,4 @@ class PetRow(BaseModel):
 class BreedRow(BaseModel):
     species: str
     name: str
-    size: Optional[str] = None
     group: Optional[str] = None
-    energy_level: Optional[str] = None

@@ -54,7 +54,7 @@ def _get_or_create_shelter(db: Session) -> Shelter:
 def _load_breeds(db: Session, breeds_csv) -> int:
     """
     Load cleaned breeds CSV into the 'breeds' table idempotently.
-    Expects columns: species, name, size, group, energy_level
+    Expects columns: species, name, group
     """
     df = pd.read_csv(breeds_csv)
     count_new = 0
@@ -74,9 +74,7 @@ def _load_breeds(db: Session, breeds_csv) -> int:
         b = Breed(
             species=species,
             name=name,
-            size=(rec.get("size") or None),
             group=(rec.get("group") or None),
-            energy_level=(rec.get("energy_level") or None),
         )
         db.add(b)
         count_new += 1
