@@ -26,9 +26,7 @@ class OutcomeType(str, Enum):
 class BreedBase(BaseModel):
     species: Species
     name: str
-    size: Optional[str] = None
     group: Optional[str] = None
-    energy_level: Optional[str] = None
 
 class BreedRead(BreedBase):
     id: int

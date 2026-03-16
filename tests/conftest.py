@@ -1,58 +1,70 @@
 import os
 import sys
 import pytest
-
-@pytest.fixture(autouse=True, scope="session")
-def _unset_write_key_for_tests():
-    # Ensure write guard is OFF for the entire test session
-    os.environ.pop("WRITE_API_KEY", None)
-    os.environ.pop("ANALYTICS_API_KEY", None)
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 from fastapi.testclient import TestClient
 
-# Ensure project root is on sys.path (keep your guard)
+# ---------------------------------------------------
+# Ensure project root is importable
+# ---------------------------------------------------
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-import os
-os.environ.pop("ANALYTICS_API_KEY", None)  # Ensure guard is OFF for test suite
 
+# ---------------------------------------------------
+# Disable API key guards for all tests
+# ---------------------------------------------------
+@pytest.fixture(autouse=True, scope="session")
+def disable_api_keys():
+    os.environ.pop("WRITE_API_KEY", None)
+    os.environ.pop("ANALYTICS_API_KEY", None)
+
+
+# ---------------------------------------------------
+# Imports AFTER path setup
+# ---------------------------------------------------
 from app.main import app
 from app.database import get_db
 from app.models import Base
 from app.security import require_analytics_api_key
 
+
+# ---------------------------------------------------
+# Database engine
+# ---------------------------------------------------
 @pytest.fixture(scope="function")
 def engine():
-    """
-    Fresh in-memory SQLite engine for each test function.
-    StaticPool ensures the same connection is reused inside the engine.
-    """
     eng = create_engine(
         "sqlite:///:memory:",
         connect_args={"check_same_thread": False},
         poolclass=StaticPool,
     )
+
     Base.metadata.create_all(bind=eng)
+
     try:
         yield eng
     finally:
         eng.dispose()
 
+
+# ---------------------------------------------------
+# Session factory
+# ---------------------------------------------------
 @pytest.fixture(scope="function")
 def session_factory(engine):
     return sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
+
+# ---------------------------------------------------
+# FastAPI client
+# ---------------------------------------------------
 @pytest.fixture(scope="function")
 def client(session_factory):
-    """
-    FastAPI TestClient with dependency override to use our in-memory DB.
-    Creates a new Session for each request via the session factory.
-    """
+
     def override_get_db():
         db = session_factory()
         try:
@@ -61,26 +73,9 @@ def client(session_factory):
             db.close()
 
     app.dependency_overrides[get_db] = override_get_db
-    with TestClient(app) as c:
-        yield c
-    app.dependency_overrides.pop(get_db, None)
+    app.dependency_overrides[require_analytics_api_key] = lambda: None
 
-@pytest.fixture(scope="function")
-def client(session_factory):
-    def override_get_db():
-        db = session_factory()
-        try:
-            yield db
-        finally:
-            db.close()
-
-    # Disable the analytics guard at the dependency level
-    app.dependency_overrides[require_analytics_api_key] = lambda: None  # <- bypass guard
-
-    app.dependency_overrides[get_db] = override_get_db
     with TestClient(app) as c:
         yield c
 
-    # Clean up overrides
-    app.dependency_overrides.pop(get_db, None)
-    app.dependency_overrides.pop(require_analytics_api_key, None)
+    app.dependency_overrides.clear()
