@@ -44,7 +44,7 @@ The pipeline is **idempotent**, meaning it can safely be re-run without corrupti
    - Tracks `external_id` to avoid duplicates  
    - Inserts cleaned + validated rows
 
-# 2.3 Duplicate Handling (`external_id`)
+## 2.3 Duplicate Handling (`external_id`)
 The Austin dataset sometimes has repeated `external_id` entries.  
 PetMatch uses **two layers** of protection:
 
@@ -65,7 +65,7 @@ Result
 ✔ Pipeline is re-runnable  
 ✔ DB remains stable & predictable  
 
-# 2.4  Running the Pipeline
+## 2.4  Running the Pipeline
 ```bash
 # Windows PowerShell
 $env:DATABASE_URL="sqlite:///./petmatch.sqlite"
@@ -77,7 +77,7 @@ python scripts/run_etl.py
 ```
 After this, the DB will be populated from the processed CSVs.
 
-# 2.5 Check results
+## 2.5 Check results
 After completion:
 - Breeds table filled
 - Pets table filled
