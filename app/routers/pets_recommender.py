@@ -78,15 +78,20 @@ def recommend(
 @router.get("/pets/recommend-debug")
 def recommend_debug(
     species: str = Query(..., description="Target species (Dog|Cat|Other)"),
-    target_age: Optional[int] = Query(None, ge=0, description="Target age (Months)"),
+    target_age: Optional[int] = Query(None, ge=0, description="Target age in months"),
     limit: int = Query(10, ge=1, le=100),
     db: Session = Depends(get_db),
 ):
-    # Normalize species
+    """
+    Returns recommended pets along with detailed score breakdown:
+    - age_score
+    - sterilization_score
+    - group_score
+    - total_score
+    """
     species_norm = normalize_species(species) or "Other"
     breed_groups = BREED_GROUPS if species_norm == "Dog" else {}
 
-    # Get recommended pets
     pets = recommend_pets(
         db=db,
         species=species_norm,
@@ -95,25 +100,28 @@ def recommend_debug(
         limit=limit,
     )
 
-    # Get group rates once for scoring
-    group_rates = get_group_rates(db, BREED_GROUPS)
+    group_rates = {}  # Fetch group rates for debug calculations
+    if breed_groups:
+        from app.services.recommender import get_group_rates
+        group_rates = get_group_rates(db, breed_groups)
 
-    debug_list = []
+    results = []
     for pet in pets:
-        # Compute component scores
         age_score = age_similarity(pet.age_months, target_age)
         sterilization_score = is_sterilized(pet.sex_upon_outcome)
-        group_score_val = group_score(pet, breed_groups, group_rates)
-        total_score = compute_score(pet, target_age, breed_groups, group_rates)
+        group_s = group_score(pet, breed_groups, group_rates)
+        total_score = (
+            70 * age_score + 10 * (10 if sterilization_score else 0) + 30 * group_s
+        )
 
-        debug_list.append({
+        results.append({
             "pet": pet_to_read(pet),
             "score_breakdown": {
                 "age_score": age_score,
                 "sterilization_score": sterilization_score,
-                "group_score": group_score_val,
+                "group_score": group_s,
                 "total_score": total_score
             }
         })
 
-    return debug_list
+    return results

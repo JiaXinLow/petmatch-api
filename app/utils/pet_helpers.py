@@ -31,20 +31,25 @@ def normalize_outcome_type(v: Optional[str]) -> Optional[str]:
     return _OUTCOME_CANONICAL.get(key) or v.strip()  # fallback to original if unknown
 
 def pet_to_read(p: Pet) -> PetRead:
-    # Normalize and convert to OutcomeType enum
+    # Normalize outcome string
     ot_str = normalize_outcome_type(p.outcome_type) if p.outcome_type else None
-    ot_enum = OutcomeType(ot_str) if ot_str in OutcomeType.__members__.values() or ot_str in [e.value for e in OutcomeType] else None
+    
+    # Convert to enum if valid, otherwise fallback to a default (e.g., 'Adoption')
+    if ot_str in [e.value for e in OutcomeType]:
+        ot_enum = OutcomeType(ot_str)
+    else:
+        ot_enum = OutcomeType.adoption  # fallback to a safe default
 
     return PetRead(
         id=p.id,
         external_id=p.external_id,
         species=p.species,
         breed_name_raw=p.breed_name_raw,
-        breed_id=p.breed_id,
+        breed_id=getattr(p, "breed_id", None),
         sex_upon_outcome=p.sex_upon_outcome,
         age_months=p.age_months,
-        color=p.color,
+        color=getattr(p, "color", None),
         outcome_type=ot_enum,
-        outcome_datetime=p.outcome_datetime,
-        shelter_id=p.shelter_id,
+        outcome_datetime=getattr(p, "outcome_datetime", None),
+        shelter_id=getattr(p, "shelter_id", None),
     )
