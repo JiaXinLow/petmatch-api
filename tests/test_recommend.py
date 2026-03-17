@@ -1,6 +1,5 @@
 from datetime import datetime
 from fastapi.testclient import TestClient
-from sqlalchemy.orm import Session
 import pytest
 
 from app.main import app
@@ -10,7 +9,7 @@ from app.routers.pets_recommender import BREED_GROUPS
 client = TestClient(app)
 
 # ----------------------------
-# Allowed outcome types
+# Allowed outcome types for PetRead
 # ----------------------------
 ALLOWED_OUTCOMES = [
     "Adoption", "Died", "Disposal", "Euthanasia", "Lost",
@@ -29,11 +28,10 @@ def make_pet(
     outcome_type: str,
     age_months: int = 12,
     sex_upon_outcome: str = "Neutered Male",
-    external_id: str = "EXT123",
+    external_id: str = None,
     created_at: datetime = None,
     updated_at: datetime = None,
 ):
-    """Create a Pet object with valid outcome_type for testing."""
     pet = Pet()
     pet.id = id
     pet.name = name
@@ -41,12 +39,10 @@ def make_pet(
     pet.breed_name_raw = breed_name_raw
     pet.age_months = age_months
     pet.sex_upon_outcome = sex_upon_outcome
-    pet.external_id = external_id
+    pet.outcome_type = outcome_type if outcome_type in ALLOWED_OUTCOMES else "Adoption"
+    pet.external_id = external_id or f"EXT{id}"
     pet.created_at = created_at or datetime.utcnow()
     pet.updated_at = updated_at or datetime.utcnow()
-
-    # Ensure outcome_type matches allowed enum exactly
-    pet.outcome_type = outcome_type if outcome_type in ALLOWED_OUTCOMES else "Adoption"
     return pet
 
 # ----------------------------
@@ -74,7 +70,7 @@ class MockSession:
         return Result(self._pets)
 
 # ----------------------------
-# Fixtures for dogs and cats
+# Fixtures
 # ----------------------------
 @pytest.fixture
 def db_dogs():
@@ -99,6 +95,8 @@ def db_cats():
 def test_recommend_dog(monkeypatch, db_dogs):
     # Patch DB dependency
     monkeypatch.setattr("app.routers.pets_recommender.get_db", lambda: db_dogs)
+    # Patch normalize_outcome_type to bypass enum mapping
+    monkeypatch.setattr("app.utils.pet_helpers.normalize_outcome_type", lambda x: x)
 
     response = client.get("/api/pets/recommend", params={"species": "Dog", "limit": 5})
     assert response.status_code == 200
@@ -112,6 +110,7 @@ def test_recommend_dog(monkeypatch, db_dogs):
 
 def test_recommend_cat(monkeypatch, db_cats):
     monkeypatch.setattr("app.routers.pets_recommender.get_db", lambda: db_cats)
+    monkeypatch.setattr("app.utils.pet_helpers.normalize_outcome_type", lambda x: x)
 
     response = client.get("/api/pets/recommend", params={"species": "Cat", "limit": 5})
     assert response.status_code == 200
@@ -123,9 +122,14 @@ def test_recommend_cat(monkeypatch, db_cats):
         assert pet["external_id"] is not None
         assert pet["outcome_type"] in ALLOWED_OUTCOMES
 
-def test_recommend_debug(client):
+def test_recommend_debug(monkeypatch, db_dogs):
+    # Patch DB dependency and normalize_outcome_type
+    monkeypatch.setattr("app.routers.pets_recommender.get_db", lambda: db_dogs)
+    monkeypatch.setattr("app.utils.pet_helpers.normalize_outcome_type", lambda x: x)
+
     response = client.get("/api/pets/recommend-debug", params={"species": "Dog", "limit": 2})
     assert response.status_code == 200
+
     data = response.json()
     assert len(data) <= 2
 
@@ -138,6 +142,7 @@ def test_recommend_debug(client):
         assert "species" in pet
         assert "breed_name_raw" in pet
         assert pet["outcome_type"] in ALLOWED_OUTCOMES
+        assert pet["external_id"] is not None
 
         # Check score_breakdown fields
         assert "age_score" in scores
