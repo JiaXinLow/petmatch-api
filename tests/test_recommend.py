@@ -3,44 +3,41 @@ from fastapi.testclient import TestClient
 import pytest
 
 from app.main import app
-from app.schemas import PetRead, OutcomeType
-from app.routers.pets_recommender import BREED_GROUPS
+from app.schemas import OutcomeType
 
 client = TestClient(app)
 
 # ----------------------------
-# Helper to create mock pets
+# Minimal mock ORM object
 # ----------------------------
-def make_pet_read(
-    id: int,
-    name: str,
-    species: str,
-    breed_name_raw: str,
-    outcome_type: str,
-    age_months: int = 12,
-    sex_upon_outcome: str = "Neutered Male",
-    external_id: str = "EXT123",
-    created_at: datetime = None,
-    updated_at: datetime = None,
-):
-    return PetRead(
-        id=id,
-        name=name,
-        species=species,
-        breed_name_raw=breed_name_raw,
-        age_months=age_months,
-        sex_upon_outcome=sex_upon_outcome,
-        outcome_type=outcome_type,
-        external_id=external_id,
-        created_at=created_at or datetime.utcnow(),
-        updated_at=updated_at or datetime.utcnow()
-    )
+class MockPet:
+    """Mimics SQLAlchemy Pet ORM object for FastAPI serialization"""
+    def __init__(
+        self,
+        id: int,
+        name: str,
+        species: str,
+        breed_name_raw: str,
+        outcome_type: str,
+        external_id: str = "EXT123",
+        age_months: int = 12,
+        sex_upon_outcome: str = "Neutered Male",
+    ):
+        self.id = id
+        self.name = name
+        self.species = species
+        self.breed_name_raw = breed_name_raw
+        self.outcome_type = outcome_type
+        self.external_id = external_id
+        self.age_months = age_months
+        self.sex_upon_outcome = sex_upon_outcome
+        self.created_at = datetime.utcnow()
+        self.updated_at = datetime.utcnow()
 
 # ----------------------------
 # Mock DB session
 # ----------------------------
 class MockSession:
-    """Mock DB session returning PetRead objects."""
     def __init__(self, pets):
         self._pets = pets
 
@@ -53,9 +50,12 @@ class MockSession:
                 class Scalars:
                     def __init__(self, pets):
                         self._pets = pets
+
                     def all(self):
                         return self._pets
+
                 return Scalars(self._pets)
+
         return Result(self._pets)
 
 # ----------------------------
@@ -64,25 +64,28 @@ class MockSession:
 @pytest.fixture
 def db_dogs():
     pets = [
-        make_pet_read(1, "Buddy", "Dog", "Beagle", "Adoption"),
-        make_pet_read(2, "Max", "Dog", "Beagle", "Return to Owner"),
-        make_pet_read(3, "Bella", "Dog", "Labrador", "Adoption"),
+        MockPet(1, "Buddy", "Dog", "Beagle", "Adoption"),
+        MockPet(2, "Max", "Dog", "Beagle", "Return to Owner"),
+        MockPet(3, "Bella", "Dog", "Labrador", "Adoption"),
     ]
     return MockSession(pets)
 
 @pytest.fixture
 def db_cats():
     pets = [
-        make_pet_read(10, "Whiskers", "Cat", "Siamese", "Adoption"),
-        make_pet_read(11, "Mittens", "Cat", "Persian", "Return to Owner"),
+        MockPet(10, "Whiskers", "Cat", "Siamese", "Adoption"),
+        MockPet(11, "Mittens", "Cat", "Persian", "Return to Owner"),
     ]
     return MockSession(pets)
 
 # ----------------------------
-# Tests
+# Allowed outcomes
 # ----------------------------
 ALLOWED_OUTCOMES = [v.value for v in OutcomeType]
 
+# ----------------------------
+# Tests
+# ----------------------------
 def test_recommend_dog(monkeypatch, db_dogs):
     monkeypatch.setattr("app.routers.pets_recommender.get_db", lambda: db_dogs)
 
@@ -119,11 +122,13 @@ def test_recommend_debug(monkeypatch, db_dogs):
         pet = item["pet"]
         scores = item["score_breakdown"]
 
+        # Pet fields
         assert "id" in pet
         assert "species" in pet
         assert "breed_name_raw" in pet
         assert pet["outcome_type"] in ALLOWED_OUTCOMES
 
+        # Score breakdown
         assert "age_score" in scores
         assert "sterilization_score" in scores
         assert "group_score" in scores
