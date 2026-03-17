@@ -420,8 +420,15 @@ Two independent guards using the same header:
 
 Enable:
 ```bash
+# Set keys for macOS / Linux / WSL (bash/zsh) only
 export ANALYTICS_API_KEY="asecretkey"
 export WRITE_API_KEY="wsecretkey"
+
+# Set keys for Window PowerShell session only
+$env:WRITE_API_KEY = "wsecretkey"
+$env:ANALYTICS_API_KEY = "asecretkey"
+
+# (Re)start the API from this same shell
 uvicorn app.main:app --reload
 ```
 Full explanation is in:
