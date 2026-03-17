@@ -10,6 +10,15 @@ from app.routers.pets_recommender import BREED_GROUPS
 client = TestClient(app)
 
 # ----------------------------
+# Allowed outcome types
+# ----------------------------
+ALLOWED_OUTCOMES = [
+    "Adoption", "Died", "Disposal", "Euthanasia", "Lost",
+    "Missing", "Relocate", "Return to Owner", "Rto-Adopt",
+    "Stolen", "Transfer"
+]
+
+# ----------------------------
 # Helper to create mock pets
 # ----------------------------
 def make_pet(
@@ -24,6 +33,7 @@ def make_pet(
     created_at: datetime = None,
     updated_at: datetime = None,
 ):
+    """Create a Pet object with valid outcome_type for testing."""
     pet = Pet()
     pet.id = id
     pet.name = name
@@ -31,10 +41,12 @@ def make_pet(
     pet.breed_name_raw = breed_name_raw
     pet.age_months = age_months
     pet.sex_upon_outcome = sex_upon_outcome
-    pet.outcome_type = outcome_type  # Must match PetRead enum exactly
     pet.external_id = external_id
     pet.created_at = created_at or datetime.utcnow()
     pet.updated_at = updated_at or datetime.utcnow()
+
+    # Ensure outcome_type matches allowed enum exactly
+    pet.outcome_type = outcome_type if outcome_type in ALLOWED_OUTCOMES else "Adoption"
     return pet
 
 # ----------------------------
@@ -62,7 +74,7 @@ class MockSession:
         return Result(self._pets)
 
 # ----------------------------
-# Tests
+# Fixtures for dogs and cats
 # ----------------------------
 @pytest.fixture
 def db_dogs():
@@ -81,22 +93,22 @@ def db_cats():
     ]
     return MockSession(pets)
 
+# ----------------------------
+# Tests
+# ----------------------------
 def test_recommend_dog(monkeypatch, db_dogs):
-    # Patch the DB dependency to use mock
+    # Patch DB dependency
     monkeypatch.setattr("app.routers.pets_recommender.get_db", lambda: db_dogs)
 
     response = client.get("/api/pets/recommend", params={"species": "Dog", "limit": 5})
     assert response.status_code == 200
     data = response.json()
     assert len(data) <= 5
+
     for pet in data:
         assert pet["species"] == "Dog"
         assert pet["external_id"] is not None
-        assert pet["outcome_type"] in [
-            "Adoption", "Died", "Disposal", "Euthanasia", "Lost",
-            "Missing", "Relocate", "Return to Owner", "Rto-Adopt",
-            "Stolen", "Transfer"
-        ]
+        assert pet["outcome_type"] in ALLOWED_OUTCOMES
 
 def test_recommend_cat(monkeypatch, db_cats):
     monkeypatch.setattr("app.routers.pets_recommender.get_db", lambda: db_cats)
@@ -105,19 +117,15 @@ def test_recommend_cat(monkeypatch, db_cats):
     assert response.status_code == 200
     data = response.json()
     assert len(data) <= 5
+
     for pet in data:
         assert pet["species"] == "Cat"
         assert pet["external_id"] is not None
-        assert pet["outcome_type"] in [
-            "Adoption", "Died", "Disposal", "Euthanasia", "Lost",
-            "Missing", "Relocate", "Return to Owner", "Rto-Adopt",
-            "Stolen", "Transfer"
-        ]
+        assert pet["outcome_type"] in ALLOWED_OUTCOMES
 
 def test_recommend_debug(client):
     response = client.get("/api/pets/recommend-debug", params={"species": "Dog", "limit": 2})
     assert response.status_code == 200
-
     data = response.json()
     assert len(data) <= 2
 
@@ -129,6 +137,7 @@ def test_recommend_debug(client):
         assert "id" in pet
         assert "species" in pet
         assert "breed_name_raw" in pet
+        assert pet["outcome_type"] in ALLOWED_OUTCOMES
 
         # Check score_breakdown fields
         assert "age_score" in scores
