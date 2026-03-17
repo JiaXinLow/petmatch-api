@@ -3,6 +3,7 @@ A lightweight **SQL-backed CRUD Web API** for managing shelter pets, performing 
 
 ---
 # Table of Contents
+<<<<<<< HEAD
 ## 1.0 Overview
 
 ## 2.0 Quickstart (Run the API Immediately)
@@ -44,7 +45,6 @@ A lightweight **SQL-backed CRUD Web API** for managing shelter pets, performing 
 ## 11.0 References and Licensing
 
 ## 12.0 Additional Docs
-
 ---
 # 1.0 Overview
 PetMatch is a FastAPI-based service that supports:
