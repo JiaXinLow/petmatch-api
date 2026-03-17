@@ -4,34 +4,63 @@ A lightweight **SQL-backed CRUD Web API** for managing shelter pets, performing 
 ---
 # Table of Contents
 1.0 Overview
+
 2.0 Quickstart (Run the API Immediately)
+
 3.0 Links to Documentation
+
    3.1 Interactive Swagger Docs
+   
    3.2 API Documentation PDF
+   
 4.0 Installation (Full Instructions)
+
 5.0 Feature Overview
+
    5.1 CRUD (Pets)
+   
    5.2 Filtering (Pets)
+   
    5.3 SQL Summary (Aggregations)
+   
    5.4 Recommendation Engine
+   
    5.5 Advanced Analytics
+   
    5.6 Health Check
+   
 6.0 Testing Information
+
   6.1 Run the full suite
+  
   6.2 Run subsets (by marker, path, or keyword)
+  
   6.3 What the tests cover (file-by-file)
+  
   6.4 Expected coverage (functional areas)
+  
   6.5 Test infrastructure & fixtures
+  
   6.6 Useful pytest options
+  
   6.7 CI (continuous integration)
+  
 7.0 Project Structure
+
 8.0 Design Decisions
+
    8.1 Tech Stack
+   
    8.2 Validation Approach
+   
    8.3 Architecture Rationale
+   
 9.0 ETL Pipeline (Austin Animal Center Dataset)
+
 10.0 Optional Security (API Keys)
+
 11.0 References and Licensing 
+
 12.0 Additional Docs
 
 ---
