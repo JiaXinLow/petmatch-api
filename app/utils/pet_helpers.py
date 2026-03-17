@@ -1,8 +1,7 @@
 from typing import Optional
 from app.models import Pet
-from app.schemas import PetRead
+from app.schemas import PetRead, OutcomeType
 
-# Canonical mapping for outcome_type (lower input -> exact output)
 _OUTCOME_CANONICAL = {
     "adoption": "Adoption",
     "transfer": "Transfer",
@@ -29,11 +28,12 @@ def normalize_outcome_type(v: Optional[str]) -> Optional[str]:
     if v is None:
         return None
     key = v.strip().lower()
-    return _OUTCOME_CANONICAL.get(key) or v.strip()  # fall back to original if unknown
+    return _OUTCOME_CANONICAL.get(key) or v.strip()  # fallback to original if unknown
 
 def pet_to_read(p: Pet) -> PetRead:
-    # If you want to be extra defensive, normalize here too before building the schema:
-    ot = normalize_outcome_type(p.outcome_type) if p.outcome_type else None
+    # Normalize and convert to OutcomeType enum
+    ot_str = normalize_outcome_type(p.outcome_type) if p.outcome_type else None
+    ot_enum = OutcomeType(ot_str) if ot_str in OutcomeType.__members__.values() or ot_str in [e.value for e in OutcomeType] else None
 
     return PetRead(
         id=p.id,
@@ -44,7 +44,7 @@ def pet_to_read(p: Pet) -> PetRead:
         sex_upon_outcome=p.sex_upon_outcome,
         age_months=p.age_months,
         color=p.color,
-        outcome_type=ot,
+        outcome_type=ot_enum,
         outcome_datetime=p.outcome_datetime,
         shelter_id=p.shelter_id,
     )
