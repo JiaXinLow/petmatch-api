@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 import json
 from pathlib import Path
 import logging
+import os
 
 from app.database import get_db
 from app.schemas import PetRead
@@ -28,11 +29,8 @@ logger = logging.getLogger("petmatch.pets_recommender")
 # Correct path to project root
 # -------------------------------
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-BREED_FILE = PROJECT_ROOT / "data" / "dogbreed.json"
+BREED_FILE = Path(os.getenv("DOGBREEDS_JSON", PROJECT_ROOT / "data" / "dogbreed.json"))
 
-# -------------------------------
-# Load BREED_GROUPS safely
-# -------------------------------
 BREED_GROUPS = {}
 if BREED_FILE.exists():
     try:
