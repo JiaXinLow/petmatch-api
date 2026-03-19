@@ -26,45 +26,58 @@ def disable_api_keys():
 # ---------------------------------------------------
 from app.main import app
 from app.database import get_db
-from app.models import Base
+from app.models import Base, Pet  # Make sure Pet model is imported
 from app.security import require_analytics_api_key
 
 # ---------------------------------------------------
-# In-memory database for testing
+# Disable filesystem writes in tests
 # ---------------------------------------------------
-@pytest.fixture(scope="session")
+@pytest.fixture(autouse=True, scope="session")
+def disable_filesystem_writes(monkeypatch):
+    monkeypatch.setattr("os.makedirs", lambda *args, **kwargs: None)
+
+# ---------------------------------------------------
+# In-memory test database engine
+# ---------------------------------------------------
+@pytest.fixture(scope="function")
 def engine():
-    """
-    Create a new in-memory SQLite engine for tests.
-    Tables are created once per test session.
-    """
     eng = create_engine(
         "sqlite:///:memory:",
         connect_args={"check_same_thread": False},
         poolclass=StaticPool,
     )
-
-    # Create all tables in the test database
     Base.metadata.create_all(bind=eng)
-    yield eng
-    eng.dispose()
+    try:
+        yield eng
+    finally:
+        eng.dispose()
 
-@pytest.fixture(scope="session")
+# ---------------------------------------------------
+# Session factory
+# ---------------------------------------------------
+@pytest.fixture(scope="function")
 def session_factory(engine):
-    """
-    Returns a session factory bound to the in-memory test database.
-    """
     return sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # ---------------------------------------------------
-# FastAPI TestClient with dependency overrides
+# Seed test data
 # ---------------------------------------------------
 @pytest.fixture(scope="function")
-def client(session_factory):
-    """
-    Provides a TestClient instance with DB and API key overrides.
-    """
-    # Override get_db to use in-memory test session
+def seed_pets(session_factory):
+    db = session_factory()
+    db.add_all([
+        Pet(species="Dog", external_id="TEST-DOG-1", breed_name_raw="Labrador", age_months=24),
+        Pet(species="Cat", external_id="TEST-CAT-1", breed_name_raw="Siamese", age_months=12),
+    ])
+    db.commit()
+    db.close()
+    return True
+
+# ---------------------------------------------------
+# FastAPI test client
+# ---------------------------------------------------
+@pytest.fixture(scope="function")
+def client(session_factory, seed_pets):
     def override_get_db():
         db = session_factory()
         try:
@@ -72,13 +85,11 @@ def client(session_factory):
         finally:
             db.close()
 
-    # Override any API key guard to do nothing
+    # Override dependencies for tests
     app.dependency_overrides[get_db] = override_get_db
     app.dependency_overrides[require_analytics_api_key] = lambda: None
 
-    # Provide a TestClient
     with TestClient(app) as c:
         yield c
 
-    # Clear overrides after each test function
     app.dependency_overrides.clear()
