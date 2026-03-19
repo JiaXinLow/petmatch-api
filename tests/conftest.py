@@ -32,7 +32,7 @@ from app.security import require_analytics_api_key
 # ---------------------------------------------------
 # Disable filesystem writes in tests
 # ---------------------------------------------------
-@pytest.fixture(autouse=True, scope="session")
+@pytest.fixture(autouse=True)
 def disable_filesystem_writes(monkeypatch):
     monkeypatch.setattr("os.makedirs", lambda *args, **kwargs: None)
 
@@ -77,7 +77,7 @@ def seed_pets(session_factory):
 # FastAPI test client
 # ---------------------------------------------------
 @pytest.fixture(scope="function")
-def client(session_factory, seed_pets):
+def client(session_factory):
     def override_get_db():
         db = session_factory()
         try:
@@ -85,7 +85,6 @@ def client(session_factory, seed_pets):
         finally:
             db.close()
 
-    # Override dependencies for tests
     app.dependency_overrides[get_db] = override_get_db
     app.dependency_overrides[require_analytics_api_key] = lambda: None
 

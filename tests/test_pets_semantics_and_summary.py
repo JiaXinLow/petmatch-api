@@ -12,7 +12,11 @@ def test_patch_species_normalization(client):
     assert r.json()["species"] == "Cat"
 
 def test_summary_average_age_none_returns_null(client, session_factory):
-    # Seed two pets with age_months=None so AVG returns None
+    """
+    Ensure that when all pets have age_months=None, the summary endpoint
+    returns average_age_months as null.
+    """
+    # Seed only pets with age_months=None
     with session_factory() as db:
         db.add_all([
             Pet(external_id="S1", species="Dog", age_months=None),
@@ -23,6 +27,8 @@ def test_summary_average_age_none_returns_null(client, session_factory):
     r = client.get("/api/pets/summary")
     assert r.status_code == 200
     data = r.json()
-    assert data["total_pets"] >= 2
-    # Average should serialize as null (Python None)
+
+    # Should see exactly 2 pets
+    assert data["total_pets"] == 2
+    # Average should be None since all ages are None
     assert data["average_age_months"] is None
