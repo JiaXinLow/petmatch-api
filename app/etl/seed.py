@@ -3,13 +3,23 @@ import pandas as pd
 import re
 import math
 
-from sqlalchemy.orm import Session
-from sqlalchemy import select
+from sqlalchemy.orm import sessionmaker, Session
+from sqlalchemy import create_engine, select
 from app.database import engine, SessionLocal
 from app.models import Base, Shelter, Breed, Pet
-from .config import ETLConfig
+from app.etl.config import ETLConfig, DB_PATH
+
 
 log = logging.getLogger(__name__)
+
+# -------------------- Setup engine & session --------------------
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)  # ensure /data exists
+
+engine = create_engine(f"sqlite:///{DB_PATH}", connect_args={"check_same_thread": False})
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# Create tables if they don't exist
+Base.metadata.create_all(bind=engine)
 
 # -------------------- small helpers --------------------
 
@@ -168,9 +178,7 @@ def _load_pets(db: Session, pets_csv, shelter_id: int):
     log.info("Pets loaded: %s new", new_count)
 
 # -------------------- entry point --------------------
-
 def run(config: ETLConfig):
-    Base.metadata.create_all(bind=engine)
     db = SessionLocal()
     try:
         shelter = _get_or_create_shelter(db)

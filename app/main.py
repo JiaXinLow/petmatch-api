@@ -50,13 +50,12 @@ def root():
 
 @app.on_event("startup")
 def on_startup():
-    # Skip DB creation if running tests
     if os.getenv("TESTING") == "1":
         logger.info("TESTING mode detected, skipping DB creation on startup")
         return
 
-    # Ensure data directory exists for SQLite
-    os.makedirs("/app/data", exist_ok=True)
+    # Ensure persistent data directory exists
+    os.makedirs("/data", exist_ok=True)  # matches Railway volume mount
 
     # Create DB tables safely
     Base.metadata.create_all(bind=engine)

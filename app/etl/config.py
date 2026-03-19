@@ -14,3 +14,10 @@ class ETLConfig(BaseModel):
     dogbreeds_json: Path = Path(os.getenv("DOGBREEDS_JSON") or DATA_RAW / "dogbreeds.json")
     pets_clean_csv: Path = Path(os.getenv("PETS_CLEAN_CSV") or DATA_PROCESSED / "pets_clean.csv")
     breeds_clean_csv: Path = Path(os.getenv("BREEDS_CLEAN_CSV") or DATA_PROCESSED / "breeds_clean.csv")
+
+# ----------------------------
+# Persistent SQLite path for Railway
+# ----------------------------
+DB_PATH = Path(os.getenv("DB_PATH") or PROJ_ROOT / "data" / "petmatch.sqlite")
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+print("Using DB_PATH:", DB_PATH.resolve())
