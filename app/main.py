@@ -17,6 +17,7 @@ from app.routers.pets_filters import router as pets_filters_router
 from app.routers.pets_stats_reco import router as pets_stats_reco_router
 from app.routers.analytics import router as analytics_router
 from app.routers.pets_recommender import router as pets_recommender_router
+from app.routers import admin
 
 openapi_tags = [
     {
@@ -61,6 +62,8 @@ app.include_router(pets_crud_router, prefix="/api")
 
 # Analytics (independent)
 app.include_router(analytics_router, prefix="/api")
+
+app.include_router(admin.router, prefix="/admin", tags=["admin"])
 
 @app.get("/")
 def root():
