@@ -3,12 +3,35 @@ services:
     name: petmatch-api
     env: python
     region: frankfurt
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    plan: free
+
+    # Build installs your dependencies
+    buildCommand: |
+      pip install -r requirements.txt
+
+    # Run ETL before the app starts so the SQLite DB is populated each deploy
+    preDeployCommand: |
+      python scripts/run_etl.py
+
+    # Start FastAPI with Uvicorn on the port Render provides
+    startCommand: |
+      uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
     envVars:
+      # Pin Python to a fully-qualified version for dependency compatibility
+      - key: PYTHON_VERSION
+        value: 3.11.11
+
+      # SQLite path in your repo (Option A: rebuilt by ETL every deploy)
       - key: DATABASE_URL
-        value: sqlite:///./petmatch.sqlite
+        value: sqlite:///./data/petmatch.sqlite
+
+      # Your existing optional guards (Render will generate values on first deploy)
       - key: ANALYTICS_API_KEY
         generateValue: true
       - key: WRITE_API_KEY
         generateValue: true
+
+      # Optional: make the breeds JSON path explicit (matches your fixed recommender code)
+      - key: DOGBREEDS_JSON
+        value: data/raw/dogbreeds.json
