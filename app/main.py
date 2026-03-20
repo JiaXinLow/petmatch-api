@@ -1,5 +1,6 @@
 import logging
 import os
+from pathlib import Path
 
 logging.basicConfig(
     level=logging.INFO,
@@ -54,8 +55,10 @@ def on_startup():
         logger.info("TESTING mode detected, skipping DB creation on startup")
         return
 
-    # Ensure persistent data directory exists
-    os.makedirs("/data", exist_ok=True)  # matches Railway volume mount
+    # Pick base dir based on DATABASE_URL; support both repo-local and Render Disk
+    db_url = os.getenv("DATABASE_URL", "sqlite:///./data/petmatch.sqlite")
+    base_dir = Path("/var/data") if db_url.startswith("sqlite:////var/data") else Path("data")
+    base_dir.mkdir(parents=True, exist_ok=True)
 
     # Create DB tables safely
     Base.metadata.create_all(bind=engine)

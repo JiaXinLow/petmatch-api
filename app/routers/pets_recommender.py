@@ -28,8 +28,7 @@ logger = logging.getLogger("petmatch.pets_recommender")
 # -------------------------------
 # Correct path to project root
 # -------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-BREED_FILE = Path(os.getenv("DOGBREEDS_JSON", PROJECT_ROOT / "data" / "dogbreed.json"))
+BREED_FILE = Path(os.getenv("DOGBREEDS_JSON", "data/raw/dogbreeds.json")).resolve()
 
 BREED_GROUPS = {}
 if BREED_FILE.exists():
