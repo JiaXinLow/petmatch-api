@@ -23,6 +23,7 @@ from app.routers.pets_filters import router as pets_filters_router
 from app.routers.pets_stats_reco import router as pets_stats_reco_router
 from app.routers.analytics import router as analytics_router
 from app.routers.pets_recommender import router as pets_recommender_router
+from app.routers import admin  # <-- import the admin router module
 
 openapi_tags = [
     {"name": "system", "description": "Root metadata and health check endpoints."},
@@ -51,6 +52,9 @@ app.include_router(pets_stats_reco_router, prefix="/api")
 app.include_router(pets_recommender_router, prefix="/api")
 app.include_router(pets_crud_router, prefix="/api")
 app.include_router(analytics_router, prefix="/api")
+
+# 3) Register the admin router (the one that triggers ETL)
+app.include_router(admin.router, prefix="/admin", tags=["admin"])
 
 @app.get("/")
 def root():
