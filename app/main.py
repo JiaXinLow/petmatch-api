@@ -9,6 +9,7 @@ logging.basicConfig(
 logger = logging.getLogger("petmatch")
 
 from fastapi import FastAPI
+from fastapi.middleware.gzip import GZipMiddleware
 
 from app.database import engine
 from app.models import Base
@@ -32,7 +33,15 @@ openapi_tags = [
 ]
 
 # 1) Create the FastAPI app first
-app = FastAPI(title="PetMatch API", version="0.1.0", openapi_tags=openapi_tags)
+app = FastAPI(
+    title="PetMatch API",
+    version="0.1.0",
+    openapi_version="3.0.2",  # keeps classic ReDoc happy
+    redoc_url="/redoc",
+    redoc_js_url="https://cdn.jsdelivr.net/npm/redoc@2/bundles/redoc.standalone.js",
+)
+
+app.add_middleware(GZipMiddleware, minimum_size=500)
 
 # 2) Register routers
 app.include_router(health_router, prefix="/api")
