@@ -13,7 +13,7 @@ def test_post_duplicate_external_id_conflict(client):
     assert detail["external_id"] == payload["external_id"]
     assert "pet_id" in detail
 
-@pytest.mark.parametrize("method", ["get", "put", "patch", "delete"])
+@pytest.mark.parametrize("method", ["get", "patch", "delete"])
 def test_not_found_404_on_missing_resource(client, method):
     url = "/api/pets/999999"
     if method == "get":

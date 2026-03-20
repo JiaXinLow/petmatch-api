@@ -58,11 +58,12 @@ def test_pets_crud_flow():
     r = client.get(f"/api/pets/{pid}")
     assert r.status_code == 200
     assert r.json()["id"] == pid
-
-    # ---- Update (PUT with partial semantics as per your API) ----
-    r = client.put(f"/api/pets/{pid}", json={"color": "Black/White"})
-    assert r.status_code == 200
+    
+    # ---- Update (PATCH - partial update) ----
+    r = client.patch(f"/api/pets/{pid}", json={"color": "Black/White"})
+    assert r.status_code == 200, r.text
     assert r.json()["color"] == "Black/White"
+
 
     # ---- List ---- 
     r = client.get("/api/pets", params={"species": "Dog", "limit": 10, "offset": 0})
