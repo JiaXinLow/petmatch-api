@@ -137,6 +137,7 @@ def test_recommend_debug(monkeypatch, db_dogs):
 
         # Score breakdown
         assert "age_score" in scores
-        assert "sterilization_score" in scores
+        # Accept new key; keep backward compatibility if old key appears
+        assert ("sterilization_bonus" in scores) or ("sterilization_score" in scores)
         assert "group_score" in scores
         assert "total_score" in scores

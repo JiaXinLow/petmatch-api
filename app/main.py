@@ -7,6 +7,8 @@ logging.basicConfig(
     format="%(levelname)s | %(name)s | %(message)s"
 )
 logger = logging.getLogger("petmatch")
+logging.getLogger("petmatch.recommender").setLevel(logging.DEBUG)
+logging.getLogger("petmatch.pets_recommender").setLevel(logging.DEBUG)
 
 from fastapi import FastAPI
 from fastapi.middleware.gzip import GZipMiddleware
