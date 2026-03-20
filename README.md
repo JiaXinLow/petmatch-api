@@ -12,7 +12,7 @@ A lightweight **SQL-backed CRUD Web API** for managing shelter pets, performing 
 - 5.0 Feature Overview
   - 5.1 CRUD (Pets)
   - 5.2 Filtering (Pets)
-  - 5.3 SQL Summary (Aggregations)
+  - 5.3 SQL Summary
   - 5.4 Recommendation Engine
   - 5.5 Advanced Analytics
   - 5.6 Health Check
@@ -38,7 +38,7 @@ A lightweight **SQL-backed CRUD Web API** for managing shelter pets, performing 
 # 1.0 Overview
 PetMatch is a FastAPI-based service that supports:
 - Full **CRUD** for pets  
-- Filtering & summary endpoints (SQL aggregations)  
+- Filtering & summary endpoints  
 - A **content‑based recommender**  
 - Two advanced analytics models:  
   - Return‑Risk (post‑adoption risk estimate)  
@@ -48,12 +48,19 @@ PetMatch is a FastAPI-based service that supports:
 
 ---
 # 2.0 Quickstart (Run the API Immediately)
+You can deploy using the hosted version:
+👉 Live Deployment: https://petmatch-api-mby0.onrender.com
+
+Or run it locally:
 ```bash
 git clone https://github.com/JiaXinLow/petmatch-api.git
 cd petmatch-api
 
 python -m venv .venv
-source .venv/bin/activate  # Windows: .\.venv\Scripts\activate
+# macOS & Linux
+source .venv/bin/activate  
+# Windows
+.\.venv\Scripts\activate
 
 pip install -r requirements.txt
 
@@ -74,6 +81,7 @@ These pages are available as soon as the server is running.
 
 ## 3.2 API Documentation PDF  
 A full, coursework-ready API documentation file (endpoints, request/response examples, status codes, and authentication notes) is provided here:
+
 📄 `docs/PetMatch_API_Documentation.pdf`
 
 ---
@@ -81,8 +89,8 @@ A full, coursework-ready API documentation file (endpoints, request/response exa
 1. Create and activate virtual environment
 ```bash
 python -m venv .venv
-. .venv/Scripts/Activate.ps1    # Windows PowerShell
 source .venv/bin/activate       # macOS / Linux
+. .venv/Scripts/Activate.ps1    # Windows PowerShell
 ```
 
 2. Install dependencies
@@ -96,18 +104,48 @@ uvicorn app.main:app --reload
 ```
 --- 
 # 5.0 Features Overview
+
 ## 5.1 CRUD (Pets)
-Create / Read / Update / Delete Pets
+### PURPOSE  
+Create, read, update, and delete pet records in the PetMatch dataset.
+
+### USE CASES  
+- Intake workflows  
+- Administrative data correction  
+- Data import/export pipelines  
+- Editing pet details before analytics or recommendations  
+
+### INTERPRETATION  
+- `POST` returns the created record (`201 Created`)  
+- `GET` returns a pet or list of pets  
+- `PATCH` applies partial updates  
+- `DELETE` removes a pet (`204 No Content`)  
+- Write operations require a **write API key**  
+
+### Endpoints  
 ```bash
-POST   /api/pets
-GET    /api/pets/{id}
-GET    /api/pets
-PUT    /api/pets/{id}
-PATCH  /api/pets/{id}
-DELETE /api/pets/{id}
+POST    /api/pets
+GET     /api/pets/{id}
+GET     /api/pets
+PATCH   /api/pets/{id}
+DELETE  /api/pets/{id}
 ```
 
 ## 5.2 Filtering (Pets)
+### PURPOSE  
+Expose distinct categorical values used throughout the dataset to support browsing, filtering, and UI dropdowns.
+
+### USE CASES  
+- Populate filter controls (species selector, breed list, outcome types)
+- Validate user input against available categories
+- Create dynamic search interfaces
+
+### INTERPRETATION  
+- Each endpoint returns a sorted list of unique values
+- Species and outcomes are normalized internally
+- Useful as lightweight metadata endpoints
+
+### Endpoints  
 ```bash
 GET /api/pets/species
 GET /api/pets/breeds
@@ -115,67 +153,110 @@ GET /api/pets/outcomes
 ```
 
 ## 5.3 SQL Summary (Aggregations)
-- Uses COUNT, GROUP BY, AVG
-- Efficient for large datasets
+### PURPOSE  
+Return a single summary payload of dataset‑wide statistics, computed efficiently using SQL aggregations (COUNT, GROUP BY, AVG, filtered CASE logic).
+
+### USE CASES  
+- Power dashboards and admin panels
+- Produce top‑level insights for BI and reporting
+- Quickly assess data quality (e.g., spikes in "Unknown")
+- Provide aggregates to frontend widgets
+
+### INTERPRETATION  
+- Includes totals, species counts, outcome counts, age buckets, top breeds
+- Computes adoption & sterilization rates
+- Includes AKC‑style group adoption stats if DOGBREEDS_JSON is present
+- Extremely fast because results are computed database‑side
+
+### Endpoints
 ```bash
 GET /api/pets/summary
 ```
 
 ## 5.4 Recommendation Engine
-Weighted scoring logic using:
-- Species match
-- Age proximity
-- Optional size/energy preference
-- Outcome-likelihood bonus
+### PURPOSE  
+Return recommended pets using weighted ranking logic incorporating species match, age similarity, and (for dogs) breed‑group affinity signals.
+
+### USE CASES  
+- “Recommended for You” UI components
+- Counselor‑assisted matchmaking
+- Automated sorting for pet search pages
+- Prioritized ordering of high‑match pets
+
+### INTERPRETATION  
+- For Dog, breed groups are loaded from DOGBREEDS_JSON
+- Higher scores rank first
+- target_age is optional but improves ranking precision
+- /pets/recommend-debug provides full score breakdown
+
+### Endpoints
 ```bash
 GET /api/pets/recommend
+GET /api/pets/recommend-debug
 ```
 
 ## 5.5 Advanced Analytics
-PetMatch provides two **real-world-inspired analytics endpoints** to support operational decisions for shelters.
+PetMatch includes two real‑world‑inspired analytics endpoints to support shelter operational decisions.
 
 1. Heuristic Post-Adoption Risk Estimate
-Estimates how likely a pet is to be **returned after adoption** using a transparent heuristic based on:
-- Age
-- Breed group
-- Species
-- Documentation clarity
-- Dark coat visibility
-- Cohort adoption rate
+### PURPOSE  
+Predict which pets may have a higher likelihood of being returned post‑adoption, using transparent heuristic components.
 
+### USE CASES  
+- Adoption counselling
+- Early intervention & follow‑up support
+- Prioritizing pets needing better photos, descriptions, or enrichment
+- Understanding risk factors for each pet
+
+### INTERPRETATION  
+- Returns a risk_score (0–100)
+- Component breakdown reveals how features contributed
+- External‑ID variant supports shelters that rely on external system IDs
+- Heuristic: intended to assist, not replace human judgement
+
+### Endpoints
 ```bash
 GET /api/analytics/return-risk/{pet_id}
 GET /api/analytics/return-risk/by-external-id/{external_id}
 ```
-Second endpoint is **staff-friendly** for shelters using external IDs.
 
-Use cases:
-- Adoption counselling
-- Improving adopter–pet matching
-- Identifying pets needing follow-up support
+2. Heuristic Welfare / Stress Level Estimate
+### PURPOSE  
+Estimate the current stress or welfare risk for a pet inside the shelter using behavioral and breed‑based signals.
 
-2. Heuristic Shelter-Stress Estimate
-Estimates the **current welfare/stress level** of a pet inside the shelter, using evidence-based signals such as:
-- Breed group *(Herding/Sporting have high stimulation needs)*
-- Age vulnerability *(senior & puppy welfare)*
-- Species enrichment fit
-- Documentation quality *(unknown sex)*
-- Coat visibility *(minor factor)*
+### USE CASES  
+- Welfare audits
+- Prioritizing enrichment
+- Identifying vulnerable or stressed animals
+- Daily kennel monitoring & welfare dashboards
 
+### INTERPRETATION  
+- Returns welfare_score (0–100)
+- Includes evidence‑based advisory suggestions
+- Accounts for breed group stimulation needs, age vulnerability, documentation clarity
+- External‑ID lookup supported
+
+### Endpoints
 ```bash
 GET /api/analytics/welfare/{pet_id}
 GET /api/analytics/welfare/by-external-id/{external_id}
 ```
 
-Use Cases:
-- Welfare auditing
-- Enrichment planning
-- Identifying vulnerable animals
-- Improving in-shelter animal experience
-
-Full details are documented in the API Documentation PDF (linked below).
-
 ## 5.6 Health Check
+### PURPOSE  
+Provide a lightweight check indicating the API is running and able to respond.
+
+### USE CASES
+- Load balancer health probes
+- Uptime monitoring
+- CI/CD smoke tests
+- Developer sanity checks
+
+### INTERPRETATION  
+- Always returns { "status": "ok" }
+- Does not test DB connectivity unless extended
+
+### Endpoints
 ```bash
 GET /health
 ```
@@ -204,11 +285,11 @@ pytest -q tests/test_pets_crud.py
 
 ## 6.3 What the tests cover (file-by-file)
 - **tests/test_health.py** — service liveness via GET /health; asserts 200 response and payload shape.
-- **tests/test_pets_crud.py** — CRUD lifecycle for /api/pets (POST/GET/PUT/PATCH/DELETE), including 201/200/204 codes and schema validation.
+- **tests/test_pets_crud.py** — CRUD lifecycle for /api/pets (POST/GET/PATCH/DELETE), including 201/200/204 codes and schema validation.
 - **tests/test_pets_filter.py** — filter/browse endpoints (/api/pets/species, /breeds, /outcomes) return distinct, stable value sets.
 - **tests/test_pets_errors.py** — negative paths & error semantics (404 not found, 409 conflict on uniqueness, 422 validation).
 - **tests/test_pets_semantics_and_summary.py** — SQL aggregations for /api/pets/summary (COUNT / GROUP BY / AVG) and business semantics (e.g., age handling).
-- **tests/test_recommend.py** — recommendation engine happy paths; ranking by species, age proximity, optional size/energy preferences.
+- **tests/test_recommend.py** — tests the recommendation engine’s happy paths, ensuring correct species filtering, scoring logic (age, breed‑group, sterilization bonus), limit handling, and full debug score breakdown using mock database sessions.
 - **tests/test_recommend_edges.py** — edge cases (empty results, ties, limits, invalid params) for /api/pets/recommend.
 - **tests/test_return_risk_unit.py** — unit tests for heuristic Return‑Risk scoring components and weight combinations.
 - **tests/test_welfare_unit.py** — unit tests for Welfare/Stress scoring components, advisories, and thresholds.
@@ -220,7 +301,7 @@ pytest -q tests/test_pets_crud.py
 
 ## 6.4 Expected coverage (functional areas)
 - CRUD operations for pets
-- Filtering & SQL summary (aggregations)
+- Filtering & SQL summary
 - Recommendation scoring (happy paths + edges)
 - Analytics models (unit + integration)
 - Optional API‑key security (analytics + writes)
@@ -253,7 +334,7 @@ pytest --durations=10
 ```
 
 ## 6.7 CI (continuous integration)
-The repository includes a minimal GitHub Actions workflow under .github/workflows/ci.yml that:
+The repository includes a minimal GitHub Actions workflow under **.github/workflows/ci.yml** that:
 - Sets up Python & installs dependencies
 - Runs pytest on every push / PR
 - Surfaces failures inline for quick triage
@@ -272,12 +353,12 @@ app/
 
   routers/
     __init__.py
+    analytics.py
+    health.py
     pets_crud.py
     pets_filters.py
     pets_recommender.py
     pets_stats_reco.py
-    health.py
-    analytics.py
 
   services/
     __init__.py
@@ -290,11 +371,13 @@ app/
     breeds.py
     config.py
     models.py
+    outcomes.py
     seed.py
   
   utils/
     __init__.py
     pet_helpers.py
+    breed_utils.py
 
 tests/
   conftest.py
@@ -322,6 +405,7 @@ docs/
 .github/workflows/ci.yml
 
 data/
+  petmatch.sqlite
   processed/
     breeds_clean.csv
     pets_clean.csv
@@ -336,9 +420,9 @@ scripts/
 
 .gitignore
 
-petmatch.sqlite
-
 README.md
+
+render.yaml
 
 requirements.txt
 ```
@@ -363,12 +447,16 @@ requirements.txt
 - Correct HTTP status codes
 
 | Code | Meaning |
-|-----|------|
-| 201 | Created |
-| 204 | Deleted |
-| 404 | Not Found |
-| 409 | Conflict |
-| 422 | Validation Error |
+|------|---------|
+| 200  | OK — successful request |
+| 201  | Created — resource successfully created |
+| 204  | No Content — resource deleted successfully |
+| 401  | Unauthorized — missing or invalid API key |
+| 404  | Not Found — resource does not exist |
+| 409  | Conflict — duplicate resource (e.g., external_id already exists) |
+| 422  | Validation Error — invalid query/path/body input |
+| 500  | Internal Server Error — unexpected backend failure |
+| 503  | Service Unavailable — database or dependency unavailable |
 
 ## 8.3 Architecture Rationale
 - **FastAPI + SQLAlchemy** chosen for clarity, async readiness, and clean schema structure
