@@ -136,3 +136,32 @@ class WelfareResponse(BaseModel):
 
 class WelfareByExternalIdResponse(WelfareResponse):
     external_id: str
+
+
+class MonthlyOutcome(BaseModel):
+    period: str  # e.g., "2025-08"
+    counts: Dict[str, int]  # {"Adoption": 123, "Transfer": 58, ...}
+
+class TopBreed(BaseModel):
+    breed_name_raw: str
+    count: int
+
+class GroupOutcomeStat(BaseModel):
+    group: str
+    outcome_counts: Dict[str, int]
+    adoption_rate: Optional[float] = None
+
+class SummaryResponse(BaseModel):
+    total_pets: int
+    species_counts: Dict[str, int]
+    average_age_months: Optional[float] = None
+
+    outcome_counts: Dict[str, int]
+    outcome_counts_by_species: Dict[str, Dict[str, int]]
+    adoption_rate: Optional[float] = None
+
+    sterilization_rate: Optional[float] = None
+    age_buckets: Dict[str, int]
+
+    top_breeds: List[TopBreed]
+    group_outcomes: List[GroupOutcomeStat]
