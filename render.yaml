@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: petmatch-api
+    env: python
+    region: frankfurt
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./petmatch.sqlite
+      - key: ANALYTICS_API_KEY
+        generateValue: true
+      - key: WRITE_API_KEY
+        generateValue: true
