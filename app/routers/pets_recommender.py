@@ -8,6 +8,7 @@ from pathlib import Path
 import logging
 import os
 from collections import defaultdict, Counter
+from pydantic import BaseModel, Field  # <- for debug response schema
 
 from app.database import get_db
 from app.schemas import PetRead
@@ -163,13 +164,104 @@ else:
     logger.warning("Breed file %s not found, using empty BREED_GROUPS", BREED_FILE)
 
 # -------------------------------
+# Response models (debug endpoint)
+# -------------------------------
+class ScoreBreakdown(BaseModel):
+    age_score: float = Field(..., description="Age similarity score (0..1) used in ranking")
+    sterilization_bonus: float = Field(..., description="Fixed bonus if sterilized")
+    groups_found: List[str] = Field(default_factory=list, description="Detected breed groups for the pet")
+    group_score: float = Field(..., description="Group affinity score (0..1) based on breed group match and rates")
+    total_score: float = Field(..., description="Final composite score used for ranking")
+
+class RecommendationDebugItem(BaseModel):
+    pet: PetRead
+    score_breakdown: ScoreBreakdown
+
+# -------------------------------
 # Main recommendation endpoint
 # -------------------------------
-@router.get("/pets/recommend", response_model=List[PetRead])
+@router.get(
+    "/pets/recommend",
+    summary="Recommend pets (ranked list)",
+    description="""
+### PURPOSE
+Return a **ranked list of recommended pets** for a target species and (optionally) a target age.
+
+### USE CASES
+- Power “Recommended for you” carousels and shortlist results in client apps  
+- Provide counselors with data‑driven suggestions aligned to age or breed group preferences  
+- Build marketing modules that feature animals with higher expected suitability  
+
+### INTERPRETATION
+- `species` is **required** and case‑insensitive; it is normalized internally to `Dog`, `Cat`, or `Other`  
+- `target_age` (months) is **optional**; if omitted, age similarity contributes less (or not at all) depending on implementation  
+- For **Dog**, breed group signals are applied using `DOGBREEDS_JSON`; for non‑Dog species, group signals are omitted  
+- Results are **ranked** by the recommender’s internal score (highest first)  
+- This endpoint returns only the **Pet** data; for score details, use `/pets/recommend-debug`  
+""",
+    response_model=List[PetRead],
+    response_description="Ranked list of pets (highest score first)",
+    responses={
+        200: {
+            "description": "Recommended pets",
+            "content": {
+                "application/json": {
+                    "example": [
+                        {
+                            "id": 2451,
+                            "external_id": "AUS-1005",
+                            "species": "Dog",
+                            "age_months": 12,
+                            "breed_name_raw": "Mixed",
+                            "breed_id": None,
+                            "sex_upon_outcome": "Neutered Male",
+                            "color": "Black/White",
+                            "outcome_type": "Adoption",
+                            "outcome_datetime": "2026-03-10T11:20:00Z",
+                            "shelter_id": 10
+                        },
+                        {
+                            "id": 2442,
+                            "external_id": "AUS-0999",
+                            "species": "Dog",
+                            "age_months": 10,
+                            "breed_name_raw": "Labrador Retriever",
+                            "breed_id": None,
+                            "sex_upon_outcome": None,
+                            "color": "Yellow",
+                            "outcome_type": None,
+                            "outcome_datetime": None,
+                            "shelter_id": 11
+                        }
+                    ]
+                }
+            },
+            "headers": {
+                "Cache-Control": {"schema": {"type": "string"}, "description": "e.g., no-store or short TTL"},
+            },
+        },
+        422: {"description": "Validation error (e.g., invalid limit bounds)"},
+    },
+)
 def recommend(
-    species: str = Query(..., description="Target species (Dog|Cat|Other)"),
-    target_age: Optional[int] = Query(None, ge=0, description="Target age in months"),
-    limit: int = Query(10, ge=1, le=100),
+    species: str = Query(
+        ...,
+        description="Target species (case-insensitive). Typical values: Dog, Cat, Other.",
+        examples={"dog": {"summary": "Dog recommendations", "value": "dog"}},
+    ),
+    target_age: Optional[int] = Query(
+        None,
+        ge=0,
+        description="Target age **in months** (optional).",
+        examples={"one-year": {"summary": "Target 12 months", "value": 12}},
+    ),
+    limit: int = Query(
+        10,
+        ge=1,
+        le=100,
+        description="Maximum number of recommendations to return (1–100).",
+        examples={"default": {"summary": "Default limit", "value": 10}, "max": {"summary": "Max", "value": 100}},
+    ),
     db: Session = Depends(get_db),
 ):
     species_norm = normalize_species(species) or "Other"
@@ -187,11 +279,86 @@ def recommend(
 # -------------------------------
 # Debug endpoint
 # -------------------------------
-@router.get("/pets/recommend-debug")
+@router.get(
+    "/pets/recommend-debug",
+    summary="Recommend pets (debug: includes score breakdown)",
+    description="""
+### PURPOSE
+Return **recommendations with detailed scoring diagnostics**, useful for debugging the
+recommender, explaining results, and validating data inputs.
+
+### USE CASES
+- Inspect how **age similarity**, **sterilization bonus**, and **breed group** signals
+  contribute to the final score  
+- Validate breed group detection and group rates derived from the dataset  
+- Troubleshoot surprising rankings or tie-breaks during development  
+
+### INTERPRETATION
+- Output includes the `pet` plus a `score_breakdown` with:  
+  - `age_score` (0..1)  
+  - `sterilization_bonus` (fixed additive bonus when sterilized)  
+  - `groups_found` (detected breed groups for the pet)  
+  - `group_score` (0..1)  
+  - `total_score` (composite)  
+- For **Dog**, breed group features come from `DOGBREEDS_JSON` if present; otherwise they’re omitted  
+- Intended for development and troubleshooting; consider hiding in production or gating with auth  
+""",
+    response_model=List[RecommendationDebugItem],
+    response_description="Ranked recommendations with score breakdown",
+    responses={
+        200: {
+            "description": "Recommendations with score explanation",
+            "content": {
+                "application/json": {
+                    "example": [
+                        {
+                            "pet": {
+                                "id": 2451,
+                                "external_id": "AUS-1005",
+                                "species": "Dog",
+                                "age_months": 12,
+                                "breed_name_raw": "Mixed",
+                                "breed_id": None,
+                                "sex_upon_outcome": "Neutered Male",
+                                "color": "Black/White",
+                                "outcome_type": "Adoption",
+                                "outcome_datetime": "2026-03-10T11:20:00Z",
+                                "shelter_id": 10
+                            },
+                            "score_breakdown": {
+                                "age_score": 0.92,
+                                "sterilization_bonus": 10.0,
+                                "groups_found": ["Herding", "Non-Sporting"],
+                                "group_score": 0.35,
+                                "total_score": 74.5
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        422: {"description": "Validation error (e.g., invalid limit bounds)"},
+    },
+)
 def recommend_debug(
-    species: str = Query(..., description="Target species (Dog|Cat|Other)"),
-    target_age: Optional[int] = Query(None, ge=0, description="Target age in months"),
-    limit: int = Query(10, ge=1, le=100),
+    species: str = Query(
+        ...,
+        description="Target species (case-insensitive). Typical values: Dog, Cat, Other.",
+        examples={"dog": {"summary": "Dog recommendations", "value": "dog"}},
+    ),
+    target_age: Optional[int] = Query(
+        None,
+        ge=0,
+        description="Target age **in months** (optional).",
+        examples={"one-year": {"summary": "Target 12 months", "value": 12}},
+    ),
+    limit: int = Query(
+        10,
+        ge=1,
+        le=100,
+        description="Maximum number of recommendations to return (1–100).",
+        examples={"default": {"summary": "Default limit", "value": 10}, "max": {"summary": "Max", "value": 100}},
+    ),
     db: Session = Depends(get_db),
 ):
     """

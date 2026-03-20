@@ -111,7 +111,109 @@ BREED_GROUPS = load_breed_groups()
 # ----------------------------------------
 # Single unified summary endpoint
 # ----------------------------------------
-@router.get("/pets/summary", response_model=SummaryResponse)
+@router.get(
+    "/pets/summary",
+    summary="Dataset summary: counts, rates, age buckets, top breeds, and group outcomes",
+    description="""
+### PURPOSE
+Provide a **single payload of high-level summary statistics** for the current pets dataset,
+including counts, rates, age distribution, top breeds, and AKC-style group outcome stats
+(if the dog breed mapping is available).
+
+### USE CASES
+- Power **overview dashboards** and landing pages  
+- Enable quick QA checks on data health (e.g., spikes in "Unknown" outcomes)  
+- Support reporting and trend exploration without multiple round-trips  
+- Feed downstream analytics that need basic aggregates and lookup tables  
+
+### INTERPRETATION
+- **Totals & averages**  
+  - `total_pets`: total rows in the `Pet` table  
+  - `average_age_months`: arithmetic mean of `age_months` (may be `null` if unknown)  
+- **Counts**  
+  - `species_counts`: counts per stored/normalized species (missing → `"Unknown"`)  
+  - `outcome_counts`: counts per `outcome_type` (missing → `"Unknown"`)  
+  - `outcome_counts_by_species`: nested counts per species × outcome  
+- **Rates**  
+  - `adoption_rate`: `Adoption / (all outcomes excluding "Unknown")`  
+    *(This implementation counts only plain "Adoption" as positive; you can change to include "Rto-Adopt" if desired.)*  
+  - `sterilization_rate`: share of rows with `sex_upon_outcome` containing **"spay"** or **"neuter"** (case-insensitive),
+    over all rows where `sex_upon_outcome` is **not null**  
+- **Age distribution**  
+  - Buckets: `0–5`, `6–11`, `12–23`, `24–59`, `60+` months (inclusive ranges)  
+- **Top breeds**  
+  - Top 10 `breed_name_raw` values by count (nulls excluded; `"Unknown"` used for blank)  
+- **Group outcomes (AKC-like)**  
+  - Uses `DOGBREEDS_JSON` (if present) to map breed strings to **up to 2 groups**  
+  - Aggregates outcomes per group and derives an `adoption_rate` per group using
+    the same definition as above  
+  - If the mapping is missing or a breed isn't recognized, that record contributes no group stats  
+""",
+    response_model=SummaryResponse,
+    response_description="Aggregated summary statistics for the current dataset",
+    responses={
+        200: {
+            "description": "Summary payload",
+            "content": {
+                "application/json": {
+                    "examples": {
+                        "typical": {
+                            "summary": "Typical dataset",
+                            "value": {
+                                "total_pets": 12450,
+                                "species_counts": {"Dog": 8000, "Cat": 4200, "Other": 250},
+                                "average_age_months": 28.7,
+                                "outcome_counts": {
+                                    "Adoption": 7200,
+                                    "Transfer": 1100,
+                                    "Euthanasia": 120,
+                                    "Return to Owner": 600,
+                                    "Unknown": 50
+                                },
+                                "outcome_counts_by_species": {
+                                    "Dog": {"Adoption": 5000, "Transfer": 700, "Return to Owner": 500, "Unknown": 30},
+                                    "Cat": {"Adoption": 2100, "Transfer": 350, "Euthanasia": 100, "Unknown": 15},
+                                    "Other": {"Adoption": 100, "Transfer": 50, "Unknown": 5}
+                                },
+                                "adoption_rate": 0.80,
+                                "sterilization_rate": 0.76,
+                                "age_buckets": {"0-5": 1800, "6-11": 2100, "12-23": 3000, "24-59": 3500, "60+": 2050},
+                                "top_breeds": [
+                                    {"breed_name_raw": "Mixed", "count": 2150},
+                                    {"breed_name_raw": "Domestic Shorthair", "count": 900},
+                                    {"breed_name_raw": "Labrador Retriever", "count": 650}
+                                ],
+                                "group_outcomes": [
+                                    {
+                                        "group": "Herding",
+                                        "outcome_counts": {"Adoption": 850, "Transfer": 90, "Unknown": 5},
+                                        "adoption_rate": 0.89
+                                    },
+                                    {
+                                        "group": "Sporting",
+                                        "outcome_counts": {"Adoption": 780, "Transfer": 120, "Unknown": 12},
+                                        "adoption_rate": 0.82
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "headers": {
+                "Cache-Control": {
+                    "schema": {"type": "string"},
+                    "description": "Clients may cache summaries briefly; e.g., 'max-age=60'"
+                },
+                "ETag": {
+                    "schema": {"type": "string"},
+                    "description": "Entity tag for conditional requests if you add it upstream"
+                },
+            },
+        },
+        422: {"description": "Validation error"},
+    },
+)
 def pets_summary(db: Session = Depends(get_db)):
     # ---------- Base totals ----------
     total = db.query(func.count(Pet.id)).scalar()
@@ -151,13 +253,11 @@ def pets_summary(db: Session = Depends(get_db)):
         outcome_counts_by_species[sp][oc] = cnt
 
     adopted = outcome_counts.get("Adoption", 0)
-    rto_adopt = outcome_counts.get("Rto-Adopt", 0)
-    positive = adopted  # or: adopted + rto_adopt
+    rto_adopt = outcome_counts.get("Rto-Adopt", 0)  # currently not counted in rate below
+    positive = adopted  # or: adopted + rto_adopt if you choose
 
     total_resolved = sum(outcome_counts.values()) - outcome_counts.get("Unknown", 0)
-    adoption_rate: Optional[float] = (
-        positive / total_resolved if total_resolved > 0 else None
-    )
+    adoption_rate: Optional[float] = positive / total_resolved if total_resolved > 0 else None
 
     # ---------- Sterilization rate ----------
     sterilized_count = (
@@ -250,7 +350,7 @@ def pets_summary(db: Session = Depends(get_db)):
     group_outcomes: List[GroupOutcomeStat] = []
     for group_name, counts in sorted(group_outcome_counts.items()):
         adopted_g = counts.get("Adoption", 0)
-        rto_adopt_g = counts.get("Rto-Adopt", 0)
+        rto_adopt_g = counts.get("Rto-Adopt", 0)  # currently not counted in rate below
         positive_g = adopted_g  # or: adopted_g + rto_adopt_g
 
         total_resolved_g = sum(counts.values()) - counts.get("Unknown", 0)
